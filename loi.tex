@@ -3,6 +3,31 @@
 \usepackage[colorlinks=true]{hyperref}
 \usepackage{xcolor}
 
+\usepackage{tikz}
+
+\makeatletter
+\newcommand*{\radiobutton}{%
+  \@ifstar{\@radiobutton0}{\@radiobutton1}%
+}
+\newcommand*{\@radiobutton}[1]{%
+  \begin{tikzpicture}
+    \pgfmathsetlengthmacro\radius{height("X")/2}
+    \draw[radius=\radius] circle;
+    \ifcase#1 \fill[radius=.6*\radius] circle;\fi
+  \end{tikzpicture}%
+}
+\makeatother
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
 \title{Letter of Intent for \href{https://www.software.ac.uk/research-software-maintenance-fund/round-1}{Research Software Maintenance Fund -- Round 1}}
 \author{}
 
@@ -13,6 +38,15 @@
 
 \section{Application name}
 
+Consolidating Bonsai as the Standard for Neuroscience Intelligent Experimental Control
+
+\section{Size of grant}
+
+\begin{itemize}
+\item[\radiobutton*] Small award (up to 1 year / £150k)
+\item[\radiobutton] Large Award (up to 2 years / £500k)
+\end{itemize}
+
 \section{Proposal summary / scope of work (500 words)}
 
 \begin{instruction}
@@ -20,6 +54,18 @@
 Please provide a short summary of the work being proposed.
 
 \end{instruction}
+
+\input{summary}
+
+\section{Categories of work}
+
+\begin{todolist}
+	\item Technical
+	\item[\done] Documentation
+	\item[\done] Training
+	\item[\done] Community
+	\item Governance
+\end{todolist}
 
 \section{Project team (250 words)}
 
