@@ -1,0 +1,139 @@
+% Bonsai
+
+Bonsai\footnote[1]{https://bonsai-rx.org/} is a software ecosystem used by thousands
+of (mostly experimental neuroscience) users in the UK and all around the world
+(reference usage numbers: number of downloads, forum members, distribution
+around the world).
+%
+Being a visual-programming language, Bonsai allows scientists with little
+programming experience to control sophisticated neuroscience experiments.
+%
+Bonsai is the centre of a growing ecosystem of open source hardware and
+software \ldots
+
+
+% Bonsai.ML and the importance of providing ML functionality to experimental
+% neurosciencetists
+
+Machine learning (ML) is now becoming essential for most branches of science,
+neuroscience in particular.
+%
+A few years back, ML was mostly used by statisticians, but today it is becoming
+a popular technology, thanks to many ML libraries (like PyTorch, GPyTorch, SickLearn)
+that simplify its use.
+%
+Yet, current neuroscience experiments are still controlled by simple means
+(e.g., deliver a reward when a rat pokes left but not right).
+%
+In 2022, we realised that adding ML functionality to Bonsai could empower
+Bonsai users and enable a radically new type of intelligent experimental
+control.
+%
+% Experimental neuroscientists with machine learning tools could create
+% unprecedented experiments unlocking unsolved mysteries of brain function.
+%
+We created the Bonsai.ML\footnote[2]{https://bonsai-rx.org/machinelearning}
+package providing machine learning functionality to the Bonsai ecosystem.
+
+% What we did
+
+We have added to Bonsai Bayesian Linear Regression models, Linear Dynamical
+Systems (LDS), Hidden Markov Models (HMM) and point-process decoders.
+%
+We have used these models to characterise a diverse range of behavioural and
+neural recordings.
+%
+All methods we have developed had been demonstrated using behavioural and
+neural data\footnote[3]{https://bonsai-rx.org/machinelearning/examples/README.html}.
+
+Bonsai is implemented in C\#, while most machine learning models are
+implemented in other languages, like Python, Julia or R.
+%
+To facilitate the incorporation of machine learning functionality into Bonsai,
+and motivate more ML methods developers to contribute their methods, we
+developed the Bonsai-Python
+Scripting\footnote[4]{https://bonsai-rx.org/python-scripting/}
+package and used it to interface Bonsai with ML packages written in Python.
+
+% What we propose to do
+
+The potential of providing machine learning functionality to experimental
+neuroscientists with little programming experience is large, as it could help
+them create unprecedented experiments leading to groundbreaking scientific
+findings.
+%
+However, to maximise the impact of this new functionality we, as methods
+developers, need to invest extra efforts on documentation, training and
+community building, as we propose below.
+
+The vast majority of current ML methods process data in batch form, after
+experiments are finished. Bonsai is a unique source of real-time behavioural and
+neural data, it is best suited for real-time ML methods, and should be a data
+source of great interest to the growing community of real-time ML methods
+developers. Thus, our community building activities will attempt to expand
+Bonsai's current user base of experimental neuroscientists with ML methods
+developers.
+
+\begin{description}
+
+    \item[Documentation:] the current documentation of
+        Bonsai.ML\footnote[5]{https://bonsai-rx.org/machinelearning/index.html}
+        is good; it describes the API and demonstrates the usage of packages
+        for processing behavioural and neural data. As part of this project we
+        will improve this documentation by:
+
+    \begin{enumerate}
+
+        \item providing more examples on the application of the already
+            integrated ML methods to new types of behavioural and neural data.
+
+        \item including include video tutorials on the use of the Bonsai.ML
+            packages.
+
+        \item adding documentation for methods developers. The current
+            documentation is focused on experimental neuroscientists. For
+            methods developer we will add examples and video tutorials on how
+            to integrate existing ML packages, written in different programming
+            languages, into the Bonsai ecosystem.
+
+        \item crucial to Bonsai.ML is to provide its users with comprehensive
+            information about what the ML methods in the package operate, what
+            their assumptions are, and what the generated outputs mean. We will
+            use Bonsai.ML to provide training to its users on machine learning.
+            An excellent resource exist presenting case studies for neural data
+            analysis with
+            Python\footnote[6]{https://mark-kramer.github.io/Case-Studies-Python/intro.html}.
+            We will create case studies for intelligent experimental control
+            with Bonsai.ML.
+
+    \end{enumerate}
+
+    \item[Training:] NeuroGEARS Ltd (the non-profit organisation that is the
+        main contributor to the development of Bonsai) has organised xxx Bonsai
+        course at different universities, and some of them can be viewed
+        online\footnote[7]{https://bonsai-rx.org/learn/}. As part of the
+        proposed project we will organise a new Bonsai course with two tracks,
+        one for experimental neuroscientists and the second one for methods
+        developers. The course will start with an introduction to Bonsai common
+        to both tracks. The experimental track will teach how to use Bonsai.ML
+        packages. The developers track will teach the reactive programming
+        framework and how to use different programming languages to interface
+        with Bonsai.
+
+    \item[Community:] It is important that we integrated into Bonsai ML methods
+        that are used widely by experimental neuroscientists. It is also
+        important that the ML functionality we provide satisfies the need of
+        these scientists. For these reasons it is vital that we collaborate
+        with experimental neuroscientists on the integration of ML methods into
+        Bonsai.
+
+        Several Neuroscience institutions around the world are using Bonsai for
+        experimental control: the Allen Institute for Neural Dynamics and
+        Janelia Research Campus in the US, the Chamapalimaud Centre for the
+        Unknown in Portugal, the Sainsbury Wellcome  Centre in London, among
+        others. We collaborate with experimental neuroscientists at the
+        Sainsbury Wellcomce Centre and at the Sainsbury Wellcome Centre on the
+        integration of machine learning functionality into Bonsai.
+
+\end{description}
+
