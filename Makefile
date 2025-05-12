@@ -1,5 +1,5 @@
 all: loi.pdf
 
-%.pdf: %.tex
-	pdflatex $<
+loi.pdf: loi.tex summary.tex
+	pdflatex loi.tex
 
