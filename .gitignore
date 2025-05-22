@@ -3,5 +3,6 @@
 *.log
 *.out
 *.bak
+*.swp
 
 loi.pdf
