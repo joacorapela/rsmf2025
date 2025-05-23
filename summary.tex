@@ -90,84 +90,137 @@ developers. Thus, our community building activities will attempt to expand
 Bonsai's current user base of experimental neuroscientists with ML methods
 developers.
 
+\subsubsection*{Documentation}
+
+The current documentation of
+Bonsai.ML\footnote[8]{\url{https://bonsai-rx.org/machinelearning/index.html}}
+is good; it describes the API and demonstrates the usage of packages for
+processing behavioural and neural data. As part of this project we will improve
+this documentation by:
+
+\begin{enumerate}
+
+    \item providing more detailed examples on the application of the
+        already integrated ML methods to new types of behavioural and
+        neural data.
+
+    \item including video tutorials on the use of the Bonsai.ML
+        package.
+
+    \item adding documentation for methods developers. The current
+        documentation is targeted to experimental neuroscientists. For
+        methods developers we will add detailed examples and video
+        tutorials on how to integrate existing ML packages, written in
+        different programming languages, into the Bonsai ecosystem.
+
+    \item crucial to Bonsai.ML is to provide its users with comprehensive
+        information about how the ML methods in the package operate, what
+        their assumptions are, and what the generated outputs mean. We will
+        use Bonsai.ML to provide training to its users on machine learning.
+        An excellent resource exist presenting case studies for neural data
+        analysis in
+        Python\footnote[9]{\url{https://mark-kramer.github.io/Case-Studies-Python/intro.html}}.
+        We will create new case studies for intelligent experimental
+        control in Bonsai.
+
+\end{enumerate}
+
+\subsubsection*{Training}
+
+NeuroGEARS Ltd (the non-profit organisation that is the main contributor to the
+development of Bonsai) has organised xxx Bonsai course at different
+universities, and some of them can be viewed
+online\footnote[10]{\url{https://bonsai-rx.org/learn/}}. As part of the
+proposed project we will organise a new Bonsai course with two tracks, one for
+experimental neuroscientists and the second one for methods developers. The
+course will start with an introduction to Bonsai common to both tracks. The
+experimental track will teach how to use Bonsai.ML packages. The developers
+track will teach the reactive programming framework and how to use different
+programming languages to interface with Bonsai.
+
+\subsubsection*{Community}
+
+We hope that in the near future experimental neuroscientists will use methods
+provided in Bonsai.ML to control their experiments, while methods developers
+will integrate their methods into Bonsai following provided examples. To
+accelerate this adoption, we will initially collaborate with experimental
+neuroscientists and help them use tools provided in Bonsai.ML to control their
+experiments, and we will collaborate with methods developers to help them
+integrate their methods into Bosai.ML.
+
+\paragraph{Collaborations with experimental neuroscientists:} Several
+Neuroscience institutions around the world are using Bonsai for experimental
+control: the Allen Institute for Neural Dynamics and Janelia Research Campus in
+the US, the Chamapalimaud Centre for the Unknown in Portugal, the Sainsbury
+Wellcome Centre and the Institute for Behavioral Neuroscience, both at
+University College London, among others. We will collaborate with experimental
+neuroscientists at the Sainsbury Wellcomce Centre and at the Allen Institute
+for Neural Dynamics on the integration of machine learning functionality into
+their experiments.
+
+\paragraph{Collaborations with methods developers;} Recently Prof.~Garrett
+Stanley, director of the Laboratory for the Control of Neural
+Systems\footnote[11]{\url{https://stanley.gatech.edu/}}, at Georgia Institute
+of Technology, contacted us asking for assistance in integrating into Bonsai.ML
+functionality for close-loop neural control, that his laboratory had developed
+in RTXI/C++. We will assist his laboratory on this integration.
+
+%
+% We will also collaborate with Prof.~Matthias
+% Hennig\footnote[12]{\url{https://homepages.inf.ed.ac.uk/mhennig/index.html}}
+% on the integration of online spike sorting routines developed by his group
+% into Bonsai.ML.
+
+Bonsai is already part of ONIX system for long-duration, low-latency and
+high-throughput neural data
+acquistion\footnote[13]{\url{https://www.nature.com/articles/s41592-024-02521-1}}.  We
+will evaluate real-time neural data processing functionality already developed
+in Bonsai.ML with ONIX recordings and create Open Ephys
+plugins\footnote[14]{\url{https://open-ephys.github.io/gui-docs/User-Manual/Plugins/}} to
+allow to easily use Bonsai.ML with ONIX.
+
+\subsubsection*{Governance}
+
+Bonsai.ML currently has no governance structure, which is a severe limitation
+considering the relevance of both experimental and computational
+neuroscientists to guide its development.
+%
+We will create this structure comprising top-notch neuroscientists that use
+Bonsai in their research and are heavily invested on its future development.
+%
+This committee will advise us on building a development roadmap for Bonsai.ML.
+It will include:
+
 \begin{description}
 
-    \item[Documentation:] the current documentation of
-        Bonsai.ML\footnote[8]{\url{https://bonsai-rx.org/machinelearning/index.html}}
-        is good; it describes the API and demonstrates the usage of packages
-        for processing behavioural and neural data. As part of this project we
-        will improve this documentation by:
+    \item[Prof.~Thomas Mrsic Flogel:] Director of the Sainsbury Wellcome
+        Centre, University College London, where Bonsai is the standard
+        platform for experimental control, and research lead on the BBSRC grant
+        that funded the creation of the Bonsai.ML package.
 
-    \begin{enumerate}
+    \item[Prof.~Maneesh Sahani:] Director of the Gatsby Computational
+        Neuroscience Unit, University College London, and research co-lead on
+        the BBSRC grant that funded the creation of the Bonsai.ML package.
 
-        \item providing more detailed examples on the application of the
-            already integrated ML methods to new types of behavioural and
-            neural data.
+    \item[Prof.~Aman Saleem:] Director of the Saleem lab, University College
+        London, and creator of the Bonsai Bon Vision package.
 
-        \item including video tutorials on the use of the Bonsai.ML
-            package.
+    \item[Prof.~Kenneth Harris:] Co-director of the Cortexlab, University
+        College London, and founding member of the International Brain
+        Laboratory, where he has played a pivotal role in developing the
+        project's data architecture. IBL uses Bonsai for experimental control.
 
-        \item adding documentation for methods developers. The current
-            documentation is targeted to experimental neuroscientists. For
-            methods developers we will add detailed examples and video
-            tutorials on how to integrate existing ML packages, written in
-            different programming languages, into the Bonsai ecosystem.
+    \item[Prof.~Garrett Stanley:] Director of the Laboratory for the Control of
+        Neural Systems, Georgia Institute of Technology. He is now migrating to
+        Bonsai software packages for the close-loop control of neural systems
+        his group had developed in the past using RTXI.
 
-        \item crucial to Bonsai.ML is to provide its users with comprehensive
-            information about how the ML methods in the package operate, what
-            their assumptions are, and what the generated outputs mean. We will
-            use Bonsai.ML to provide training to its users on machine learning.
-            An excellent resource exist presenting case studies for neural data
-            analysis in
-            Python\footnote[9]{\url{https://mark-kramer.github.io/Case-Studies-Python/intro.html}}.
-            We will create new case studies for intelligent experimental
-            control in Bonsai.
+    \item[Dr.~Jakob Voigts:] Director of the Voigts Lab, HHMI's Janelia
+        Research Campus, co-founder of Open Ephys and senior author of ONIX,
+        which uses Bonsai as experimental control platform.
 
-    \end{enumerate}
-
-    \item[Training:] NeuroGEARS Ltd (the non-profit organisation that is the
-        main contributor to the development of Bonsai) has organised xxx Bonsai
-        course at different universities, and some of them can be viewed
-        online\footnote[10]{\url{https://bonsai-rx.org/learn/}}. As part of the
-        proposed project we will organise a new Bonsai course with two tracks,
-        one for experimental neuroscientists and the second one for methods
-        developers. The course will start with an introduction to Bonsai common
-        to both tracks. The experimental track will teach how to use Bonsai.ML
-        packages. The developers track will teach the reactive programming
-        framework and how to use different programming languages to interface
-        with Bonsai.
-
-    \item[Community:] We hope that in the near future experimental neuroscientists
-        will use methods provided in Bonsai.ML to control
-        their experiments, while methods developers will integrate
-        their methods into Bonsai following provided examples. To accelerate
-        this adoption, we will initially collaborate with experimental neuroscientists
-        and help them use tools provided in Bonsai.ML to control their
-        experiments, and we will collaborate with methods developers to help
-        them integrate their methods into Bosai.ML.
-
-        Several Neuroscience institutions around the world are using Bonsai for
-        experimental control: the Allen Institute for Neural Dynamics and
-        Janelia Research Campus in the US, the Chamapalimaud Centre for the
-        Unknown in Portugal, the Sainsbury Wellcome  Centre and the Institute
-        for Behavioral Neuroscience, both at University College London, among
-        others. We will collaborate with experimental neuroscientists at the
-        Sainsbury Wellcomce Centre and at the Allen Institute for Neural
-        Dynamics on the integration of machine learning functionality into
-        their experiments.
-
-        Recently Prof.~Garrett Stanley, director of the Laboratory for the
-        Control of Neural
-        Systems\footnote[11]{\url{https://stanley.gatech.edu/}}, at Georgia
-        Institute of Technology, contacted us asking for assistance in
-        integrating into Bonsai.ML functionality for close-loop neural control,
-        that his laboratory had developed in RTXI/C++. We will assist his
-        laboratory on this integration.
-        %
-        We will also collaborate with Prof.~Matthias
-        Hennig\footnote[12]{\url{https://homepages.inf.ed.ac.uk/mhennig/index.html}}
-        on the integration of online spike sorting routines developed by his
-        group into Bonsai.ML.
-
+    \item[Dr.~Josh Siegel:] Director of the Electrophysioloy group at the Allen
+        Institute for Neural Dynamics, co-founder of Open Ephys and author of
+        ONIX.
+        
 \end{description}
-
