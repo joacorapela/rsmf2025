@@ -1,5 +1,5 @@
-all: loi.pdf
+all: eoi.pdf
 
-loi.pdf: loi.tex summary.tex
-	pdflatex loi.tex
+eoi.pdf: eoi.tex summary.tex projectTeam.tex
+	pdflatex eoi.tex
 
