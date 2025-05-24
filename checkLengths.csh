@@ -1,3 +1,3 @@
 #!/bin/csh
 
-wc -w summary.tex
+wc -w summary.tex projectTeam.tex
