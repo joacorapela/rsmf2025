@@ -53,7 +53,7 @@ Governance
 
 # Project Team
 
-The consolidation of Bonsai as a standard for intelligent experimental control requires expertise in software engineering, machine learning and experimental neuroscience. Therefore, a very unique set of software development skills are required to integrate ML functionality inBonsai.
+The consolidation of Bonsai as a standard for intelligent experimental control requires expertise in software engineering, machine learning and experimental neuroscience. Therefore, a very unique set of software development skills are required to integrate ML functionality into Bonsai.
 
 We are a very cohesive team, with different levels of seniority, and with complementary expertise, to successfully deliver the proposed software maintenance tasks.
 
@@ -67,7 +67,7 @@ We are a very cohesive team, with different levels of seniority, and with comple
 
 #  Benefit to UK research
 
-Bonsai has demonstrated that providing experimental neuroscientists easy to use tools for experimental control, allows them to create very sophisticated experiments. Bonsai.ML puts ML tools in the hands of experimental neuroscientists. With them, the level of sophistication of their experiments, and the research findings that they produce, should greatly increase.
+Bonsai has demonstrated that providing experimental neuroscientists easy to use tools for experimental control, allows them to create very sophisticated experiments. Bonsai.ML puts ML tools in the hands of experimental neuroscientists. With them, the level of sophistication of their experiments, and the research findings that they produce, greatly increase.
 
 Most current ML methods are designed to operate offline, with datasets stored on disk, after data collection has finished. Bonsai requires ML methods that can process online data, while data is being collected, and in a close-loop manner. This has two important implications. First, Bonsai.ML provides a new type of ML methods for real-time neuroscience data, operating in close loop. Used by experimental neuroscientists, these method could generate unprecedented findings on brain function. Second, Bonsai, as an excellent
 source of real-time neural and behavioural data, should become of interest to ML methods developers wanting to apply their methods to real-time data in close loop. Therefore, the dissemination of Bonsai.ML among machine learning methods developers could attract a new community of ML methods developers to Bonsai.
@@ -89,8 +89,6 @@ By providing an extremely simple, yet flexible visual syntax, Bonsai provides th
 We are currently using the measures described below to assess the impact of Bonsai.ML in the experimental neuroscience and/or methods development community. We will compare the change of these measures before and after each project milestone is achieved.
 
 **Bonsai.ML nuget package downloads:** we monitor the number of Bonsai.ML package downloads at https://www.nuget.org/packages/Bonsai.ML,
-
-**Number of Bonsai packages integrated into Bonsai.ML:** we use nuget.org to check the number of packages that are using Bonsai.ML at https://www.nuget.org/packages/Bonsai.ML, which is a proxy to the number of methods developers contributing to Bonsai.ML.
 
 **Bonsai.ML discussions in Bonsai forum:** we track discussions in the Bonsai forum that are related to Bonsai.ML (e.g., https://github.com/orgs/bonsai-rx/discussions?discussions_q=is%3Aopen+bonsai.ml).
 
