@@ -1,0 +1,29 @@
+digraph {
+  layout=dot;
+  ranksep=0.2;
+
+  documentation [shape=box];
+  documentation -> "improve\ncurrent\nNG,JR,GL";
+  documentation -> "for methods\ndevelopers\nJR,NG,GL";
+  documentation -> "video\ntutorials\nNG,JR,GL";
+  documentation -> "Bonsai.ML\npaper\nJR,NG,GL";
+
+  training [shape=box];
+  training -> "Bonsai\ncourse\nGL,NG,JR";
+
+  community [shape=box];
+  community -> exp;
+  community -> methods;
+  exp [shape=box,label=<<FONT COLOR="BLACK">experimental<br/>collaborations</FONT>>]
+  methods [shape=box,label=<<FONT COLOR="BLACK">methodological<br/>collaborations</FONT>>]
+  community -> "Bonsai\nconference\nGL,NG,JR";
+  exp -> "UCL\n(Aman)\nJR,NG,GL";
+  exp -> "SWC\nNG,JR,GL";
+  methods -> "Garrent\nStanley\nJR,NG,GL";
+
+  technical [shape=box];
+  technical -> integrations;
+  integrations [shape=box];
+  integrations -> "PyTorch\nNG,JR,GL";
+
+}
