@@ -9,4 +9,6 @@
 *.blg
 *.csh
 
+application/activitiesGraphs/*svg
+
 eoi_long
