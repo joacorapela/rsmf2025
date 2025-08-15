@@ -25,5 +25,6 @@ digraph {
   technical -> integrations;
   integrations [shape=box];
   integrations -> "PyTorch\nNG,JR,GL";
+  technical -> "Bonsai\non Linux\nNG,GL,JR";
 
 }

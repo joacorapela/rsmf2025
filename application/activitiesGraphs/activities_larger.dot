@@ -12,25 +12,22 @@ digraph {
   training [shape=box];
   training -> "Bonsai\ncourse\nGL,NG,JR";
 
+  "video\ntutorials\nNG,JR,GL" -> community [style=invis];
+
   community [shape=box];
-  community -> exp;
-  community -> methods;
-  exp [shape=box,label=<<FONT COLOR="BLACK">experimental<br/>collaborations</FONT>>]
-  methods [shape=box,label=<<FONT COLOR="BLACK">methodological<br/>collaborations</FONT>>]
+  community -> collaborations;
   community -> "Bonsai\nconference\nGL,NG,JR";
-  exp -> "SWC\nNG,JR,GL";
-  exp -> "UCL\n(Aman)\nJR,NG,GL";
-  exp -> "AIND\nJR,NG,GL";
-  methods -> "Garrent\nStanley\nJR,NG,GL";
-  methods -> "ONIX\nJR,NG,GL";
+  collaborations -> "SWC\nNG,JR,GL";
+  collaborations -> "UCL's IBN\nJR,NG,GL";
+  collaborations -> "AIND\nNG,JR,GL";
+
+  "Bonsai\ncourse\nGL,NG,JR" -> technical [style=invis];
 
   technical [shape=box];
   technical -> integrations;
   integrations [shape=box];
-  integrations -> "PyTorch\nNG,JR,GL";
-  integrations -> "RxInfer\nJR,NG,GL";
+  integrations -> "Garrent\nStanley\nJR,NG,GL";
   integrations -> "Infer.NET\nJR,NG,GL";
-  integrations -> "SpikeInterface\nNG,JR,GL";
   technical -> "Bonsai\non Linux\nNG,GL,JR";
 
 
