@@ -8,6 +8,7 @@
 *.bbl
 *.blg
 *.csh
+.nfs*
 
 application/activitiesGraphs/*svg
 application/beforeChatGPT/*

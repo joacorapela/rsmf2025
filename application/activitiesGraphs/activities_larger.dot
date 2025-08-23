@@ -26,7 +26,7 @@ digraph {
   technical [shape=box];
   technical -> integrations;
   integrations [shape=box];
-  integrations -> "Garrent\nStanley\nJR,NG,GL";
+  integrations -> "CLOCTools\nJR,NG,GL";
   integrations -> "Infer.NET\nJR,NG,GL";
   technical -> "Bonsai\non Linux\nNG,GL,JR";
 
