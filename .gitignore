@@ -10,5 +10,6 @@
 *.csh
 
 application/activitiesGraphs/*svg
+application/beforeChatGPT/*
 
 eoi_long
