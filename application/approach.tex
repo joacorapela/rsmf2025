@@ -118,7 +118,57 @@ profoundly advance scientific discovery.
 
 \subsubsection*{Close-loop optogenetic control: CLOC}
 
-Over the last two decades, there has been a rapid expansion of tools and technologies for recording the large-scale activity within and across brain structures at single neuron resolution \citep{}. In parallel, the development of optogenetics provided the ability to optically excite or inhibit neural activity in a cell-type specific manner \citep{}. Together, these advances in the ability to `read' or `write' the neural code have led to a wide range of discoveries about brain function \citep{}.
+Over the last two decades, there has been a rapid expansion of tools and
+technologies for recording the large-scale activity within and across brain
+structures at single neuron resolution \citep{}. In parallel, the development
+of optogenetics provided the ability to optically excite or inhibit neural
+activity in a cell-type specific manner \citep{}. Together, these advances in
+the ability to `read' or `write' the neural code have led to a wide range of
+discoveries about brain function \citep{}.
+
+However, most brain writing is currently performed open-loop, at predefined
+schedules, independently of behavioral or neural state. This is a sever
+limitation since closed-loop experimentation enables a qualitative leap in
+discovery: from observing correlations under rigid protocols, to revealing
+causal mechanisms of neural dynamics, plasticity, and behavior in naturalistic
+settings. Critically, close-loop stimulation has proved transformative for
+treating devastating brain disorders as Parkinson disease or epilepsy, while
+its use to treat many others (e.g., depression, obsessive
+compulsive disorder) is an active area of research.
+
+Recently Prof.~Garrett Stanley contacted us asking for assistance in
+integrating into Bonsai.ML functionality for close-loop neural control that his
+laboratory had developed in
+RTXI/C++\footnote[6]{\url{https://cloctools.github.io/}}.
+%
+Prof. Garrett Stanley (Georgia Tech) is a leading pioneer in closed-loop
+neuroscience, having developed groundbreaking methods that combine real-time
+neural control with systems neuroscience. His work has set the standard for how
+closed-loop approaches can uncover principles of cortical encoding and
+plasticity that are invisible to traditional open-loop experiments.
+%
+We will assist his laboratory on this integration.
+%
+Bonsai excels on the close-loop control of behavioral experiments and is
+naturally fitted to also succeed on the close-loop control of neural activity.
+
+An important reason for the lack of uptake of close-loop brain stimulation is
+the lack of easy-to-use software tools to manage this type of stimulation.
+%
+A good integration of the tools from the laboratory of Prof.~Stanley into
+Bonsai.ML could enable a qualitative leap in discovery, from observing
+correlations under rigid protocols, to revealing causal mechanisms of neural
+dynamics, plasticity, and behavior in naturalistic settings.
+%
+It could allow us to answer questions that open-loop approaches simply cannot:
+What neural states cause behavior? How does the brain adapt to state-dependent
+perturbations in real time? And how can pathological dynamics be detected and
+corrected as they emerge?"
+
+It allows us to answer questions that open-loop approaches simply
+cannot: What neural states cause behavior? How does the brain adapt to
+perturbations in real time? And how can pathological dynamics be detected and
+corrected as they emerge?
 
 Paradoxically, the optimal integration of recording and optogenetic stimulation
 techniques has received comparatively little attention. Our collaborator,
@@ -133,12 +183,6 @@ function of a wide range of complex technologies
 ranging from communication to flight, applying this
 perspective in the nervous system remains more the-
 oretical [15–19] than experimental.
-
-Recently Prof.~Garrett
-Stanley contacted us asking for assistance in integrating into Bonsai.ML
-functionality for close-loop neural control that his laboratory had developed
-in RTXI/C++\footnote[6]{\url{https://stanley.gatech.edu/}}. We will assist his
-laboratory on this integration.
 
 \subsection*{Governance}
 
