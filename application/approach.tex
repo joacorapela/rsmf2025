@@ -116,63 +116,51 @@ few lines of code. By making powerful yet easy-to-use inference methods
 accessible to experimental neuroscientists, this project has the potential to
 profoundly advance scientific discovery.
 
-\subsubsection*{Close-loop optogenetic control: CLOC}
+\subsubsection*{Closed-loop optogenetic control: CLOC}
 
-Over the last two decades, there has been a rapid expansion of tools and
-technologies for recording the large-scale neural activity at single neuron
-resolution \citep{steinmetzEtAl21}. In parallel, the development
-of optogenetics provided the ability to optically excite or inhibit neural
-activity in a cell-type specific manner \citep{deisseroth14}. Together, these advances in
-the ability to `read' or `write' the neural code have led to a wide range of
-discoveries about brain function \citep{stanley13}.
+Closed-loop neural control represents a transformative advance in neuroscience:  
+rather than delivering stimulation at fixed, open-loop schedules, it enables  
+precisely timed interventions based on ongoing brain and behavioral activity.  
+This paradigm allows researchers to move beyond observing correlations to  
+directly testing causal mechanisms of neural dynamics, plasticity, and
+behavior.  
+Critically, closed-loop stimulation has already proved transformative in the  
+clinic, for example in deep brain stimulation for Parkinson’s disease and  
+epilepsy, while its extension to other disorders (e.g. depression, obsessive  
+compulsive disorder) remains an active area of research. Despite this promise,  
+widespread adoption has been limited by the lack of accessible,
+well-engineered,  
+and sustainable software frameworks for real-time experimental control.
 
-However, most brain writing is currently performed open-loop, at predefined
-schedules, independently of behavioral or neural state. This is a severe
-limitation since closed-loop experimentation enables a qualitative leap in
-discovery: from observing correlations under rigid protocols, to revealing
-causal mechanisms of neural dynamics, plasticity, and behavior in naturalistic
-settings. Critically, close-loop stimulation has proved transformative for
-treating devastating brain disorders as Parkinson disease or epilepsy, while
-its use to treat many others (e.g., depression, obsessive compulsive disorder)
-is a active area of research.
+Prof.~Garrett Stanley (Georgia Tech, US) is a pioneer in closed-loop  
+neuroscience, having developed groundbreaking methods that combine real-time  
+neural control with systems neuroscience. His laboratory recently contacted us  
+to explore integrating their existing CLOC tools, originally implemented in  
+RTXI/C++, into Bonsai.ML\footnote[6]{\url{https://cloctools.github.io/}}.  
+This represents a unique opportunity: Bonsai already excels at real-time  
+closed-loop control in behavioral experiments, and extending it to include  
+state-of-the-art closed-loop neural control will position the platform as the  
+first sustainable, general-purpose framework for both levels of
+experimentation.
 
-Recently Prof.~Garrett Stanley (Georgia Tech University, US) contacted us
-asking for assistance in integrating into Bonsai.ML functionality for
-close-loop neural control that his laboratory had developed in
-RTXI/C++\footnote[6]{\url{https://cloctools.github.io/}}.
-%
-He is a leading pioneer in closed-loop neuroscience, having developed
-groundbreaking methods that combine real-time neural control with systems
-neuroscience. His work has set the standard for how closed-loop approaches can
-uncover principles of cortical encoding and plasticity that are invisible to
-traditional open-loop experiments.
-%
-Bonsai excels on the close-loop control of behavioral experiments and is
-naturally fitted to also succeed on the close-loop control of neural activity.
-%
-We will assist his laboratory on this integration.
+An important reason for the poor uptake of closed-loop methods in neuroscience  
+is that existing implementations are often ad hoc, difficult to install or  
+extend, and not integrated with modern pipelines for data analysis or  
+sharing. By providing Bonsai users with accessible, open-source, and  
+sustainably engineered tools for closed-loop control, we will directly address  
+this barrier and enable a new type of experimentation where researchers can  
+both read and write the neural code in real time. This will accelerate  
+discovery across both basic and translational neuroscience.
 
-An important reason for the poor uptake of close-loop brain stimulation by the
-neuroscience community is the lack of easy-to-use software tools to manage this
-new type of stimulation.
-%
-A good integration of the tools from the laboratory of Prof.~Stanley into
-Bonsai.ML could enable a qualitative leap in discovery, from observing
-correlations under rigid protocols, to revealing causal mechanisms of neural
-dynamics, plasticity, and behavior in naturalistic settings.
-%
-It could allow us to answer questions that open-loop approaches simply cannot:
-What neural states cause behavior? How does the brain adapt to state-dependent
-perturbations in real time? And how can pathological dynamics be detected and
-corrected as they emerge?"
-
-The laboratory of Prof.~Stanley have integrated some of their tools for
-close-loop control into Bonsai using the Python scripting package that we
-developed\footnote{https://bonsai-rx.org/python-scripting/}.
-%
-To improve runtime performance we will implement the tools in C\#, and use a
-comprehensive battery of unit tests to check that the new C\# implementation
-matches the original implementation (in C++ and Python).
+Members of Prof.~Stanley’s lab have already prototyped some of their  
+closed-loop control methods in Bonsai using our Python scripting
+interface\footnote{https://bonsai-rx.org/python-scripting/}.  
+In this project, we will collaborate with his group to re-implement these  
+methods in C\# for high-performance integration into Bonsai.ML, supported by a  
+comprehensive suite of unit tests to ensure functional equivalence with the  
+original C++ implementations. This integration will ensure both the scientific  
+impact of Prof.~Stanley’s innovations and their long-term sustainability within  
+a widely adopted open-source ecosystem.
 
 \subsection*{Governance}
 
