@@ -119,41 +119,42 @@ profoundly advance scientific discovery.
 \subsubsection*{Close-loop optogenetic control: CLOC}
 
 Over the last two decades, there has been a rapid expansion of tools and
-technologies for recording the large-scale activity within and across brain
-structures at single neuron resolution \citep{}. In parallel, the development
+technologies for recording the large-scale neural activity at single neuron
+resolution \citep{steinmetzEtAl21}. In parallel, the development
 of optogenetics provided the ability to optically excite or inhibit neural
-activity in a cell-type specific manner \citep{}. Together, these advances in
+activity in a cell-type specific manner \citep{deisseroth14}. Together, these advances in
 the ability to `read' or `write' the neural code have led to a wide range of
-discoveries about brain function \citep{}.
+discoveries about brain function \citep{stanley13}.
 
 However, most brain writing is currently performed open-loop, at predefined
-schedules, independently of behavioral or neural state. This is a sever
+schedules, independently of behavioral or neural state. This is a severe
 limitation since closed-loop experimentation enables a qualitative leap in
 discovery: from observing correlations under rigid protocols, to revealing
 causal mechanisms of neural dynamics, plasticity, and behavior in naturalistic
 settings. Critically, close-loop stimulation has proved transformative for
 treating devastating brain disorders as Parkinson disease or epilepsy, while
-its use to treat many others (e.g., depression, obsessive
-compulsive disorder) is an active area of research.
+its use to treat many others (e.g., depression, obsessive compulsive disorder)
+is a active area of research.
 
-Recently Prof.~Garrett Stanley contacted us asking for assistance in
-integrating into Bonsai.ML functionality for close-loop neural control that his
-laboratory had developed in
+Recently Prof.~Garrett Stanley (Georgia Tech University, US) contacted us
+asking for assistance in integrating into Bonsai.ML functionality for
+close-loop neural control that his laboratory had developed in
 RTXI/C++\footnote[6]{\url{https://cloctools.github.io/}}.
 %
-Prof. Garrett Stanley (Georgia Tech) is a leading pioneer in closed-loop
-neuroscience, having developed groundbreaking methods that combine real-time
-neural control with systems neuroscience. His work has set the standard for how
-closed-loop approaches can uncover principles of cortical encoding and
-plasticity that are invisible to traditional open-loop experiments.
-%
-We will assist his laboratory on this integration.
+He is a leading pioneer in closed-loop neuroscience, having developed
+groundbreaking methods that combine real-time neural control with systems
+neuroscience. His work has set the standard for how closed-loop approaches can
+uncover principles of cortical encoding and plasticity that are invisible to
+traditional open-loop experiments.
 %
 Bonsai excels on the close-loop control of behavioral experiments and is
 naturally fitted to also succeed on the close-loop control of neural activity.
+%
+We will assist his laboratory on this integration.
 
-An important reason for the lack of uptake of close-loop brain stimulation is
-the lack of easy-to-use software tools to manage this type of stimulation.
+An important reason for the poor uptake of close-loop brain stimulation by the
+neuroscience community is the lack of easy-to-use software tools to manage this
+new type of stimulation.
 %
 A good integration of the tools from the laboratory of Prof.~Stanley into
 Bonsai.ML could enable a qualitative leap in discovery, from observing
@@ -165,24 +166,13 @@ What neural states cause behavior? How does the brain adapt to state-dependent
 perturbations in real time? And how can pathological dynamics be detected and
 corrected as they emerge?"
 
-It allows us to answer questions that open-loop approaches simply
-cannot: What neural states cause behavior? How does the brain adapt to
-perturbations in real time? And how can pathological dynamics be detected and
-corrected as they emerge?
-
-Paradoxically, the optimal integration of recording and optogenetic stimulation
-techniques has received comparatively little attention. Our collaborator,
-Prof.~ Garrett Stanley is a pioneer in the use of methods from optimal control
-to understand brain function. He has develop excellent packages for ...
-
-for review [14]), and in most cases these closed-
-loop systems utilize event-triggered or on-off con-
-trol rather than continuous feedback. While feed-
-back control is the engineering cornerstone for the
-function of a wide range of complex technologies
-ranging from communication to flight, applying this
-perspective in the nervous system remains more the-
-oretical [15–19] than experimental.
+The laboratory of Prof.~Stanley have integrated some of their tools for
+close-loop control into Bonsai using the Python scripting package that we
+developed\footnote{https://bonsai-rx.org/python-scripting/}.
+%
+To improve runtime performance we will implement the tools in C\#, and use a
+comprehensive battery of unit tests to check that the new C\# implementation
+matches the original implementation (in C++ and Python).
 
 \subsection*{Governance}
 
