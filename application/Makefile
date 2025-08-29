@@ -1,7 +1,7 @@
 
 all: applicationLarger.pdf
 
-applicationLarger.pdf: applicationLarger.tex vision.tex approach.tex
+applicationLarger.pdf: applicationLarger.tex software.tex vision.tex approach.tex objectives.tex
 	pdflatex applicationLarger.tex
 	bibtex applicationLarger.aux
 	pdflatex applicationLarger.tex
