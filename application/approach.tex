@@ -5,59 +5,66 @@
     \caption{Proposed activities. See text for details.}
 \end{figure}
 
-\subsection*{Documentation}
+\subsection*{Approach}
 
-Good documentation is essential for software uptake.
-%
-Bonsai.ML already contains substantial
+\subsubsection*{Documentation}
+
+\paragraph{Summary:} Expand Bonsai.ML documentation.
+
+\paragraph{Previous work:} Bonsai.ML already contains substantial
 \href{https://bonsai-rx.org/machinelearning/index.html}{documentation} for all
-distributed packages. This documentation includes Bonsai working examples that users
-can copy and paste them in their Bonsai local runtime and execute them. We will
-extend this documentation by:
+distributed packages. This documentation includes Bonsai working examples that
+users can copy and paste them in their Bonsai local runtime and execute them.
 
-\begin{description}
+\paragraph{Subtasks (responsible team member):}\mbox{}\\
+\begin{itemize}
 
-    \item[providing more examples] on the application of the
-        already integrated ML methods to new types of behavioural and
-        neural data.
+    \item\textbf{provide more examples (NG)} on the application of the already
+        integrated ML methods to new types of behavioural and neural data.
+        %
+        These examples will be similar to the
+        \href{https://bonsai-rx.org/machinelearning/examples/README.html}{existing
+        ones}, but they will be more detailed.
 
-    \item[including video tutorials] on the use of the Bonsai.ML
+    \item\textbf{include video tutorials (NG)} on the use of the Bonsai.ML
         package.
 
-    \item[adding documentation for methods developers] as the current one is
+    \item\textbf{add documentation for methods developers (NG)} as the current one is
         targeted to Bonsai.ML users.
 
-    \item[creating case studies] for intelligent experimental control in Bonsai,
-        similar to the case studies for neural data analysis in
-        Python\footnote[4]{\url{https://mark-kramer.github.io/Case-Studies-Python/intro.html}},
-        or those for model based machine
-        learning\footnote[5]{\url{https://mbmlbook.com/index.html}}, by our Microsoft
-        collaborators.
-        The aim of these case studies is to provide ML training to
-        Bonsai users.
+    \item\textbf{create case studies (JR)} for intelligent experimental control
+        in Bonsai, similar to the
+        \href{https://mark-kramer.github.io/Case-Studies-Python/intro.html}{case
+        studies for neural data analysis in Python}, or those for
+        \href{https://mbmlbook.com/index.html}{model based machine learning},
+        by our Microsoft collaborators.
 
-    \item[publishing a first Bonsai.ML paper] describing its functionality, as
+    \item\textbf{publish a first Bonsai.ML paper (NG)} describing its functionality, as
         companion papers substantially increases the adoption of software
         packages \citep{lopesEtAl15,guilbeaultEtAl21}.
 
-\end{description}
+\end{itemize}
 
-\subsection*{Training}
+\noindent\rule{\textwidth}{1pt}
+\subsubsection*{Training}
 
-Since 2017, NeuroGEARS Ltd (the non-profit organisation that is the main
-contributor to the development of Bonsai) has organised at least two Bonsai
-course per year at different universities, and some of them can be viewed
-online\footnote[5]{\url{https://bonsai-rx.org/learn/}}. We will organise a new
-Bonsai course with a module on Bonsai.ML.
+\paragraph{Summary:} Organize Bonsai course, with Bonsai.ML module.
 
-\subsection*{Community}
+\paragraph{Previous work:} Since 2017, NeuroGEARS Ltd (the non-profit
+organisation that is the main contributor to the development of Bonsai) has
+organised at least two Bonsai course per year at different universities, and
+\href{https://bonsai-rx.org/learn/}{some of them} can be viewed
+online.
 
-Adding state-of-the-art ML methods and comprehensive documentation is critical.
-However, from our previous experience with Bonsai, adoption will be low if we
-do not demonstrate the impact of Bonsai.ML methods for solving important
-neuroscience problems.
-%
-For this, we need to work closely with experimental neuroscientists to help
+\paragraph{Outputs:} course delivery, online course material.
+
+\paragraph{Responsible team members:} GL, NG, JR.
+
+\noindent\rule{\textwidth}{1pt}
+\subsubsection*{Collaborations}
+
+\paragraph{Summary:}
+Collaborate with experimental neuroscientists to help
 them solve relevant problems in intelligent experimental control.
 
 We will collaborate with experimental neuroscientists at the Sainsbury Wellcome
@@ -70,14 +77,15 @@ experiments.
 All these scientists are our close collaborators. Please refer to their letters
 of support.
 
-\subsection*{Integrations}
+\noindent\rule{\textwidth}{1pt}
+\subsubsection*{Integrations}
 
-\subsubsection*{Probabilistic programming software: Infer.NET}
+\subsubsection*{Probabilistic programming: Infer.NET}
 
-Most of the probabilistic models currently integrated into Bonsai are
-implemented in Python. These serve as excellent demonstrations of how Python
-applications can connect to the Bonsai ecosystem, and they are central to our
-aim of attracting Python developers to contribute to Bonsai.ML.
+\paragraph{Background:} Most of the probabilistic models currently integrated
+into Bonsai are implemented in Python. These serve as excellent demonstrations
+of how Python applications can connect to the Bonsai ecosystem, and they are
+central to our aim of attracting Python developers to contribute to Bonsai.ML.
 
 However, Python implementations are substantially slower than equivalent C\#
 code. For demanding real-time applications, C\# implementations are preferable,
@@ -97,10 +105,11 @@ Research Cambridge since 2004, used in
 \href{https://dotnet.github.io/infer/papers.html}{hundreds of papers}, and
 \href{https://www.microsoft.com/en-us/research/blog/the-microsoft-infer-net-machine-learning-framework-goes-open-source/}{open-sourced
 in 2018}.  Infer.NET uses deterministic approximate inference, enabling fast
-and scalable solutions. For example, it has powered systems that extract
-knowledge from billions of web pages (petabyte-scale
-data\footnote[7]{\url{https://www.microsoft.com/en-us/research/blog/the-microsoft-infer-net-machine-learning-framework-goes-open-source/}})
-— the kind of scalability critical for real-time inference in Bonsai.
+and scalable solutions. For
+\href{https://www.microsoft.com/en-us/research/blog/the-microsoft-infer-net-machine-learning-framework-goes-open-source/}{example},
+it has powered systems that extract knowledge from billions of web pages
+(petabyte-scale data) — the kind of scalability critical for real-time
+inference in Bonsai.
 
 Message passing is a natural connection point between Bonsai and Infer.NET.
 Infer.NET uses message passing for approximate inference, while Bonsai relies
@@ -116,53 +125,88 @@ few lines of code. By making powerful yet easy-to-use inference methods
 accessible to experimental neuroscientists, this project has the potential to
 profoundly advance scientific discovery.
 
+\paragraph{Previous work:} Our Microsoft collaborator, Dr.~Tom Minka, invented
+a seminal algorithm for inference in graphical models, the Expectation
+Propagation algorithm~\cite{minka01}, and is the lead developer of Infer.NET.
+Please refer to his letter of support.
+
+\paragraph{Responsible team member:} JR (is experience in C\#, Bonsai and
+probabilistic inference by message passing).
+
+\paragraph{Outputs:}\mbox{}\\
+
+\begin{itemize}
+
+    \item Bonsai nodes implementing Infer.NET inference methods
+    \item online Bayesian linear regression implemented in Bonsai.ML--Infer.NET
+    \item linear dynamical systems implemented in Bonsai.ML--Infer.NET
+    \item hidden Markov model implemented in Bonsai.ML--Infer.NET
+    \item point-process decoder implemented in Bonsai.ML--Infer.NET
+    \item documentation, tutorials and use cases on how to work with
+probabilistic programming models in Bonsai--Infer.NET \end{itemize}
+
 \subsubsection*{Closed-loop optogenetic control: CLOC}
 
-Closed-loop neural control represents a transformative advance in neuroscience:  
-rather than delivering stimulation at fixed, open-loop schedules, it enables  
-precisely timed interventions based on ongoing brain and behavioral activity.  
-This paradigm allows researchers to move beyond observing correlations to  
-directly testing causal mechanisms of neural dynamics, plasticity, and
-behavior.  
-Critically, closed-loop stimulation has already proved transformative in the  
-clinic, for example in deep brain stimulation for Parkinson’s disease and  
-epilepsy, while its extension to other disorders (e.g. depression, obsessive  
-compulsive disorder) remains an active area of research. Despite this promise,  
-widespread adoption has been limited by the lack of accessible,
-well-engineered,  
-and sustainable software frameworks for real-time experimental control.
+\paragraph{Background:} Closed-loop neural control represents a transformative
+advance in neuroscience:  rather than delivering stimulation at fixed,
+open-loop schedules, it enables precisely timed interventions based on ongoing
+brain and behavioral activity. This paradigm allows researchers to move beyond
+observing correlations to  directly testing causal mechanisms of neural
+dynamics, plasticity, and behavior. Critically, closed-loop stimulation has
+already proved transformative in the  clinic, for example in deep brain
+stimulation for Parkinson’s disease and  epilepsy, while its extension to other
+disorders (e.g. depression, obsessive  compulsive disorder) remains an active
+area of research. Despite this promise, widespread adoption has been limited
+by the lack of accessible, well-engineered,  and sustainable software
+frameworks for real-time experimental control.
 
-Prof.~Garrett Stanley (Georgia Tech, US) is a pioneer in closed-loop  
-neuroscience, having developed groundbreaking methods that combine real-time  
-neural control with systems neuroscience. His laboratory recently contacted us  
-to explore integrating their existing CLOC tools, originally implemented in  
-RTXI/C++, into Bonsai.ML\footnote[6]{\url{https://cloctools.github.io/}}.  
-This represents a unique opportunity: Bonsai already excels at real-time  
-closed-loop control in behavioral experiments, and extending it to include  
-state-of-the-art closed-loop neural control will position the platform as the  
-first sustainable, general-purpose framework for both levels of
-experimentation.
+Prof.~Garrett Stanley (Georgia Tech, US) is a pioneer in closed-loop
+neuroscience, having developed groundbreaking methods that combine real-time
+neural control with systems neuroscience. He recently contacted us to explore
+integrating their existing \href{https://cloctools.github.io/}{CLOCTools},
+originally implemented in RTXI/C++, into Bonsai.ML.  This represents a unique
+opportunity: Bonsai already excels at real-time closed-loop control in
+behavioral experiments, and extending it to include state-of-the-art
+closed-loop neural control will position the platform as the first sustainable,
+general-purpose framework for both levels of experimentation.
 
-An important reason for the poor uptake of closed-loop methods in neuroscience  
-is that existing implementations are often ad hoc, difficult to install or  
-extend, and not integrated with modern pipelines for data analysis or  
-sharing. By providing Bonsai users with accessible, open-source, and  
-sustainably engineered tools for closed-loop control, we will directly address  
-this barrier and enable a new type of experimentation where researchers can  
-both read and write the neural code in real time. This will accelerate  
+An important reason for the poor uptake of closed-loop methods in neuroscience
+could be that existing implementations are often ad hoc, difficult to install
+or  extend, and not integrated with modern pipelines for data analysis or
+sharing. By providing Bonsai users with accessible, open-source, and
+sustainably engineered tools for closed-loop control, we will directly address
+this barrier and enable a new type of experimentation where researchers can
+both read and write the neural code in real time. This will accelerate
 discovery across both basic and translational neuroscience.
 
-Members of Prof.~Stanley’s lab have already prototyped some of their  
-closed-loop control methods in Bonsai using our Python scripting
-interface\footnote{https://bonsai-rx.org/python-scripting/}.  
-In this project, we will collaborate with his group to re-implement these  
-methods in C\# for high-performance integration into Bonsai.ML, supported by a  
-comprehensive suite of unit tests to ensure functional equivalence with the  
-original C++ implementations. This integration will ensure both the scientific  
-impact of Prof.~Stanley’s innovations and their long-term sustainability within  
-a widely adopted open-source ecosystem.
+\paragraph{Previous work:} Members of Prof.~Stanley’s lab have already
+prototyped some of their closed-loop control methods in Bonsai using our
+\href{https://bonsai-rx.org/python-scripting/}{Python scripting interface}.
 
-\subsection*{Governance}
+\paragraph{Responsible team members:} JR (experienced in feedback control, C++,
+C\#, Bonsai)
+
+\paragraph{Subtasks:}\mbox{}\\
+
+\begin{itemize}
+
+    \item collaborate with the group of Prof.~Stanley on the implementation in
+        C\# the functionality in the repository
+        \href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctr-est}.
+
+    \item deploy a comprehensive battery of test cases to check the correctness
+        of the C\#/Bonsai implementation against the C++/RTXI one.
+
+    \item reproduce in C\# all the tutorials and examples in the repository
+        lds-ctr-est.
+
+    \item develop addition documentation, tutorials and use cases for
+        experimental neuroscientists with no training on feedback control.
+
+\end{itemize}
+
+\noindent\rule{\textwidth}{1pt}
+\subsubsection*{Governance}
 
 We will create a Bonsai.ML governance structure comprising top-notch
 neuroscientists that use Bonsai in their research and are heavily invested on
@@ -170,3 +214,39 @@ its future development.
 %
 This committee will advise us on building a long-term development roadmap for
 Bonsai.ML.
+
+\noindent\rule{\textwidth}{1pt}
+\subsection*{Management}
+
+We will conduct management activities at different frequencies:
+
+\begin{description}
+
+    \item[Twice a year:] we will generate a progress report, which will be
+        publicly available, and hold meetings with the advisory board to
+        discuss it and receive expert advise.
+
+    \item[Every three months:] we will hold meetings between the project lead, TMF, the
+        senior project co-lead, MS, the senior RSE, JR, the junior RSE, NG, and
+        the external project co-lead, GL, to evaluate the project progress.
+
+    \item[Weekly:] as has been our practice since the start of the Bonsai.ML
+        project, the junior and senior RSEs will meet with the external project
+        co-lead to discuss issues that appeared during the week, review
+        activities for the following week, and adjust project directions.
+
+    \item[Daily:] the offices of the senior and junior RSEs are next to each
+        other, enabling discussions to manage spontaneous project issues.
+
+\end{description}
+
+Meetings with collaborators will be arranged as needed.
+%
+At the SWC, GCNU and NG we are experimental and computational neuroscientists
+with successful collaborative experience, and we have no doubt that the
+proposed collaborations will be of the same kind,
+%
+specially since we have successfully interacted in the past with most of the
+propose collaborators.
+%
+Please refer to their letters of support.
