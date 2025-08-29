@@ -28,7 +28,6 @@ digraph {
   integrations [shape=box];
   integrations -> "CLOCTools\nJR,NG,GL";
   integrations -> "Infer.NET\nJR,NG,GL";
-  technical -> "Bonsai\non Linux\nNG,GL,JR";
 
 
   /* { rank=same; documentation training community technical } */
