@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="RSMF25" company="Gatsby Unit" webLink="" view-date="2025-11-01" view-index="0" gantt-divider-location="351" resource-divider-location="419" version="3.3.3316" locale="en_GB">
     <description/>
-    <view zooming-state="default:11" id="gantt-chart">
+    <view zooming-state="default:10" id="gantt-chart">
         <field id="tpd3" name="Name" width="200" order="0"/>
         <field id="tpd4" name="Begin date" width="75" order="1"/>
         <field id="tpd5" name="End date" width="75" order="2"/>
@@ -48,32 +48,23 @@
         <task id="1" uid="ffa6c4b885b345cd942174131a3ca923" name="doc_video_tutorials" meeting="false" start="2026-05-08" duration="42" complete="0" expand="true">
             <depend id="6" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="6" uid="5661c36332b24f97ada832bf54797637" name="col_SWC" meeting="false" start="2026-07-07" duration="84" complete="0" expand="true">
-            <depend id="8" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="8" uid="de12c6161d1744e9ac197e663a2bcc56" name="col_AIND" meeting="false" start="2026-11-02" duration="84" complete="0" expand="true">
+        <task id="6" uid="5661c36332b24f97ada832bf54797637" name="col_SWC" meeting="false" start="2026-07-07" duration="84" complete="0" expand="true"/>
+        <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="com_BonsaiConf" color="#e1e100" meeting="false" start="2026-11-02" duration="42" complete="0" expand="true"/>
+        <task id="8" uid="de12c6161d1744e9ac197e663a2bcc56" name="col_AIND" meeting="false" start="2026-12-30" duration="84" complete="0" expand="true">
             <depend id="4" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#e1e100" meeting="false" start="2027-02-26" duration="42" complete="0" expand="true">
-            <depend id="5" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_coursePrep" color="#e1e100" meeting="false" start="2027-04-27" duration="44" complete="0" expand="true">
-            <depend id="11" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="com_BonsaiConf" color="#e1e100" meeting="false" start="2027-06-28" duration="66" complete="0" expand="true">
-            <depend id="12" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="12" uid="7d24c83628a64b65a85a0094e5c7c1eb" name="tec_bonsaiLinux" meeting="false" start="2027-09-28" duration="44" complete="0" expand="true"/>
+        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#e1e100" meeting="false" start="2027-04-27" duration="42" complete="0" expand="true"/>
+        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_coursePrep" color="#e1e100" meeting="false" start="2027-10-18" duration="44" complete="0" expand="true"/>
         <task id="7" uid="6a2fb6c65f814c03bf4061691c67df4b" name="col_IBN" color="#e10000" meeting="false" start="2026-01-12" duration="84" complete="0" expand="true">
-            <depend id="3" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="3" uid="134dd0e3ef1e413587d5a501bce4aef6" name="dosc_case_studies" color="#e10000" meeting="false" start="2026-05-08" duration="60" complete="0" expand="true">
             <depend id="9" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="9" uid="c7df81c2137a4401809225b636d8b4e2" name="int_CLOC" color="#e10000" meeting="false" start="2026-07-31" duration="160" complete="0" expand="true">
+        <task id="9" uid="c7df81c2137a4401809225b636d8b4e2" name="int_CLOC" color="#e10000" meeting="false" start="2026-05-08" duration="160" complete="0" expand="true">
             <depend id="10" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="10" uid="2fe3c907cdef43f1b981d7ec88369257" name="int_Infer.NET" color="#e10000" meeting="false" start="2027-03-12" duration="160" complete="0" expand="true"/>
+        <task id="10" uid="2fe3c907cdef43f1b981d7ec88369257" name="int_Infer.NET" color="#e10000" meeting="false" start="2026-12-18" duration="160" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="134dd0e3ef1e413587d5a501bce4aef6" name="dosc_case_studies" color="#e10000" meeting="false" start="2027-07-30" duration="60" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Joaquin Rapela" function="Default:0" contacts="" phone=""/>
@@ -92,7 +83,6 @@
         <allocation task-id="2" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="4" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
         <allocation task-id="5" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
-        <allocation task-id="12" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="4" resource-id="2" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="5" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
     </allocations>
