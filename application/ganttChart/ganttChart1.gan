@@ -54,7 +54,7 @@
             <depend id="4" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#e1e100" meeting="false" start="2027-04-27" duration="42" complete="0" expand="true"/>
-        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_coursePrep" color="#e1e100" meeting="false" start="2027-10-18" duration="44" complete="0" expand="true"/>
+        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_course" color="#e1e100" meeting="false" start="2027-10-18" duration="44" complete="0" expand="true"/>
         <task id="7" uid="6a2fb6c65f814c03bf4061691c67df4b" name="col_IBN" color="#e10000" meeting="false" start="2026-01-12" duration="84" complete="0" expand="true">
             <depend id="9" type="2" difference="0" hardness="Strong"/>
         </task>
