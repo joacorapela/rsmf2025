@@ -252,6 +252,19 @@ prototyped some of their closed-loop control methods in Bonsai using our
 \paragraph{Responsible team members:} JR (experienced in feedback control, C++,
 C\#, Bonsai)
 
+\subsection*{Cross-platform development of Bonsai}
+
+\paragraph{Background:} The landscape of technology for neuroscience has never been as vast and diverse as it is today. The current lack of true cross-platform capability for Bonsai is severely limiting, as neuroscientists often have to manage multiple software applications to run their experiments. However, Bonsai faces signficant challenges in the road ahead to becoming truely cross-platform that will require substantial investment from our team. 
+
+Bonsai was developed in 2012 using Microsoft's flagship technology stack (visual studio,
+.NET framework, and C\#) when the tools for cross-platform support simply didn't exist.While the \href{https://devblogs.microsoft.com/dotnet/introducing-net-standard/}{introduction of .NET standard} in 2016 was a significant step towards bringing cross-platform support to Microsoft's ecosystem, many of Microsoft's core technologies remained tied to the legacy .NET framework. The decision by Bonsai developers to remain on .NET framework meant foregoing the transition to .NET core in order to continue using WinForms, Reactive.NET, and ZedGraph.
+
+Fast forward to today, Bonsai was supported on Linux using \href{https://www.mono-project.com/}{Mono}, however, the Mono project has since become deprecated and is no longer being maintained. Our team has uncovered a short-term, immediate path forward for Bonsai cross-platform using \href{https://www.winehq.org/}{Wine} and have identified \href{https://bugs.winehq.org/show_bug.cgi?id=58211}{several caveats and workarounds} for this approach. While this approach has proven useful, the lack of developer tools for debugging applications running Wine on Linux makes it significantly more challenging to use and develop Bonsai programs on Linux.
+
+In an effort to support cross-platform, Microsoft's latest versions of .NET core support developing applications on Linux, and Visual Studio Code's C\# Development Kit provides powerful debugging tools for .NET applications targetting .NET 6 SDK and above. Additionally, many machine learning libraries are designed with cross-platform support, with some benefiting from the increase in performance provided by the Linux OS and development ecosystem. We propose to update Bonsai's internal source code to target these new, modern frameworks to enhance user's developer experience, as well as improve the robustness and functionality of the Bonsai language into the future.
+
+Updating Bonsai's legacy code for true cross-platform support will greatly expand the target audience of our user base and significantly reduce the friction that current users face when developing Bonsai workflows and packages on non-Windows platforms. Furthermore, by transitioning Bonsai from outdated .NET framework packages such as WinForms towards modern cross-platform ones such as \href{https://github.com/HexaEngine/Hexa.NET.ImGui/tree/master}{Hexa.NET.ImGui}, improvements in speed and performance are likely to permeate across all platforms. 
+
 \paragraph{Subtasks:}\mbox{}\\
 
 \begin{itemize}
