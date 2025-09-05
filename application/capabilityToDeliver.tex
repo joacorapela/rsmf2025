@@ -1,82 +1,136 @@
-The first draft of this proposal was prepared by the senoir RSE, JR, with
-contributions from the junior RSE, NG. The senior RSE could not be project lead
-due to UCL policies.
-%
-RSEs at the Gatsby Unit and SWC are deeply immerse in a machine-learning and
-systems-neuroscience research environment, and their work is focused on
-developing machine learning software for systems neuroscience research.
-%
-Thus, they are well prepared to deliver the proposed activities.
 
-\textbf{JR} has ample \textbf{software engineering} training and experience, with a
-masters degree in computer science, work experience at IBM Argentina and the
-IBM Almaden Research Center (San Jose, CA), and six years of RSE experience at
-the Gatsby Unit.
+This proposal is mutli-disciplinary, requiring skills on software engineering,
+machine learning and both experimental and computational neruroscience. Our
+team has these skills at the leadership and developers level, as we describe
+next.
+
+\subsection*{Relevant Experience}
+
+\paragraph{Prof.~Tom Mrsic Flogel} (project lead) is an experimental
+neuroscientists and director of the SWC. Research in his laboratory aims to explain how the
+brain makes decisions by combining sensory information with previously learned
+knowledge. This research relies on training mice to perform complex behavioural
+tasks, and requires complex experimental design, combined with cutting-edge
+recording and data-analytic techniques, in order to produce shareable code and
+datasets (e.g.
+\href{http://mouse.vision/han2017/}{http://mouse.vision/han2017/}) and
+publications (Orsolic et al 2021 Neuron; Clancy et al 2019 Nature Neuroscience;
+Chabrol et al 2019 Neuron; Han et al 2018 Nature; Kim et al 2018 Neuron; Khan
+et al 2018 Nature Neuroscience). His research team has also established brain-machine
+interfaces, wherein brain activity is used to control external actuators,
+requiring closed-loop experimental control (Clancy and Mrsic-Flogel, 2021
+Neuron).  As the behavioural tasks used in his lab require complex
+software-control of data acquisition and data analysis pipelines, he knows
+first-hand their crucial importance for driving and enabling neuroscientific
+research.
+
+He has published 49 peer-reviewed papers, with an h-index of 35 (calculated by
+google scholar).  He is a founding member of the International Brain
+Laboratory (IBL), a global consortium which brings together researchers from
+experimental and theoretical disciplines to understand decision-making in the
+in brain (IBL et al 2019 Neuron). The Bonsai ecosystem is critical to IBL, as
+it ensures that experimental control, stimulus presentation and data
+acquisition can be identically reproduced across all participating labs in UK,
+Europe and USA (IBL et al 2021, eLife)
+
+The expertise of Prof.~Mrsic Flogel will be critical to supervise the
+neuroscientific aspects of the proposed documentation, collaborations and
+integrations.
+
+\paragraph{Prof.~Maneesh Sahani} (project co-lead) is a computational
+neuroscientists and director of the Gatsby Unit. He has authored over 100
+peer-reviewed scientific papers, with an h-index (computed by Google scholar)
+of 47. A substantial component of his research focuses on the development of
+advance machine-learning based tools for neuroscience research. This included
+his PhD research. His thesis \textit{Latent Variable Models for Neural Data
+Analysis} introduced new techniques of probabilistic inference and applied
+these to the problem of “spike sorting” and clustering of neuronal activity
+profiles. It has been cited over 180 times.
+
+Beginning around 2005, his group published a series of new neuroinformatics
+tools designed to characterise and understand population-scale activity using
+the large-scale multielectrode recording methods being developed. These papers
+provided the backbone for a new analytic approach that is now being employed
+and extended by systems neuroscience laboratories worldwide. A central
+component of the current proposal is to disseminate this approach (and others)
+already available within Bonsai, easing its adoption by a wider group of
+laboratories that lack in-house informatics expertise. Key foundational papers
+include Yu et al., 2006, Yu et al., 2009 and Macke et al., 2011.
 %
-He is the lead developer of the package
-\href{https://github.com/joacorapela/svGPFA}{Sparse Variational Gaussian
-Process Factor Analysis} and has openly distributed several machine learning
-methods, including linear dynamical system models in
+This remains an active thread of his research, with key recent papers including
+Duncker et al., 2019, Rutten et al., 2020 and Soulat et al., 2021.
+%
+Prof.~Sahani has also developed a number of other neuroinformatics tools
+relevant to Bonsai.ML including decoding methods (Yu et al., 2010, Santhanam et
+al., 2009, Yu et al., 2000) and cell segmentation methods for optical imaging
+(Pachitariu et al., 2013, Bohner et al., 2016). Thus, his expertise well be
+valuable for evaluation and guidance.
+
+\paragraph{Dr.~Goncalo Lopes} (project co-lead) is the creator of Bonsai and
+has sample experience in software development, having transitioned from being
+the single author of a software used only by himself to run his PhD
+experiments, to managing a software development company serving thousands of
+users around the world and collaborating with leading universities and research
+centers around the world \ldots
+
+\paragraph{Dr.~Joaquín Rapela} (Research Software Engineer) specializes in
+signal processing and machine learning, with applications to understanding
+brain function. He earned his PhD in Signal Processing from the University of
+Southern California, where he developed statistical models to characterize
+responses of visual cell to natural images (Rapela et al., 2006, Rapela et al.,
+2010). He completed postdoctoral research first using statistical methods to
+model cognition in humans at University of California San Diego (Rapela et al.,
+2018), and later using machine learning to characterize aberrant neural
+activity in epileptic patients at Brown University (Rapela et al., 2019).
+
+Dr.~Rapela has extensive software development expertise, holding a Master’s
+degree in Computer Science and industry experience at IBM Argentina and the IBM
+Almaden Research Center (San Jose, CA).
+
+Since joining the Gatsby Computational Neuroscience Unit in 2019 as a Research
+Engineer Fellow, he has focused on distributing efficient software
+implementations of advanced statistical methods created at the Unit, and
+supporting experimental neuroscientists in applying advanced computational
+tools to analyze neural data.
+
+He is the lead developer of \href{https://github.com/joacorapela/svGPFA}{Sparse
+Variational Gaussian Process Factor Analysis (svGPFA)}, and has openly released
+several machine learning packages, including linear dynamical systems in
 \href{https://github.com/joacorapela/ssm}{Python} and
 \href{https://github.com/joacorapela/kalmanFilter}{R},
 \href{https://github.com/joacorapela/hiddenMarkovModels}{Hidden Markov Models}
 in R, and
 \href{https://github.com/joacorapela/bayesianLinearRegression}{Bayesian Linear
 Regression} in Python.
+
+Dr.~Rapela played a leading role in securing the BBSRC grant that funded the
+creation of Bonsai.ML and has led its development since the project’s
+inception. He also played a central role in preparing the current proposal.
+
+\paragraph{Dr.~Nicholas Guilbeault} (research software engineer) has strong
+training in biology and systems neuroscience, with a PhD from the department of
+cell and systems biology of the University of Toronto.
 %
-JR is skilled in \textbf{signal processing and ML}, with a PhD in Signal Processing from
-the Electrical Engineering Department, University of Southern California,
-postdoctoral experience using machine learning to model human
-electrophysiological recordings at the Swartz Center for Computational
-Neuroscience, University California San Diego (UCSD), and at Brown University, and
-machine learning software development practice at the Gatsby Unit.
+Since the beginning of his PhD, has has been working on the interface between
+neuroscience ans software development, especially in Bonsai. He create the
+\href{https://ncguilbeault.github.io/BonZeb/}{Bonzeb} package.
 %
-He has applied his quantitative skills to \textbf{understand the function of
-the brain}. He modeled the visual system during his PhD, he studied attention in humans
-during his postdoctoral position at UCSD, he investigated epilepsy in humans during his postdoc
-at Brown University, and contributed to investigations on diverse aspects of brain function in rodents as a RSE
-at the Gatsby Unit and SWC.
+He joined the Gatsby Unit in 2023 as an RSE for Bonsai.ML and became the lead
+software developer of the package.
 %
-JR has successful \textbf{funding acquisition experience}. During his first
-postdoctoral position at UCSD, he was awarded a seed
-grant as principal investigator (\$30.000) to model neural ensembles with population dynamical models
-using human ECoG recordings during speech production; and in 2022 he prepared
-the first draft of the Bonsai.ML proposal to BBSRC (\pounds 800.000).
-%
-Since 2023 he has been \textbf{leading the development of this project}.
+As such he has been exposed to varied machine learning methods, and has
+received formal training in advanced mathematical subjects as participants of
+the
+\href{https://www.ucl.ac.uk/gatsby/study-and-work/gatsby-bridging-programme}{Gatsby
+Bridging Program}.
 
+\subsection*{Balance of Skills and Expertise}
 
-NG has strong training in biology and systems neuroscience, has extensive
-software development experience and he is now skilled in mathematics.
+\subsection*{Leadership and Management Skills}
 
-The RSEs assembled a unique multidisciplinary team to supervise and develop the
-proposed activities, combining critical expertise in software engineering, ML,
-and both experimental and computational neuroscience.
-%
-The project lead, TMF, directs the SWC, a world-class experimental neuroscience
-research center, while the project co-lead, MS, directs the Gatsby Unit, a meca
-in machine learning and computational neuroscience. Both research centers share
-a common building and work in close collaboration.
-%
-The external project co-lead, GL, is the creator of Bonsai and has sample
-experience in software development, having transitioned from being the single
-author of a software used only by himself to run his PhD experiments, to
-managing a software development company serving thousands of users around the
-world and collaborating with leading universities and research centers around
-the world.
+\subsection*{Contribution to Developing Good Practice in Communities}
 
+\subsection*{Developing others}
 
+\subsection*{Closing Statement}
 
-\subsection*{Highly trained RSEs in }
-
-Acquiring domain expertise is essential for the work of RSEs. Ideally, RSEs
-are well trained in the domain area of their collaborating scientists, and
-attend their research talks. However, in standard university RSE groups, where
-RSEs work with scientists in many domain areas, acquiring this domain expertise
-is very challenging.
-
-Fortunately, at the SWC and Gatsby Unit, RSEs are deeply integrated into the
-machine learning and neuroscience research of their collaborating scientists,
-they attend their research talks, and interact closely with them.  Hence, our
-RSEs are highly trained in machine learning and neuroscience, skills that are
-central for the successful delivery of this proposal.
