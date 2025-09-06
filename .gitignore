@@ -12,6 +12,7 @@
 
 application/activitiesGraphs/*svg
 application/beforeChatGPT/*
+application/chatGPTsugestions/*
 application/old/*
 
 eoi_long
