@@ -11,35 +11,54 @@
 
 \paragraph{Summary:} Expand Bonsai.ML documentation.
 
-\paragraph{Previous work:} Bonsai.ML already contains substantial
+\paragraph{Previous work:} Bonsai.ML already contains detailed
 \href{https://bonsai-rx.org/machinelearning/index.html}{documentation} for all
-distributed packages. This documentation includes Bonsai working examples that
-users can copy and paste them in their Bonsai local runtime and execute them.
+distributed packages. This documentation includes installation instructions,
+API listings, and Bonsai working examples that users can copy and paste into
+their Bonsai local runtime and execute. We will improve this documentation as
+described next.
 
-\paragraph{Subtasks (responsible team member):}\mbox{}\\
+\paragraph{Future work (responsible team member):}\mbox{}\\
 \begin{itemize}
 
-    \item\textbf{provide more examples (NG)} on the application of the already
+    \item \textbf{Re-structure documentation following the style of
+        \href{https://scikit-learn.org/}{scikit-learn} (NG)}. Our current
+        documentation lacks accessible statistical explanations of each method
+        and clear links between related methods.  We will adopt the style of
+        \href{https://scikit-learn.org/}{scikit-learn}, where methods are
+        introduced with high-level descriptions, grouped into categories, and
+        cross-referenced to practical examples.
+
+    \item\textbf{Provide more examples (NG)} on the application of the already
         integrated ML methods to new types of behavioural and neural data.
         %
         These examples will be similar to the
         \href{https://bonsai-rx.org/machinelearning/examples/README.html}{existing
-        ones}, but they will be more detailed.
+        ones}, but will be more detailed.
+        %
+        They should attract to Bonsai.ML a wider group of experimental
+        neuroscientists.
 
-    \item\textbf{include video tutorials (NG)} on the use of the Bonsai.ML
-        package.
+    \item\textbf{Include video tutorials (NG)} on the use of the Bonsai.ML
+        package, as done in
+        \href{https://mark-kramer.github.io/Case-Studies-Python}{Case Studies
+        for Neural Data Analysis}, for example
+        \href{https://youtu.be/Oj9e2bB3BfI}{here}.
 
-    \item\textbf{add documentation for methods developers (NG)} as the current one is
-        targeted to Bonsai.ML users.
+    \item\textbf{Add documentation for methods developers (NG)} as the current
+        one is targeted to Bonsai.ML users. For example, we will provide
+        detailed instructions to Python developers on how to integrate their
+        methods into Bonsai.ML, including explanations about how handles
+        Python's global interpreter lock in C\#.
 
-    \item\textbf{create case studies (JR)} for intelligent experimental control
+    \item\textbf{Create case studies (JR)} for intelligent experimental control
         in Bonsai, similar to the
         \href{https://mark-kramer.github.io/Case-Studies-Python/intro.html}{case
         studies for neural data analysis in Python}, or those for
         \href{https://mbmlbook.com/index.html}{model based machine learning},
         by our Microsoft collaborators.
 
-    \item\textbf{publish a first Bonsai.ML paper (NG)} describing its functionality, as
+    \item\textbf{Publish a first Bonsai.ML paper (NG)} describing its functionality, as
         companion papers substantially increases the adoption of software
         packages \citep{lopesEtAl15,guilbeaultEtAl21}.
 
@@ -48,15 +67,19 @@ users can copy and paste them in their Bonsai local runtime and execute them.
 \noindent\rule{\textwidth}{1pt}
 \subsubsection*{Training}
 
-\paragraph{Summary:} Organise Bonsai course, with Bonsai.ML module.
+\paragraph{Summary:} Organise Bonsai course, with a Bonsai.ML module.
 
-\paragraph{Previous work:} Since 2017, NeuroGEARS Ltd (the non-profit
-organisation that is the main contributor to the development of Bonsai) has
-organised at least two Bonsai course per year at different universities, and
-\href{https://bonsai-rx.org/learn/}{some of them} can be viewed
-online.
+\paragraph{Previous work:} Since 2017, NeuroGEARS Ltd has organised at least
+two Bonsai courses per year at different universities, and
+\href{https://bonsai-rx.org/learn/}{some of them} can be viewed online. We will
+deliver a one-week-long Bonsai course, hosted at the Sainsbury Wellcome Centre,
+for approximately 20 students, targeted to Bonsai users with intermediate
+understanding of the language. The structure of the course will be similar to
+previous ones (e.g., \href{https://neurogears.org/st-andrews-2024/}{2024 Bonsai
+Course at St.~Andrews University}).
 
-\paragraph{Outputs:} course delivery, online course material.
+\paragraph{Outputs:} course delivery, online course material (including lecture
+slides, worksheets and video recordings).
 
 \paragraph{Responsible team members:} GL, NG, JR.
 
@@ -92,12 +115,12 @@ Neuroscience, University College London, UK.
         experimental and methodological improvements for the next iteration of
         the collaboration.
 
-    \item[Future work:] We will to further test the accuracy of the previous
-        model and estimation algorithm and, if needed, explore alternatives. For
-        this we will use artificially generated data with ground truth. The
-        Saleem laboratory will improve experimental issues. Then we
-        will evaluate the performance of the Bonsai.ML forecaster in animal
-        behavioural data.
+    \item[Future work:] We will further test the accuracy of the previous model
+        and estimation algorithm and, if needed, explore alternatives. For this
+        we will use artificially generated data with ground truth. The Saleem
+        laboratory will improve experimental procedures. Then we will evaluate
+        the performance of the Bonsai.ML forecaster in new animal behavioural
+        data.
 
     \item[Outcomes:] We will document the activities of the collaboration, create a new
         Bonsai.ML forecasting package, and publish the outcomes of the
@@ -136,9 +159,13 @@ Neural Dynamics, US.
 
     \item[Future work:] Evaluate the real-time performance of the Bonsai.ML
         latents estimation method with previously recorded data replayed in
-        real time, and later with live neural recordings. Publish a Bonsai.ML
-        neural latents package, and a related paper reporting scientific
-        findings with the new package.
+        real time, and later with live neural recordings collected by the group
+        of Dr.~Siegle at the AIND.
+
+    \item[Outcomes:] Bonsai.ML neural latent package, documented with examples
+        from this collaboration. Paper reporting scientific findings, and
+        real-time performance metrics, of the Bonsai.ML neural latents package
+        applied to neural recordings from the AIND.
 
     \item[Responsible team member:] NG.
 
@@ -226,28 +253,32 @@ area of research. Despite this promise, widespread adoption has been limited
 by the lack of accessible, well-engineered,  and sustainable software
 frameworks for real-time experimental control.
 
-Prof.~Garrett Stanley (Georgia Tech, US) is a pioneer in closed-loop
-neuroscience, having developed groundbreaking methods that combine real-time
-neural control with systems neuroscience. He recently contacted us to explore
-integrating their existing \href{https://cloctools.github.io/}{CLOCTools},
-originally implemented in RTXI/C++, into Bonsai.ML.  This represents a unique
-opportunity: Bonsai already excels at real-time closed-loop control in
-behavioural experiments, and extending it to include state-of-the-art
-closed-loop neural control will position the platform as the first sustainable,
-general-purpose framework for both levels of experimentation.
+Prof.~Garrett Stanley (Georgia Tech and Emory University, US) is a pioneer in
+closed-loop neuroscience, having developed groundbreaking methods that combine
+real-time neural control with systems neuroscience. He recently contacted us to
+explore integrating their existing
+\href{https://cloctools.github.io/}{CLOCTools}, originally implemented in
+RTXI/C++, into Bonsai.ML.  This represents a unique opportunity: Bonsai already
+excels at real-time closed-loop control in behavioural experiments, and
+extending it to include state-of-the-art closed-loop neural control will
+position the platform as the first sustainable, general-purpose framework for
+both levels of experimentation.
 
 An important reason for the poor uptake of closed-loop methods in neuroscience
 could be that existing implementations are often ad hoc, difficult to install
-or  extend, and not integrated with modern pipelines for data analysis or
-sharing. By providing Bonsai users with accessible, open-source, and
-sustainably engineered tools for closed-loop control, we will directly address
-this barrier and enable a new type of experimentation where researchers can
-both read and write the neural code in real time. This will accelerate
-discovery across both basic and translational neuroscience.
+or  extend, and not integrated with software for experimental control. By
+providing Bonsai users with accessible, open-source, and sustainably engineered
+tools for closed-loop control, we will directly address this barrier and enable
+a new type of experimentation where researchers can both read and write the
+neural code in real time. This will accelerate discovery across both basic and
+translational neuroscience.
 
 \paragraph{Previous work:} Members of Prof.~Stanley’s lab have already
 prototyped some of their closed-loop control methods in Bonsai using our
 \href{https://bonsai-rx.org/python-scripting/}{Python scripting interface}.
+Please refer to the repositories in the
+\href{https://github.com/ndac-bonsai}{ndcac-bonsai} organisation containing
+these prototypes (ndac stands for neural dynamic adaptive control).
 
 \paragraph{Responsible team members:} JR
 
@@ -255,18 +286,17 @@ prototyped some of their closed-loop control methods in Bonsai using our
 
 \begin{itemize}
 
-    \item collaborate with the group of Prof.~Stanley on the implementation in
-        C\# the functionality in the repository
-        \href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctr-est}.
+    \item implement in C\# the functionality in the repositories of the
+        organization \href{https://github.com/ndac-bonsai}{ndac-bonsai}.
 
     \item deploy a comprehensive battery of test cases to check the correctness
-        of the C\#/Bonsai implementation against the C++/RTXI one.
+        of the C\#/Bonsai implementation against the Python one.
 
-    \item reproduce in C\# all the tutorials and examples in the repository
-        lds-ctr-est.
+    \item extend functionality of Bonsai development environment to allow users
+        graphically build probabilistic models.
 
-    \item develop addition documentation, tutorials and use cases for
-        experimental neuroscientists with no training on feedback control.
+    \item develop documentation, tutorials and use cases for experimental
+        neuroscientists with no training on optimal feedback control.
 
 \end{itemize}
 
