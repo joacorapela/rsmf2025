@@ -3,31 +3,30 @@ digraph {
   ranksep=0.2;
 
   documentation [shape=box];
-  documentation -> "improve\ncurrent\nNG,JR,GL";
-  documentation -> "for methods\ndevelopers\nJR,NG,GL";
-  documentation -> "video\ntutorials\nNG,JR,GL";
-  documentation -> "case studies\nfor intelligent\nexp. control\nJR,NG,GL";
-  documentation -> "Bonsai.ML\npaper\nJR,NG,GL";
+  documentation -> "improve\ncurrent\nNG";
+  documentation -> "for methods\ndevelopers\nNG";
+  documentation -> "video\ntutorials\nNG";
+  documentation -> "case studies\nfor intelligent\nexp. control\nJR";
+  documentation -> "Bonsai.ML\npaper\nJR";
 
   training [shape=box];
-  training -> "Bonsai\ncourse\nGL,NG,JR";
+  training -> "Bonsai\ncourse\nNG";
 
-  "video\ntutorials\nNG,JR,GL" -> community [style=invis];
+  "video\ntutorials\nNG" -> community [style=invis];
 
   community [shape=box];
   community -> collaborations;
-  community -> "Bonsai\nconference\nGL,NG,JR";
-  collaborations -> "SWC\nNG,JR,GL";
-  collaborations -> "UCL's IBN\nJR,NG,GL";
-  collaborations -> "AIND\nNG,JR,GL";
+  community -> "Bonsai\nconference\nNG";
+  collaborations -> "IBN\nJR";
+  collaborations -> "AIND\nJR";
 
-  "Bonsai\ncourse\nGL,NG,JR" -> technical [style=invis];
+  "Bonsai\ncourse\nNG" -> technical [style=invis];
 
   technical [shape=box];
   technical -> integrations;
   integrations [shape=box];
-  integrations -> "CLOCTools\nJR,NG,GL";
-  integrations -> "Infer.NET\nJR,NG,GL";
+  integrations -> "CLOCTools\nJR";
+  integrations -> "Infer.NET\nJR";
 
 
   /* { rank=same; documentation training community technical } */
