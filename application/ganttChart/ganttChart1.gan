@@ -6,7 +6,7 @@
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#0000e1 #e10000 #e1e100 #e1e1e1]]></option>
+        <option id="color.recent"><![CDATA[#e10000 #e100e1 #ff00ff #0000e1 #e1e100 #e1e1e1]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="270" order="0"/>
@@ -43,11 +43,11 @@
             <depend id="1" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="1" uid="ffa6c4b885b345cd942174131a3ca923" name="doc_video_tutorials" meeting="false" start="2026-05-08" duration="42" complete="0" expand="true"/>
-        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#8cb6ce" meeting="false" start="2026-08-17" duration="42" complete="0" expand="true"/>
         <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="com_BonsaiConf" color="#8cb6ce" meeting="false" start="2026-10-19" duration="42" complete="0" expand="true"/>
         <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_course" color="#8cb6ce" meeting="false" start="2027-04-05" duration="44" complete="0" expand="true"/>
-        <task id="9" uid="c7df81c2137a4401809225b636d8b4e2" name="int_CLOCTools" color="#e10000" meeting="false" start="2026-01-12" duration="132" complete="0" expand="true"/>
-        <task id="7" uid="6a2fb6c65f814c03bf4061691c67df4b" name="col_IBN" color="#e10000" meeting="false" start="2026-07-15" duration="84" complete="0" expand="true"/>
+        <task id="9" uid="c7df81c2137a4401809225b636d8b4e2" name="int_CLOCTools" color="#e10000" meeting="false" start="2026-01-05" duration="132" complete="0" expand="true"/>
+        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#e10000" meeting="false" start="2026-07-13" duration="42" complete="0" expand="true"/>
+        <task id="7" uid="6a2fb6c65f814c03bf4061691c67df4b" name="col_IBN" color="#e10000" meeting="false" start="2026-09-07" duration="84" complete="0" expand="true"/>
         <task id="8" uid="de12c6161d1744e9ac197e663a2bcc56" name="col_AIND" color="#e10000" meeting="false" start="2027-01-11" duration="84" complete="0" expand="true"/>
         <task id="10" uid="2fe3c907cdef43f1b981d7ec88369257" name="int_Infer.NET" color="#e10000" meeting="false" start="2027-05-10" duration="130" complete="0" expand="true"/>
         <task id="3" uid="134dd0e3ef1e413587d5a501bce4aef6" name="dosc_case_studies" color="#e10000" meeting="false" start="2027-01-11" duration="60" complete="0" expand="true"/>
