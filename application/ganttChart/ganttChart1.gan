@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="RSMF25" company="Gatsby Unit" webLink="" view-date="2026-01-01" view-index="0" gantt-divider-location="183" resource-divider-location="419" version="3.3.3316" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="RSMF25" company="Gatsby Unit" webLink="" view-date="2025-12-01" view-index="0" gantt-divider-location="211" resource-divider-location="419" version="3.3.3316" locale="en_GB">
     <description/>
     <view zooming-state="default:9" id="gantt-chart">
-        <field id="tpd3" name="Name" width="182" order="0"/>
+        <field id="tpd3" name="Name" width="210" order="0"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#e10000 #e100e1 #ff00ff #0000e1 #e1e100 #e1e1e1]]></option>
+        <option id="color.recent"><![CDATA[#00ff00 #e10000 #e100e1 #ff00ff #0000e1 #e1e100 #e1e1e1]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="270" order="0"/>
@@ -36,21 +36,89 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="e4c107bd84804506b872e218a921f4df" name="doc_improve_current" meeting="false" start="2026-01-12" duration="42" complete="0" expand="true">
+        <task id="0" uid="e4c107bd84804506b872e218a921f4df" name="doc_improve_current" meeting="false" start="2026-01-12" duration="24" complete="0" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="2" uid="e8d2f32a264d498e920e6c7ea2a9c88d" name="doc_methods_developers" meeting="false" start="2026-03-11" duration="42" complete="0" expand="true">
-            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        <task id="2" uid="e8d2f32a264d498e920e6c7ea2a9c88d" name="doc_methods_developers" meeting="false" start="2026-02-13" duration="21" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="1" uid="ffa6c4b885b345cd942174131a3ca923" name="doc_video_tutorials" meeting="false" start="2026-05-08" duration="42" complete="0" expand="true"/>
-        <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="com_BonsaiConf" color="#8cb6ce" meeting="false" start="2026-10-19" duration="42" complete="0" expand="true"/>
-        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_course" color="#8cb6ce" meeting="false" start="2027-04-05" duration="44" complete="0" expand="true"/>
-        <task id="9" uid="c7df81c2137a4401809225b636d8b4e2" name="int_CLOCTools" color="#e10000" meeting="false" start="2026-01-05" duration="132" complete="0" expand="true"/>
-        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#e10000" meeting="false" start="2026-07-13" duration="42" complete="0" expand="true"/>
-        <task id="7" uid="6a2fb6c65f814c03bf4061691c67df4b" name="col_IBN" color="#e10000" meeting="false" start="2026-09-07" duration="84" complete="0" expand="true"/>
-        <task id="8" uid="de12c6161d1744e9ac197e663a2bcc56" name="col_AIND" color="#e10000" meeting="false" start="2027-01-11" duration="84" complete="0" expand="true"/>
-        <task id="10" uid="2fe3c907cdef43f1b981d7ec88369257" name="int_Infer.NET" color="#e10000" meeting="false" start="2027-05-10" duration="130" complete="0" expand="true"/>
-        <task id="3" uid="134dd0e3ef1e413587d5a501bce4aef6" name="dosc_case_studies" color="#e10000" meeting="false" start="2027-01-11" duration="60" complete="0" expand="true"/>
+        <task id="3" uid="134dd0e3ef1e413587d5a501bce4aef6" name="dosc_case_studies" color="#8cb6ce" meeting="false" start="2026-03-16" duration="42" complete="0" expand="true"/>
+        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tra_Bonsai_course" color="#8cb6ce" meeting="false" start="2026-06-01" duration="26" complete="0" expand="true"/>
+        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="doc_Bonsai.ML_paper" color="#8cb6ce" meeting="false" start="2026-07-20" duration="24" complete="0" expand="true"/>
+        <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="com_BonsaiConf" color="#8cb6ce" meeting="false" start="2026-10-26" duration="24" complete="0" expand="true"/>
+        <task id="9" uid="c7df81c2137a4401809225b636d8b4e2" name="ns_ssmC#" color="#e10000" meeting="false" start="2026-01-12" duration="21" complete="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" uid="de34c82ec9ed4e718e1e667a8f5afc99" name="ns_m1" color="#e10000" meeting="true" start="2026-02-10" duration="0" complete="0" expand="true"/>
+        <task id="12" uid="3f205da73680477594a5eebd371f354a" name="ns_C#" color="#e10000" meeting="false" start="2026-02-10" duration="10" complete="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" uid="b77f6fac5da24c7a822f32eaa8fe5abc" name="ns_test_cases" color="#e10000" meeting="false" start="2026-02-24" duration="10" complete="0" expand="true">
+            <depend id="15" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" uid="f5820e29194e410292cd2ac9b5b4e8ad" name="ns_bonsai_integration" color="#e10000" meeting="false" start="2026-03-10" duration="10" complete="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="16" uid="2b28f7ea878e4d5d9e1ee5006474c03d" name="ns_m2" color="#e10000" meeting="true" start="2026-03-24" duration="0" complete="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="19" uid="63f1af49e9a44531adf8410e81ba03d7" name="add_replay" color="#e10000" meeting="false" start="2026-03-24" duration="10" complete="0" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" uid="4d111181c43c4bd3906f610e9401a482" name="ns_test_replayed" color="#e10000" meeting="false" start="2026-04-07" duration="10" complete="0" expand="true">
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="24" uid="608419c5dfdf464eb957219f21334068" name="ns_m3" color="#e10000" meeting="true" start="2026-04-21" duration="0" complete="0" expand="true"/>
+        <task id="18" uid="c6c3e9bf03b24624b5780b770efae4ea" name="ns_latencty_tests" color="#e10000" meeting="false" start="2026-04-21" duration="10" complete="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="20" uid="e493a51ce59a461cbbc009cf806f253c" name="ns_test_rt_exp_data" color="#e10000" meeting="false" start="2026-05-05" duration="10" complete="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" uid="00de51948b3c4ba49db7bb1fa262379c" name="ns_m4" color="#e10000" meeting="true" start="2026-05-19" duration="0" complete="0" expand="true"/>
+        <task id="21" uid="4ed56296f10747db8a70cbfd8584467d" name="ns_add_docs" color="#e10000" meeting="false" start="2026-05-19" duration="5" complete="0" expand="true">
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" uid="60dffb74d58a48ee806f35e91eefce7b" name="ns_tutorials" color="#e10000" meeting="false" start="2026-05-26" duration="5" complete="0" expand="true">
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="25" uid="26bc158881684e9db6cffa50847f6c83" name="ns_package_release" color="#e10000" meeting="false" start="2026-06-02" duration="5" complete="0" expand="true">
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="26" uid="ea710ab09da94cb4abe9754bc3fca81c" name="ns_m5" color="#e10000" meeting="true" start="2026-06-09" duration="0" complete="0" expand="true"/>
+        <task id="27" uid="ae6e69f352544a859621d9ac1785644f" name="in_learn" color="#00ff00" meeting="false" start="2026-06-15" duration="10" complete="0" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="28" uid="f9695c5adbda44278099cf756883f660" name="in_OBLR" color="#00ff00" meeting="false" start="2026-06-29" duration="10" complete="0" expand="true">
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="30" uid="8f73d7fd8183475f9af0c0f994227342" name="in_ms1" color="#00ff00" meeting="true" start="2026-07-13" duration="0" complete="0" expand="true"/>
+        <task id="29" uid="0f1c6ab5c87c4134925a460b88c53a91" name="in_LDS" color="#00ff00" meeting="false" start="2026-07-13" duration="10" complete="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="31" uid="ca77a216877a47dd9113a7b84ee7d144" name="in_ms2" color="#00ff00" meeting="true" start="2026-07-27" duration="0" complete="0" expand="true">
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="32" uid="3d1949ab919c4545b20a7f4477ef3d3c" name="in_HMM" color="#00ff00" meeting="false" start="2026-07-27" duration="10" complete="0" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="33" uid="b68412343dc84f699cc2595cd593c322" name="in_ms3" color="#00ff00" meeting="true" start="2026-08-10" duration="0" complete="0" expand="true">
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="34" uid="67ada653da9145818fb4d828914ac8dd" name="in_PP_decoder" color="#00ff00" meeting="false" start="2026-08-10" duration="10" complete="0" expand="true">
+            <depend id="35" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="35" uid="d4146df92aac4b77ac26a75a23bd7701" name="in_ms4" color="#00ff00" meeting="true" start="2026-08-24" duration="0" complete="0" expand="true">
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="36" uid="9de0395242c644f49e20821c15186fb5" name="in_docs" color="#00ff00" meeting="false" start="2026-08-24" duration="15" complete="0" expand="true">
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="37" uid="45d5d1c825904c43a18d83b4914b52c7" name="in_ms5" color="#00ff00" meeting="true" start="2026-09-14" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Joaquin Rapela" function="Default:0" contacts="" phone=""/>
@@ -62,10 +130,7 @@
         <allocation task-id="4" resource-id="0" function="Default:0" responsible="true" load="50.0"/>
         <allocation task-id="5" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="10" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="7" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="1" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="2" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="4" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
         <allocation task-id="5" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
