@@ -88,94 +88,6 @@ slides, worksheets and video recordings).
 \paragraph{Responsible team members:} GL, JR.
 
 \noindent\rule{\textwidth}{1pt}
-\subsubsection*{Collaborations}
-
-\paragraph{Collaboration 1: forecasting animal behaviour for zero-lag stimulus
-presentation in augmented-reality experiments.} Prof.~Aman Saleem,
-\href{https://www.saleemlab.com/}{Saleem Lab}, Institute of Behavioural
-Neuroscience, University College London, UK.
-
-
-\begin{description}
-
-    \item[Background:] In augmented reality experiments, particularly in
-        neuroscience, precise stimulus timing is critical, yet unavoidable
-        system delays mean that visual stimuli often appear slightly later than
-        intended. This latency is especially problematic when linking neural
-        activity to sensory input or behaviour. To address this, we will use
-        algorithms that forecast animal position and head orientation, allowing
-        stimuli to be pre-rendered and displayed in synchrony with the
-        subject's actual position and head orientation.
-
-    \item[Previous work:] In the 2024 Bonsai conference we began conversations
-        with Prof.~Saleem about using predictive algorithms, like state-space
-        models, to improve augmented reality experiments in animals. We
-        implemented in Python a
-        \href{https://github.com/joacorapela/collaborationAman/blob/master/reports/ekfForKinematicsAndHeadOrientation/ekfForKinematicsAndHeadOrientation.pdf}{
-            nonlinear state-space model, and the extended Kalman filter
-            algorithm} to estimate the model parameters, in order to forecast,
-        using video recordings, position and head orientation of mice exploring
-        a circular arena surrounded by a 360 degree visual display screen. We identified
-        experimental and methodological improvements for the next iteration of
-        the collaboration.
-
-    \item[Future work:] We will further test the accuracy of the previous model
-        and estimation algorithm and, if needed, explore alternatives. For this
-        we will use artificially generated data with ground truth. The Saleem
-        laboratory will improve experimental procedures. Then we will evaluate
-        the performance of the Bonsai.ML forecaster in new animal behavioural
-        data.
-
-    \item[Outcomes:] We will document the activities of the collaboration, create a new
-        Bonsai.ML forecasting package, and publish the outcomes of the
-        collaboration in a scientific journal.
-
-    \item[Responsible team member:] JR.
-
-\end{description}
-
-\paragraph{Collaboration 2: estimating latent variables for high-channel-count
-Neuropixels recordings, in real time, while recordings are being performed.}
-Dr.~Josh Siegle, head of the electrophysiology group, Allen Institute for
-Neural Dynamics, US.
-
-\begin{description}
-
-    \item[Background:] Visualisation is central to scientific inquiry,
-        especially in neuroscience. Yet, modern high-density recordings from
-        hundreds or thousands of electrodes pose major challenges for clear,
-        real-time visualisation. At the Gatsby Unit, we pioneered single-trial
-        dimensionality reduction with latent-variable models \citep{yuEtAl09},
-        and extended these approaches in later work, e.g.
-        \citep{dunckerAndSahani18}, supported by open-source software
-        (\href{https://github.com/joacorapela/svGPFA}{svGPFA}). However, all
-        current latent-variable methods operate offline, after data collection.
-        In this project we will integrate a state-space model into Bonsai.ML to
-        estimate and visualise latent variables online, during
-        high-channel-count recordings.
-
-    \item[Previous work:] We have developed a
-        \href{https://joacorapela.github.io/ssm/auto_examples/neuralLatents/plot_MC_MAZE_SMALL.html#sphx-glr-auto-examples-neurallatents-plot-mc-maze-small-py}{linear-dynamical-systems
-        model and estimation methods to infer latent variables in real time
-        from high-channel-count electrophysiological recording}, and we are now
-        integrating it into Bonsai.ML.
-
-
-    \item[Future work:] Evaluate the real-time performance of the Bonsai.ML
-        latents estimation method with previously recorded data replayed in
-        real time, and later with live neural recordings collected by the group
-        of Dr.~Siegle at the AIND.
-
-    \item[Outcomes:] Bonsai.ML neural latent package, documented with examples
-        from this collaboration. Paper reporting scientific findings, and
-        real-time performance metrics, of the Bonsai.ML neural latents package
-        applied to neural recordings from the AIND.
-
-    \item[Responsible team member:] JR.
-
-\end{description}
-
-\noindent\rule{\textwidth}{1pt}
 \subsubsection*{Integrations}
 
 \subsubsection*{Probabilistic programming: Infer.NET}
@@ -307,25 +219,19 @@ these prototypes (ndac stands for neural dynamic adaptive control).
 \noindent\rule{\textwidth}{1pt}
 \subsubsection*{Governance}
 
-We will create a Bonsai.ML steering committee that will provide us strategic
-oversight on this project and advise us on building a long-term development
+We will create a Bonsai.ML steering committee that will be responsible for
+approving project milestones and advise us on building a long-term development
 roadmap for Bonsai.ML.
+%
+Responding to guidance and feedback from the steering committee ensures
+Bonsai.ML addressed pressing neuroscience needs on an international scale.
 
 Several renowned experimental and computational neuroscientists around the
 world are heavily invested in Bonsai, are very interested in adding ML
-functionality to their Bonsai workflows and have agreed to join the Bonsai.ML
+functionality to their Bonsai workflows, and have agreed to join the Bonsai.ML
 steering committee. We list them below.
 
 \begin{description}
-
-    \item[Prof.~Thomas Mrsic-Flogel,] director of the SWC, project lead on the
-        BBSRC grant that funded the creation of Bonsai.ML, and project lead on
-        this proposal. Bonsai is the main software for experimental control at
-        the SWC.
-
-    \item[Prof.~Maneesh Sahani,] director of the GCNU, project co-lead on the
-        BBSRC grant that funded the creation of Bonsai.ML, and project co-lead
-        on this proposal.
 
     \item[Prof.~Garrett Stanley,] leader of the Laboratory for the Control of
         Neural Systems, Georgia Tech, US. Expert on close-loop control of
@@ -340,8 +246,9 @@ steering committee. We list them below.
         built on top of Bonsai.
 
     \item[Prof.~Josh Siegle,] senior scientist and lead of the
-        electrophysiology group at the Allen Institute for Neural Dynamics,
-        where Bonsai is the only software for experimental control.
+        electrophysiology group at the Allen Institute for Neural Dynamics. He
+        leads the development of Open Ephys GUI, which is tightly integrated
+        with Bonsai.
 
     \item[Prof.~Ken Harris,] co-director of the Cortexlab, University College
         London, and founding director of the International Brain Laboratory,
@@ -349,7 +256,8 @@ steering committee. We list them below.
         laboratories around the world.
 
     \item[Prof.~Athena Akrami,] director of the Learning, Inference and Memory
-        Lab, at the SWC, that uses Bonsai for experimental control.
+        Lab, at the SWC, that uses Bonsai extensively for the control of
+        complex rodent experiments in her lab.
 
 \end{description}
 
@@ -360,22 +268,30 @@ We will conduct management activities at different frequencies:
 
 \begin{description}
 
-    \item[Twice a year:] we will generate a progress report, which will be
-        publicly available, and hold meetings with the steering committee to
-        discuss it and receive expert advise. Minutes from these meeting will
-        be published openly to maintain transparency.
+    \item[Twice a year:] we will convene the steering committee. Two weeks in
+        advance of each meeting, we will circulate a progress report
+        summarising achieved milestones, proposed future activities, and the
+        most recent version of the Bonsai.ML long-term roadmap.
+        %
+        The steering committee will review the report, endorse completed
+        milestones, and provide feedback or suggestions on planned activities.
+        %
+        Based on project progress and committee input, we will revise the
+        long-term roadmap, ensuring that Bonsai.ML development remains aligned
+        with community needs and strategic goals.
+        %
+        Minutes and key decisions from these meetings will be documented and,
+        where possible, shared with the Research Software Maintenance Fund
+        through appropriate reporting channels.
 
-    \item[Every three months:] we will hold meetings between the project lead, TMF, the
-        project co-lead, MS, the RSE, JR, and
-        the external project co-lead, GL, to evaluate the project progress.
+    \item[Every month:] we will hold meetings between the project lead, the
+        project co-lead, the RSE, and the external project co-lead, to evaluate
+        the project progress.
 
     \item[Weekly:] as has been our practice since the start of the Bonsai.ML
-        project, the junior and senior RSEs will meet with the external project
-        co-lead to discuss issues that appeared during the week, review
-        activities for the following week, and adjust project directions.
-
-    \item[Daily:] the offices of the senior and junior RSEs are next to each
-        other, enabling discussions to manage spontaneous project issues.
+        project, the RSEs will meet with the external project co-lead to
+        discuss issues that appeared during the week, review activities for the
+        following week, and adjust project directions.
 
 \end{description}
 
