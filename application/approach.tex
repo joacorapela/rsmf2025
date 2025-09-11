@@ -96,18 +96,39 @@ slides, worksheets and video recordings).
 into Bonsai are implemented in Python. These serve as excellent demonstrations
 of how Python applications can connect to the Bonsai ecosystem, and they are
 central to our aim of attracting Python developers to contribute to Bonsai.ML.
-
+%
 However, Python implementations are substantially slower than equivalent C\#
 code. For demanding real-time applications, C\# implementations are preferable,
 especially when expressed in a probabilistic programming language (PPL).
 
-The existing Python and C\# implementations of probabilistic models (e.g.,
-linear dynamical systems, hidden Markov models, Bayesian linear regression —
-see
+In addition, the existing Python and C\# implementations of probabilistic
+models (e.g., linear dynamical systems, hidden Markov models, Bayesian linear
+regression — see
 \href{https://bonsai-rx.org/machinelearning/examples/README.html}{examples})
-are relatively complex and heterogeneous, making them harder to maintain. In
-contrast, implementations in a C\# PPL would be faster, simpler, and more
-homogeneous, reducing errors and improving maintainability.
+are relatively complex and heterogeneous, in the sense that the implementation
+of learning and inference in linear dynamical systems is non-trivial and has
+little in common with the implementation of learning and inference in Bayesian
+linear regression or in hidden Markov models.
+%
+In contrast, implementations in a C\# PPL would be much simpler, since PPLs
+abstract from their users the complexities of their inference algorithms,
+leading to sophisticated inferential methods implemented in a few lines of
+code.
+%
+Also, thanks to this abstraction, implementations of different probabilistic
+models in PPLs are substantially more homogeneous in PPLs than in general
+purpose ones.
+
+Currently, when we decide to incorporate a new probabilistic model into
+Bonsai.ML, we need to implement the learning and inference algorithms for the
+specific model, which is generally quite complex and time consuming.
+%
+In contrast, implementing a new probabilistic model in a PPL only requires the
+specification of how the model generates observations, without the
+need of specific learning or inference algorithms.
+%
+Thus, integrating a PPL into Bonsai.ML would greatly simplify the addition of
+new probabilistic models to the language.
 
 Fortunately, C\# has an excellent PPL:
 \href{https://dotnet.github.io/infer/}{Infer.NET}, developed at Microsoft
@@ -121,38 +142,86 @@ it has powered systems that extract knowledge from billions of web pages
 (petabyte-scale data) — the kind of scalability critical for real-time
 inference in Bonsai.
 
-Message passing is a natural connection point between Bonsai and Infer.NET.
-Infer.NET uses message passing for approximate inference, while Bonsai relies
-on message passing for reactive computations. Exposing Infer.NET’s message
-passing algorithms as Bonsai nodes will allow users to seamlessly combine
-efficient inference with reactive experimental control.
-
-We will re-implement in Infer.NET all the probabilistic models previously
-integrated into Bonsai using Python or C\#. This integration will accelerate
-inference, simplify and standardise inference programs, and empower Bonsai
-users to create new probabilistic models and inference algorithms with just a
-few lines of code. By making powerful yet easy-to-use inference methods
-accessible to experimental neuroscientists, this project has the potential to
-profoundly advance scientific discovery.
-
 \paragraph{Previous work:} Our Microsoft collaborator, Dr.~Tom Minka, invented
 a seminal algorithm for inference in graphical models, the Expectation
 Propagation algorithm~\citep{minka01}, and is the lead developer of Infer.NET.
 Please refer to his letter of support.
 
+\paragraph{Tasks:}\mbox{}\\
+
+\begin{description}
+
+    \item[in\_learn:] the responsible team member is skilled in probabilistic
+        programming, but not in Infer.NET. He will invest two weeks in learning
+        well the language.
+
+    \item[in\_OBLR:]  Implement in Infer.NET the Online Bayesian Linear
+        Regression model, currently implemented in C\# in Bonsai.ML. Develop
+        test cases to check that the output of the Infer.Net and previous C\#
+        implementations are equal.
+
+    \item[in\_LDS:] Implement in Infer.NET the Linear Dynamical Systems model,
+        currently implemented in Python. Develop test cases to check that the
+        output of the Infer.Net and previous Python implementations are equal.
+
+    \item[in\_HMM:] Implement in Infer.NET the Hidden Markov Model, currently
+        implemented in Python. Develop test cases to check that the output of
+        the Infer.Net and previous Python implementations are equal.
+
+    \item[in\_PPdecoder:] Implement in Infer.NET the Point Process Decoding
+        model, currently implemented in Python. Develop test cases to check
+        that the output of the Infer.Net and previous Python implementations
+        are equal.
+
+    \item[in\_docs:] For each of the models integrated above, we will add
+        extensive documentation explaining how the models were implemented in
+        Infer.NET. The aim is to enable Bonsai.ML users to learn from these
+        examples and apply the same principles to build and perform inference
+        on their own custom probabilistic models, beyond the ones provided in
+        Bonsai.ML-Infer.NET.
+
+\end{description}
+
+\paragraph{Impact:}
+This integration will accelerate
+inference, simplify and standardise inference programs, and empower Bonsai
+users to create new probabilistic models and inference algorithms with just a
+few lines of code. Consequently, this activity will drastically improve the
+maintainability of the software and facilitate the incorporation of new
+probabilistic functionality to the Bonsai ecosystem.
+
+\paragraph{Milestones and Indicators:}\mbox{}\\
+
+\begin{description}
+
+    \item[in\_m1:]  implement OBLR in Bonsai.ML.Infer.NET
+
+    \item[in\_i1:] package Bonsai.ML.Infer.NET.OBLR published in nuget
+
+    \item[in\_m2:] implement LDS in Bonsai.ML.Infer.NET
+
+    \item[in\_i2:] package Bonsai.ML.Infer.NET.LDS published in nuget
+
+    \item[in\_m3:] implement HMM in Bonsai.ML.Infer.NET
+
+    \item[in\_i3:] package Bonsai.ML.Infer.NET.HMM published in nuget
+
+    \item[in\_m4:] implement Point Process Decoder in Bonsai.ML.Infer.NET
+
+    \item[in\_i4:] package Bonsai.ML.Infer.NET.PP.decoder published in nuget
+
+    \item[in\_m5:] detailed documentation in repos Bonsai.ML.Infer.NET.OBLR
+        Bonsai.ML.Infer.NET.LDS Bonsai.ML.Infer.NET.HMM
+        Bonsai.ML.Infer.NET.PP.decoder
+
+    \item[in\_i5:] detailed documentation available in the above repos
+
+    \item[in\_m6:] publish all of the previous Bonsai.ML.Infer.NET.* packages
+    \item[in\_i6:] packages Bonsai.ML.Infer.NET.* available in nuget
+
+\end{description}
+
 \paragraph{Responsible team member:} JR.
-
-\paragraph{Outputs:}\mbox{}\\
-
-\begin{itemize}
-
-    \item Bonsai nodes implementing Infer.NET inference methods
-    \item online Bayesian linear regression implemented in Bonsai.ML--Infer.NET
-    \item linear dynamical systems implemented in Bonsai.ML--Infer.NET
-    \item hidden Markov model implemented in Bonsai.ML--Infer.NET
-    \item point-process decoder implemented in Bonsai.ML--Infer.NET
-    \item documentation, tutorials and use cases on how to work with
-probabilistic programming models in Bonsai--Infer.NET \end{itemize}
 
 \subsubsection*{Closed-loop optogenetic control tools: CLOCTools}
 
