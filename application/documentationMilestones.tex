@@ -1,55 +1,46 @@
-These are the milestones I can think for the documentation section:
+The Bonsai.ML project has maintained a strong commitment to producing high-quality documentation to support both experimental neuroscience users and machine learning method developers. We have identified several key areas of improvement that we believe will enhance the usability and accessibility of the documentation for both user groups. These include:
 
-## Improve current documentation
+* Restructuring and expanding the existing documentation to match the style of established machine learning libraries (e.g., scikit-learn). This includes adding dedicated sections for installation, user guides, API reference, and examples.
+* Engaging the user community to provide tailored, comprehensive examples and user guides to demonstrate applications of Bonsai.ML methods for both neuroscientists and machine learning developers.
+* Producing video tutorials to complement written documentation, catering to different learning styles and improving accessibility.
+* Enhancing developer-focused documentation, including detailed guides and tutorials for method developers on how to create and integrate new machine learning methods into Bonsai using 3 different approaches: Python, C# scripting, and TorchSharp.
 
-- documentation re-structured following scikit-learn style
-- additional examples of the application of Bonsai.ML methods
-- be specific about which examples we will provide
+Below is a detailed timeline with specific milestones and rationale that outline our plans for improving the documentation over the next year.
 
-## Video tutorials
+\textbf{Timeline and Milestones:}
+\begin{itemize}
+    \item \textbf{Milestone 1: Planning and Initial Restructuring (Month 1-2)}
+    \begin{itemize}
+        \item Conduct a thorough review of the existing documentation to identify key gaps and areas for improvement compared to established machine learning libraries.
+        \item Survey the Bonsai.ML user community to gather feedback on current documentation and identify key areas for improvement.
+        \item Define a new style guide for the documentation layout (user guides, API reference, examples) based on user feedback and establish clear guidelines for contributing examples, naming conventions and code formatting, video tutorial style, and other best practices.
+    \end{itemize}
+    \item \textbf{Milestone 2: Expanding Examples, User Guides, and Initial Video Tutorial (Month 3-6)}
+    \item \begin{itemize}
+        \item Develop a series of tailored, comprehensive examples and user guides that demonstrate the application of Bonsai.ML methods for both neuroscientists and machine learning developers.
+        \item Review and update existing documentation to ensure consistency with the new style guide.
+        \item Expand the user guide and API reference sections to begin developing developer-focused documentation. This will include detailed guides and tutorials for method developers on how to create and integrate new machine learning methods into Bonsai, with an initial focus on Python-based method integration.
+        \item Produce the first video tutorial: "Getting started with Bonsai.ML: installing, set up, and initial overview", to provide an overview of installation and basic usage of Bonsai.ML.
+    \end{itemize}
+    \item \textbf{Milestone 3: Video Tutorial Series, Comprehensive Developer Documentation (Month 7-10)}
+    \item \begin{itemize}
+        \item Provide detailed documentation and guidance on writing C# extensions and custom ML operators for Bonsai, including best practices and common pitfalls. This will include an example of medium complexity built directly in C\# using local extensions (e.g., a custom operator for neurophysiological signal processing).
+        \item Continue expanding developer-focused documentation, particularly focusing on TorchSharp-based method integration. This will include more examples and tutorials to help developers get started implementing custom modules into Bonsai.
+        \item Produce 2 new video tutorials: 1. "Building custom ML operators in Bonsai using C\# extensions" and 2. "Integrating PyTorch models into Bonsai using TorchSharp".
+    \end{itemize}
+    \item \textbf{Milestone 4: Final Review, Testing, and Community Engagement (Month 11-12)}
+    \begin{itemize}
+        \item Conduct a final review of all documentation and video materials, incorporating user feedback and ensuring clarity and consistency.
+        \item Engage with the Bonsai.ML user community to receive feedback on the updated documentation and identify any remaining gaps or areas needing improvement.
+    \end{itemize}
+\end{itemize}
 
-- video tutorial included in documentation
+\textbf{Deliverables:}
+Documentation is a "living resource" which is best maintained through continuous improvement and community feedback. With this in mind, here are some specific deliverables we are committed to, drawn from anticipated use-cases from user engagement, to illustrate the proposed improvements:
 
-## Documentation for method developers
-
-- Python scripting documentation improved
-- C# scripting documentation improved
-- documentation on TorchSharp functionality available in Bonsai improved
-
-## Bonsai.ML Paper
-
-- preprint published on BioRxiv
-
-## Training
-
-- Bonsai course announced
-- Bonsai course delivered
-
-While thinking on milestones for the collaboration with Garrett, I
-realised that it will take much longer than what I previously thought.
-See estimates below. Only integrating neurostate-hmm will take around
-six months.
-
-# Neural Dynamic Adaptive Control tools
-
-- implement subset of ssm library in C# (4 weeks)
-- implement neurostate-hmm in C# (2 weeks)
-- develop test cases of neurostate-hmm and fix problems (3 weeks)
-- integrate neurostate-hmm into Bonsai (2 weeks)
-- add functionality to Bonsai to replay previously recorded data (2 weeks)
-- evaluate Bonsai's neurostate-hmm with replayed data (2 weeks)
-- evaluate and improve latency of neurostate-hmm in Bonsai (2 weeks)
-- collaborate with Prof.~Stanley lab in testing neurostate-hmm in real-time experimental data (2 weeks)
-- add documentation on neurostate-hmm in Bonsai (2 weeks)
-- add tutorials on neurostate-hmm in Bonsai (2 weeks)
-- release the neurostate-hmm Bonsai package (2 weeks)
-
-- implement HybridSystemControl in C#
-- develop test cases of HybridSystemControl
-- integrate HybridSystemControl into Bonsai
-- evaluate Bonsai's HybridSystemControl with replayed data
-- evaluate and improve latency of HybridSystemControl in Bonsai
-- collaborate with Prof.~Stanley lab in testing HybridSystemControl in real-time experimental data
-- add documentation on HybridSystemControl in Bonsai
-- add tutorials on HybridSystemControl in Bonsai
-- release the HybridSystemControl Bonsai package
+\begin{itemize}
+    \item Restructure the existing documentation to include dedicated sections for installation, user guides, API reference, and examples, in line with the style of established machine learning libraries such as scikit-learn.
+    \item Add a dedicated developer guide section to the documentation website that specifically addresses the needs of machine learning software developers to create and integrate new methods into Bonsai. This will include guides for integrating machine learning models into Bonsai using Python, C\#, and TorchSharp.
+    \item Produce a video tutorial series with at least 3 videos hosted on a public platform (e.g., YouTube) that will cover key areas of documentation that we have identified as lacking. We anticipate creating at least one video for each of the following areas: installation, basic usage, and an advanced application of Bonsai.ML, and will gather user feedback to guide our efforts. The videos will be embedded directly into the documentation website.
+    \item Expand the existing examples repository with at least 5 new comprehensive examples. Although the exact topics will be determined based on user feedback, we anticipate including examples for common neuroscience and machine learning use cases, such as real-time visualization of neural latents.
+\end{itemize}
