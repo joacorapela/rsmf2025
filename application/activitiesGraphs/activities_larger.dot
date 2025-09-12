@@ -15,10 +15,7 @@ digraph {
   "video\ntutorials\nNG" -> community [style=invis];
 
   community [shape=box];
-  community -> collaborations;
   community -> "Bonsai\nconference\nNG";
-  collaborations -> "IBN\nJR";
-  collaborations -> "AIND\nJR";
 
   "Bonsai\ncourse\nNG" -> technical [style=invis];
 
