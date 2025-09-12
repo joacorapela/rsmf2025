@@ -70,6 +70,27 @@ described next.
 
 \noindent\rule{\textwidth}{1pt}
 \subsubsection*{Training}
+\paragraph{Summary:} Organise a Bonsai course with a dedicated Bonsai.ML module.
+
+\paragraph{Previous work:} Since 2017, NeuroGEARS Ltd has organised at least
+two Bonsai courses per year at different universities, and deliver a
+one-week-long Bonsai course, hosted at the Sainsbury Wellcome Centre, for
+approximately 20 students, targeted to Bonsai users with intermediate
+understanding of the language. The structure of the course will be similar to
+previous ones (e.g., \href{https://neurogears.org/st-andrews-2024/}{2024 Bonsai
+Course at St.~Andrews University}) and is outlined briefly below.
+
+\begin{description}
+    \item[Day 1 - Introduction to Bonsai:] What is visual reactive programming? Introduction to Marble diagrams and how to read them. Learning your way around the Bonsai IDE. How to measure and control almost anything with Bonsai. Real-time tracking of colored objects, moving objects and contrasting objects. Measuring behavior using voltages and an Arduino.
+
+    \item[Day 2 - Real-time closed-loop experiments:] Fundamental reactive operators. Data synchronization and measuring closed-loop latency. Conditional effects: triggering a stimulus based on video activity. Continuous feedback: modulate stimulus intensity with speed or distance. Continuous and conditional feedback: closed-loop experiment building blocks. Synchronising asynchronous data streams.
+
+    \item[Day 3 - Operant behavioral tasks:] Sharing observable sequences. Creating dynamic observable sequences with higher-order operators. Modeling trial sequences: states, events, and side-effects. Driving state transitions with external inputs. Best practices for composing complex workflows.
+
+    \item[Day 4 - Machine learning:] Basics of online probabilistic machine learning. Online Bayesian linear regression. Interfacing Bonsai with Python. Linear dynamical systems. Hidden Markov Models. Neural decoding models. Neural latents models.
+
+    \item[Day 5 - Best practices:] How to extend Bonsai with scripting. Reproducible deployment and versioning of experiments. Bonsai hackathon and project presentations. Closing remarks.
+\end{description}
 
 \paragraph{Summary:} Organise Bonsai course, with a Bonsai.ML module.
 
@@ -194,28 +215,30 @@ probabilistic functionality to the Bonsai ecosystem.
 
 \begin{description}
 
-    \item[in\_m1:] OBLR implemented in Bonsai.ML.Infer.NET
+    \item[in\_m1:] OBLR implemented in Bonsai.ML.Infer.NET.
 
-    \item[in\_i1:] package Bonsai.ML.Infer.NET.OBLR published in nuget
+    \item[in\_i1:] Package Bonsai.ML.Infer.NET.OBLR published in nuget.org.
 
-    \item[in\_m2:] LDS implemented in Bonsai.ML.Infer.NET
+    \item[in\_m2:] LDS implemented in Bonsai.ML.Infer.NET.
 
-    \item[in\_i2:] package Bonsai.ML.Infer.NET.LDS published in nuget
+    \item[in\_i2:] Package Bonsai.ML.Infer.NET.LDS published in nuget.org.
 
-    \item[in\_m3:] HMM implemented in Bonsai.ML.Infer.NET
+    \item[in\_m3:] HMM implemented in Bonsai.ML.Infer.NET.
 
-    \item[in\_i3:] package Bonsai.ML.Infer.NET.HMM published in nuget
+    \item[in\_i3:] Package Bonsai.ML.Infer.NET.HMM published in nuget.org.
 
     \item[in\_m4:] Point Process Decoder implemented in Bonsai.ML.Infer.NET
 
-    \item[in\_i4:] package Bonsai.ML.Infer.NET.PP.decoder published in nuget
+    \item[in\_i4:] Package Bonsai.ML.Infer.NET.PP.decoder published in
+        nuget.org.
 
-    \item[in\_m5:] detailed documentation added to all nuget packages above
+    \item[in\_m5:] Detailed documentation added to all nuget packages above.
 
-    \item[in\_i5:] detailed documentation available in the above nuget packages
+    \item[in\_i5:] Eetailed documentation available in the above nuget
+        packages.
 
-    \item[in\_m6:] publish all of the previous Bonsai.ML.Infer.NET.* packages
-    \item[in\_i6:] packages Bonsai.ML.Infer.NET.* available in nuget
+    \item[in\_m6:] Bonsai.ML.Infer.NET.* packages published.
+    \item[in\_i6:] Packages Bonsai.ML.Infer.NET.* available in nuget.org.
 
 \end{description}
 
@@ -263,25 +286,91 @@ Please refer to the repositories in the
 \href{https://github.com/ndac-bonsai}{ndcac-bonsai} organisation containing
 these prototypes (ndac stands for neural dynamic adaptive control).
 
+\paragraph{Tasks:}\mbox{}\\
+
+\begin{description}
+
+    \item[hsc\_C\#\_Infer.NET:] Implement the Python package Hybrid System
+        Control in C\#.
+	%
+        Runtime performance is critical for the control of neural system, and a
+        C\# implementation should be much faster than a Python one.
+	%
+        The Python implementation uses the ssm Python library to perform
+        inference in linear dynamical systems. Instead, we will
+        use Bonsai.ML.Infer.NET.LDS previously developed. (4 weeks)
+
+    \item[hsc\_test\_cases:] Develop test cases for the C\# implementation of
+        HybridSystemControl, comparing is functionality with that of the
+        original Python implementation. Fix any resulting problem. (2 weeks)
+
+    \item[hsc\_bonsai\_integration:] Integrate the C\# implementation of HybridSystemControl
+        into Bonsai, generating the Bonsai.ML.HybridSystemControl package.  (2
+        weeks)
+
+    \item[hsc\_eval\_synthetic:] Evaluate the package
+        Bonsai.ML.HybridSystemControl with synthetic data and fix problems.
+        These evaluation will focus on testing if the package can achieve the
+        real-time latency constraints required in neuroscience applications. (2
+        weeks)
+
+    \item[hsc\_eval\_exp:] Assist the laboratory of Prof.~Stanely in
+        testing Bonsai.ML.HybridSystemControl with experimental data, and
+        address problems. (4 weeks)
+
+    \item[hsc\_docs:] Add documentation to Bonsai.ML.HybridSystemControl, in a
+        similar style as the new documentation of other Bonsai.ML packages. (3
+        weeks)
+
+    \item[hsc\_release:] Release the Bonsai.ML.HybridSystemControl package. (1
+        week)
+
+\end{description}
+
+\paragraph{Milestones and Indicators:}\mbox{}\\
+
+\begin{description}
+
+    \item[hsc\_m1:] Package HybridSystemControl implemented in C\#.
+
+    \item[hsc\_i1:] Package HybridSystemControl published in nuget.org.
+
+    \item[hsc\_m2:] Test cases added  to HybridSystemControl.
+
+    \item[hsc\_i2:] Test cases available in nuget package HybridSystemControl.
+
+    \item[hsc\_m3:] Package Bonsai.ML.HybridSystemControl created.
+
+    \item[hsc\_i3:] Package Bonsai.ML.HybridSystemControl available in GitHub
+        repository.
+
+    \item[hsc\_m4:] Package Bonsai.ML.HybridSystemControl evaluated with
+        synthetic data.
+
+    \item[hsc\_i4:] Workflows demonstrating the correct functionality with
+        syntetic data of the package Bonsai.ML.HybridSystemControl available in
+        GitHub repository.
+
+    \item[hsc\_m5:] Functionality of Bonsai.ML.HybridSystemControl demonstrated
+        with experimental data.
+
+    \item[hsc\_i5:] Experimental evidence available in GitHub repository demonstrating that the package
+        Bonsai.ML.HybridSystemControl succeeded holding the firing rate of a
+        single neuron in the thalamus at a steady level with optogenetic
+        inputs, while a mouse was visually stimulated.
+
+    \item[hsc\_m6:] Documentation added to Bonsai.ML.HybridSystemControl.
+
+    \item[hsc\_i6:] API documentation, examples and tutorials available in
+        GitHub repository.
+
+    \item[hsc\_m7:] Package Bonsai.ML.HybridSystemControl released.
+
+    \item[hsc\_i7:] Bonsai.ML.HybridSystemControl available in nuget.org.
+
+\end{description}
+
 \paragraph{Responsible team members:} JR
-
-\paragraph{Subtasks:}\mbox{}\\
-
-\begin{itemize}
-
-    \item implement in C\# the functionality in the repositories of the
-        organization \href{https://github.com/ndac-bonsai}{ndac-bonsai}.
-
-    \item deploy a comprehensive battery of test cases to check the correctness
-        of the C\#/Bonsai implementation against the Python one.
-
-    \item extend functionality of Bonsai development environment to allow users
-        graphically build probabilistic models.
-
-    \item develop documentation, tutorials and use cases for experimental
-        neuroscientists with no training on optimal feedback control.
-
-\end{itemize}
 
 \noindent\rule{\textwidth}{1pt}
 \subsubsection*{Governance}
