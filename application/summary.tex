@@ -1,2 +1,104 @@
-This proposal is in line with BBSRC's \emph{Artificial Intelligence in
-Bioscience} area of investment and support.
+\href{https://bonsai-rx.org/}{Bonsai} is a visual reactive programming language
+mostly used for neuroscience experimental control.
+%
+Bonsai is free and open-source.  Its design emphasises performance,
+flexibility, and ease-of-use, allowing scientists with no previous programming
+experience to quickly develop their own high-performance data acquisition and
+experimental control systems.
+%
+Bonsai has been adopted in hundreds of laboratories worldwide and has the
+largest user base in the systems neuroscience community (7,000 downloads per
+year and almost 100 citations per year of the core Bonsai paper
+\citep{lopesEtAl15}). In the last year alone, more than 1,000 new users
+incorporated Bonsai into their experimental protocols.
+
+The application of
+\href{https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/artificial-intelligence-in-bioscience/}{artificial
+intelligence in bioscience} is central to UKRI.
+%
+Specifically, machine learning (ML), the subfield of artificial intelligence
+(AI) where systems learn from data, is responsible of all recent breakthroughs
+in AI.
+%
+In 2022 we realised that adding ML functionality to Bonsai would be
+transformative for experimental neuroscience.
+\href{https://gow.bbsrc.ukri.org/grants/AwardDetails.aspx?FundingReference=BB\%2FW019132\%2F1}{Funded
+by BBSRC}, we developed the
+\href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML} package, that
+integrates into the Bonsai ecosystem state of the art ML methods, like
+\href{https://bonsai-rx.org/machinelearning/examples/examples/LinearDynamicalSystems/README.html}{Linear
+Dynamical Systems},
+\href{https://bonsai-rx.org/machinelearning/examples/examples/HiddenMarkovModels/README.html}{Hidden
+Markov Models},
+\href{https://bonsai-rx.org/machinelearning/examples/examples/Torch/NeuralNetsTrainedOnline/README.html}{Deep
+Neural Networks}, and a
+\href{https://bonsai-rx.org/machinelearning/examples/examples/PointProcessDecoder/DecodePositionFromHippocampusSortedUnits/README.html}{Point-Process
+Decoder}.
+
+Since the majority of Bonsai users have little exposure to ML, to
+maximize impact of Bonsai.ML we need to provide comprehensive documentation.
+\textbf{Aim 1 of this proposal is to build such documentation}.
+
+\textbf{Aim 2 is to build a training course on Bonsai and Bonsai.ML}.
+
+Most ML methods in Bonsai.ML are written in Python. They are excellent examples
+on how to integrate ML functionality written in other language into Bonsai,
+which is critical for our efforts to promote the integration of ML packages
+written in Python into Bonsai.ML.
+%
+However, for time critical applications, implementing ML functionality in C\#
+is better.
+%
+In addition, when adding a new ML model into Bonsai.ML, we need to develop
+complex code for learning and inference for the specific model. This code is
+generally different for different ML models, leading to heterogeneous code.
+%
+This code would be much simpler if we used a probabilistic programming language
+(PPL) for probabilistic modeling in Bonsai.ML. They make possible to specify
+complex probabilistic models in a few lines of code, and they automatically
+perform inference and learning in the specified models, exempting users from
+the complex, error-prone, and time-consuming task of doing this manually.
+%
+Since users are exempted from coding inference and learning procedures, PPLs
+lead to more homogeneous code across different models.
+
+Thus, using a C\# PPL would lead to faster, simple, more homogeneous and more
+extendable inference and learning code in Bonsai.ML.
+%
+Fortunately, C\# provides an excellent PPL: Infer.NET, develop by Dr.~Tom Minka
+and collaborators at Microsoft Research Cambridge. \textbf{Aim~3 is to simplify the
+code of all probabilistic models in Bonsai.ML by integrating Infer.NET for
+learning and inference}.
+
+To bring together the Bonsai developer community, in December 2024 we organized
+the first Bonsai Developers Conference. \textbf{Aim~4 is to foster community building
+by organizing the second one in December 2026}.
+
+Because it is a reactive programming language, Bonsai excels in processing
+asynchronous events, which is excellent for close-loop control. Currently
+Bonsai uses close-loop control only for behavioral experiment.
+%
+Close-loop control of neural activity is not widely used in the experimental
+neuroscience community, mainly because close-loop neural experiments are
+challenging to run, and no widely-used experimental platform exist to perform
+them.
+%
+Prof.~Garrett Stanley (Georgia Tech, US), an expert on close-loop neural
+control, requested our assistance for the integration into Bonsai.ML of the
+software ``\emph{Close Loop Optogenetic Control Tools}'',
+\href{https://cloctools.github.io/}{CLOCTools}, that his laboratory had
+developed for the control of neural activity with optogenetic inputs.
+\textbf{Aim~5 is to integrate CLOCTools into Bonsai.ML}.
+%
+In doing so we will attract to Bonsai.ML a large community of experimental
+neuroscientists doing close-loop control of neural activity.
+
+By the end of the funding period, Bonsai.ML will have excellent documentation,
+a better trained user community, a much better code for inference and learning
+in probabilistic models (faster, simpler, more homogeneous and extensible), a
+more cohesive developers community, and a mature long-term development plan.
+%
+In addition, expertise in the Bonsai development community will be larger,
+thanks to the addition of skills in advanced inference, from the Infer.NET team
+at Microsoft Research Cambridge, and skills in close-loop control of neural
+activity, from the laboratory of Prof.~Stanley.
