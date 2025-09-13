@@ -42,56 +42,46 @@ maximize impact of Bonsai.ML we need to provide comprehensive documentation.
 \textbf{Aim 2 is to build a training course on Bonsai and Bonsai.ML}.
 
 Most ML methods in Bonsai.ML are written in Python. They are excellent examples
-on how to integrate ML functionality written in other language into Bonsai,
-which is critical for our efforts to promote the integration of ML packages
-written in Python into Bonsai.ML.
+on how to integrate ML functionality written in other language into Bonsai.
 %
 However, for time critical applications, implementing ML functionality in C\#
 is better.
 %
-In addition, when adding a new ML model into Bonsai.ML, we need to develop
-complex code for learning and inference for the specific model. This code is
-generally different for different ML models, leading to heterogeneous code.
+In addition, the inference and learning code in Bonsai.ML would be much
+simpler, more homogeneous, and applicable to a broader set of moels, if we used
+a probabilistic programming language (PPL) in Bonsai.ML.
 %
-This code would be much simpler if we used a probabilistic programming language
-(PPL) for probabilistic modeling in Bonsai.ML. They make possible to specify
-complex probabilistic models in a few lines of code, and they automatically
-perform inference and learning in the specified models, exempting users from
-the complex, error-prone, and time-consuming task of doing this manually.
-%
-Since users are exempted from coding inference and learning procedures, PPLs
-lead to more homogeneous code across different models.
-
-Thus, using a C\# PPL would lead to faster, simple, more homogeneous and more
-extendable inference and learning code in Bonsai.ML.
-%
-Fortunately, C\# provides an excellent PPL: Infer.NET, develop by Dr.~Tom Minka
-and collaborators at Microsoft Research Cambridge. \textbf{Aim~3 is to simplify the
-code of all probabilistic models in Bonsai.ML by integrating Infer.NET for
-learning and inference}.
+Fortunately, C\# provides an excellent PPL, Infer.NET, develop by Dr.~Tom Minka
+and collaborators at Microsoft Research Cambridge. \textbf{Aim~3 is to improve
+the maintainability of code of all probabilistic models in Bonsai.ML by
+integrating Infer.NET for learning and inference}.
 
 To bring together the Bonsai developer community, in December 2024 we organized
-the first Bonsai Developers Conference. \textbf{Aim~4 is to foster community building
-by organizing the second one in December 2026}.
+the first Bonsai Developers Conference. \textbf{Aim~4 is to foster community
+building by organizing the second Bonsai Developers Conference in December
+2026}.
 
 Because it is a reactive programming language, Bonsai excels in processing
 asynchronous events, which is excellent for close-loop control. Currently
 Bonsai uses close-loop control only for behavioral experiment.
 %
-Close-loop control of neural activity is not widely used in the experimental
-neuroscience community, mainly because close-loop neural experiments are
-challenging to run, and no widely-used experimental platform exist to perform
-them.
+Despite its strong potential, close-loop control of neural activity is not
+widely used by the experimental neuroscience community, mainly because
+close-loop neural experiments are challenging to run, and not widely-used
+experimental platform exist to perform them.
 %
 Prof.~Garrett Stanley (Georgia Tech, US), an expert on close-loop neural
 control, requested our assistance for the integration into Bonsai.ML of the
 software ``\emph{Close Loop Optogenetic Control Tools}'',
 \href{https://cloctools.github.io/}{CLOCTools}, that his laboratory had
-developed for the control of neural activity with optogenetic inputs.
-\textbf{Aim~5 is to integrate CLOCTools into Bonsai.ML}.
+developed. \textbf{Aim~5 is to integrate CLOCTools into Bonsai.ML}.
 %
 In doing so we will attract to Bonsai.ML a large community of experimental
-neuroscientists doing close-loop control of neural activity.
+neuroscientists interested in doing close-loop control of neural activity.
+
+\textbf{Aim~6 is to assemble and meet with a steering committee that will guide
+us in building a long-term roadmap, and supervise the development of this
+grant}.
 
 By the end of the funding period, Bonsai.ML will have excellent documentation,
 a better trained user community, a much better code for inference and learning
