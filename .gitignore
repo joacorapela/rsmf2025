@@ -2,6 +2,7 @@
 *.aux
 *.log
 *.out
+*.toc
 *.bak
 *.swp
 *.pdf
