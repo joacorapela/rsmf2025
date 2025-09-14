@@ -1,94 +1,79 @@
-\href{https://bonsai-rx.org/}{Bonsai} is a visual reactive programming language
-mostly used for neuroscience experimental control.
-%
-Bonsai is free and open-source.  Its design emphasises performance,
-flexibility, and ease-of-use, allowing scientists with no previous programming
-experience to quickly develop their own high-performance data acquisition and
-experimental control systems.
-%
-Bonsai has been adopted in hundreds of laboratories worldwide and has the
-largest user base in the systems neuroscience community (7,000 downloads per
-year and almost 100 citations per year of the core Bonsai paper
-\citep{lopesEtAl15}). In the last year alone, more than 1,000 new users
-incorporated Bonsai into their experimental protocols.
+\section*{Summary}
 
-The application of
+\href{https://bonsai-rx.org/}{Bonsai} is a free and open-source visual reactive
+programming language widely used for experimental control in neuroscience.
+Designed for performance, flexibility, and ease of use, Bonsai enables
+scientists with little or no programming background to build high-performance
+data acquisition and control systems. With more than 7,000 downloads annually,
+nearly 100 citations per year of the core paper, and over 1,000 new users in
+2024 alone, Bonsai has become the most widely adopted software platform in
+systems neuroscience. Its success demonstrates the transformative role that
+sustainable, community-driven research software can play in accelerating
+discovery.  
+
+A central priority of UKRI is the application of
 \href{https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/artificial-intelligence-in-bioscience/}{artificial
-intelligence in bioscience} is central to UKRI.
-%
-Specifically, machine learning (ML), the subfield of artificial intelligence
-(AI) where systems learn from data, is responsible of all recent breakthroughs
-in AI.
-%
-In 2022 we realised that adding ML functionality to Bonsai would be
-transformative for experimental neuroscience.
-\href{https://gow.bbsrc.ukri.org/grants/AwardDetails.aspx?FundingReference=BB\%2FW019132\%2F1}{Funded
-by BBSRC}, we developed the
-\href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML} package, that
-integrates into the Bonsai ecosystem state of the art ML methods, like
+intelligence in bioscience}. In 2022 we recognised that integrating machine
+learning (ML) into Bonsai could be transformative for experimental
+neuroscience. With BBSRC support
+(\href{https://gow.bbsrc.ukri.org/grants/AwardDetails.aspx?FundingReference=BB%2FW019132%2F1}{BB/W019132/1}),
+we developed \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML}, which
+extends Bonsai with state-of-the-art ML methods. These include
 \href{https://bonsai-rx.org/machinelearning/examples/examples/LinearDynamicalSystems/README.html}{Linear
 Dynamical Systems},
 \href{https://bonsai-rx.org/machinelearning/examples/examples/HiddenMarkovModels/README.html}{Hidden
 Markov Models},
 \href{https://bonsai-rx.org/machinelearning/examples/examples/Torch/NeuralNetsTrainedOnline/README.html}{Deep
-Neural Networks}, and a
+Neural Networks (Torch; trained online)}, and a
 \href{https://bonsai-rx.org/machinelearning/examples/examples/PointProcessDecoder/DecodePositionFromHippocampusSortedUnits/README.html}{Point-Process
-Decoder}.
+Decoder}. Embedding these models directly in Bonsai’s reactive programming
+environment enables adaptive, data-driven experimental designs that were
+previously out of reach for many laboratories.  
 
-Since the majority of Bonsai users have little exposure to ML, to
-maximize impact of Bonsai.ML we need to provide comprehensive documentation.
-\textbf{Aim 1 of this proposal is to build such documentation}.
+To maximise the impact and long-term sustainability of Bonsai.ML, this proposal
+pursues six aims:  
 
-\textbf{Aim 2 is to build a training course on Bonsai and Bonsai.ML}.
+\begin{enumerate}
 
-Most ML methods in Bonsai.ML are written in Python. They are excellent examples
-on how to integrate ML functionality written in other language into Bonsai.
-%
-However, for time critical applications, implementing ML functionality in C\#
-is better.
-%
-In addition, the inference and learning code in Bonsai.ML would be much
-simpler, more homogeneous, and applicable to a broader set of moels, if we used
-a probabilistic programming language (PPL) in Bonsai.ML.
-%
-Fortunately, C\# provides an excellent PPL, Infer.NET, develop by Dr.~Tom Minka
-and collaborators at Microsoft Research Cambridge. \textbf{Aim~3 is to improve
-the maintainability of code of all probabilistic models in Bonsai.ML by
-integrating Infer.NET for learning and inference}.
+  \item \textbf{Documentation} – Produce comprehensive, user-centred
+documentation that makes ML tools accessible to non-specialists across the
+neuroscience community.  
 
-To bring together the Bonsai developer community, in December 2024 we organized
-the first Bonsai Developers Conference. \textbf{Aim~4 is to foster community
-building by organizing the second Bonsai Developers Conference in December
-2026}.
+  \item \textbf{Training} – Develop and deliver a practical training course on
+Bonsai and Bonsai.ML, building capacity and lowering barriers to adoption.  
 
-Because it is a reactive programming language, Bonsai excels in processing
-asynchronous events, which is excellent for close-loop control. Currently
-Bonsai uses close-loop control only for behavioral experiment.
-%
-Despite its strong potential, close-loop control of neural activity is not
-widely used by the experimental neuroscience community, mainly because
-close-loop neural experiments are challenging to run, and not widely-used
-experimental platform exist to perform them.
-%
-Prof.~Garrett Stanley (Georgia Tech, US), an expert on close-loop neural
-control, requested our assistance for the integration into Bonsai.ML of the
-software ``\emph{Close Loop Optogenetic Control Tools}'',
-\href{https://cloctools.github.io/}{CLOCTools}, that his laboratory had
-developed. \textbf{Aim~5 is to integrate CLOCTools into Bonsai.ML}.
-%
-In doing so we will attract to Bonsai.ML a large community of experimental
-neuroscientists interested in doing close-loop control of neural activity.
+  \item \textbf{Maintainability} – In collaboration with Microsoft
+Research Cambridge, integrate their C\# probabilistic programming library
+\emph{Infer.NET} into Bonsai.ML. This will simplify and unify inference and
+learning code, making it faster, more maintainable, and more extensible, while
+embedding the expertise of a world-leading industrial research group into the
+Bonsai ecosystem.  
 
-\textbf{Aim~6 is to assemble and meet with a steering committee that will guide
-us in building a long-term roadmap, and supervise the development of this
-grant}.
+  \item \textbf{Community building} – Strengthen the developer community by
+organising the second Bonsai Developers Conference in December 2026, building
+on the successful inaugural event in 2024.  
 
-By the end of the funding period, Bonsai.ML will have excellent documentation,
-a better trained user community, a much better code for inference and learning
-in probabilistic models (faster, simpler, more homogeneous and extensible), a
-more cohesive developers community, and a mature long-term development plan.
-%
-In addition, expertise in the Bonsai development community will be larger,
-thanks to the addition of skills in advanced inference, from the Infer.NET team
-at Microsoft Research Cambridge, and skills in close-loop control of neural
-activity, from the laboratory of Prof.~Stanley.
+  \item \textbf{Community reach} – Engage neuroscientists interested in
+\emph{closed-loop} neural experimentation by supporting the use of
+\href{https://cloctools.github.io/}{CLOCTools} within Bonsai.ML, in
+collaboration with Prof.~Garrett Stanley (Georgia Tech). This partnership will
+attract a new community of researchers to Bonsai and broaden its reach to an
+emerging but underrepresented area of neuroscience.
+
+  \item \textbf{Governance} – Establish a steering committee to guide a
+long-term roadmap, prioritise sustainability, and supervise development
+throughout the grant.
+
+\end{enumerate}
+
+By the end of the funding period, Bonsai.ML will provide high-quality
+documentation and training resources, a robust and maintainable codebase, and a
+stronger developer community with expanded expertise and broader reach. In
+particular, collaborations with Microsoft Research Cambridge and
+Prof.~Garrett Stanley’s laboratory will embed cutting-edge knowledge in
+probabilistic inference and closed-loop experimentation. Together, these
+efforts will ensure Bonsai remains a sustainable, widely adopted research
+software platform, aligned with UKRI’s strategic priorities in artificial
+intelligence, bioscience, and community-driven research software
+sustainability.
+
