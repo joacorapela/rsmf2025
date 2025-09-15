@@ -265,59 +265,54 @@ position the platform as the first sustainable, general-purpose framework for
 both levels of experimentation.
 
 An important reason for the poor uptake of closed-loop methods in neuroscience
-could be that existing implementations are often ad hoc, difficult to install
-or  extend, and not integrated with software for experimental control. By
-providing Bonsai users with accessible, open-source, and sustainably engineered
-tools for closed-loop control, we will directly address this barrier and enable
-a new type of experimentation where researchers can both read and write the
-neural code in real time. This will accelerate discovery across both basic and
-translational neuroscience.
+is that existing implementations are often ad hoc, difficult to install or
+extend, and not integrated with widely-used software for experimental control.
+By providing Bonsai users with accessible, open-source, and sustainably
+engineered tools for closed-loop control, we will directly address this barrier
+and enable a new type of experimentation where researchers can both read and
+write the neural code in real time. This will accelerate discovery across both
+basic and translational neuroscience.
 
-\paragraph{Previous work:} Members of Prof.~Stanley’s lab have already
-prototyped some of their closed-loop control methods in Bonsai using our
-\href{https://bonsai-rx.org/python-scripting/}{Python scripting interface}.
-Please refer to the repositories in the
-\href{https://github.com/ndac-bonsai}{ndcac-bonsai} organisation containing
-these prototypes (ndac stands for neural dynamic adaptive control).
+We will create a Bonsai package integrating functionality for the estimation
+and control of linear dynamical systems from the repository
+\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}, built by the
+laboratory of Prof.~Garrett Stanley.
+%
+They will be responsible of maintaining the lds-ctrl-est repository and we will
+provide infrastructure to access its functionality from Bonsai.
 
 \paragraph{Tasks:}\mbox{}\\
 
 \begin{description}
 
-    \item[hsc\_C\#\_Infer.NET:] Implement the Python package Hybrid System
-        Control in C\#.
-	%
-        Runtime performance is critical for the control of neural system, and a
-        C\# implementation should be much faster than a Python one.
-	%
-        The Python implementation uses the ssm Python library to perform
-        inference in linear dynamical systems. Instead, we will
-        use Bonsai.ML.Infer.NET.LDS previously developed. (4 weeks)
-
-    \item[hsc\_test\_cases:] Develop test cases for the C\# implementation of
-        HybridSystemControl, comparing is functionality with that of the
-        original Python implementation. Fix any resulting problem. (2 weeks)
-
-    \item[hsc\_bonsai\_integration:] Integrate the C\# implementation of HybridSystemControl
-        into Bonsai, generating the Bonsai.ML.HybridSystemControl package.  (2
+    \item[ldsCE\_eval:] Learn and evaluate the functionality in the
+        package
+        \href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}. (2
         weeks)
 
-    \item[hsc\_eval\_synthetic:] Evaluate the package
-        Bonsai.ML.HybridSystemControl with synthetic data and fix problems.
+    \item[ldsCE\_wrapper:] Use C++/CLI wrappers to access C++
+        functionality in the \texttt{lds-ctr-est} package from C\#. (3 weeks)
+
+    \item[ldsCE\_bonsai\_integration:] Build the package
+        \texttt{Bonsai.ML.LDS-CTR-EST} providing the functionality of the
+        package \texttt{lds-ctr-est} to the Bonsai ecosystem (3 weeks).
+
+    \item[ldsCE\_eval\_synthetic:] Evaluate the package
+        \texttt{Bonsai.ML.LDS-CTR-EST} with synthetic data and fix problems.
         These evaluation will focus on testing if the package can achieve the
         real-time latency constraints required in neuroscience applications. (2
         weeks)
 
-    \item[hsc\_eval\_exp:] Assist the laboratory of Prof.~Stanely in
-        testing Bonsai.ML.HybridSystemControl with experimental data, and
-        address problems. (4 weeks)
+    \item[ldsCE\_eval\_exp:] Assist the laboratory of Prof.~Stanely in testing
+        the package \texttt{Bonsai.ML.LDS-CTR-EST} with experimental data, and
+        address potential problems. (4 weeks)
 
-    \item[hsc\_docs:] Add documentation to Bonsai.ML.HybridSystemControl, in a
-        similar style as the new documentation of other Bonsai.ML packages. (3
-        weeks)
+    \item[ldsCE\_docs:] Add documentation to the package
+        \texttt{Bonsai.ML.LDS-CTR-EST}, in a similar style as the new
+        documentation of other Bonsai.ML packages.  (3 weeks)
 
-    \item[hsc\_release:] Release the Bonsai.ML.HybridSystemControl package. (1
-        week)
+    \item[ldsCE\_release:] Release the package \texttt{Bonsai.ML.LDS-CTR-EST}.
+        (1 week)
 
 \end{description}
 
@@ -325,42 +320,42 @@ these prototypes (ndac stands for neural dynamic adaptive control).
 
 \begin{description}
 
-    \item[hsc\_m1:] Package HybridSystemControl implemented in C\#.
+    \item[ldsCE\_m1:] Functionality from the package
+        \texttt{Bonsai.ML.LDS-CTR-EST} accessible from C\#.
 
-    \item[hsc\_i1:] Package HybridSystemControl published in nuget.org.
+    \item[ldsCE\_i1:] \href{https://cloctools.github.io/lds-ctrl-est/docs/api/examples/}{Examples}
+        from the package \texttt{lds-ctr-est} replicated with C\# code.
+        C\# examples available in a GitHub repository.
 
-    \item[hsc\_m2:] Test cases added  to HybridSystemControl.
+    \item[ldsCE\_m2:] Build package \texttt{Bonsai.ML.LDS-CTR-EST}.
 
-    \item[hsc\_i2:] Test cases available in nuget package HybridSystemControl.
+    \item[ldsCE\_i2:] Package \texttt{Bonsai.ML.LDS-CTR-EST} available in
+        Bonsai's package manager.
 
-    \item[hsc\_m3:] Package Bonsai.ML.HybridSystemControl created.
+    \item[ldsCE\_m3:] Package \texttt{Bonsai.ML.LDS-CTR-EST}
+        evaluated with synthetic data.
 
-    \item[hsc\_i3:] Package Bonsai.ML.HybridSystemControl available in GitHub
-        repository.
+    \item[ldsCE\_i3:] Evaluation report, including latency figures, added to
+        the documentation of package\linebreak\texttt{Bonsai.ML.LDS-CTR-EST}.
 
-    \item[hsc\_m4:] Package Bonsai.ML.HybridSystemControl evaluated with
-        synthetic data.
-
-    \item[hsc\_i4:] Workflows demonstrating the correct functionality with
-        syntetic data of the package Bonsai.ML.HybridSystemControl available in
-        GitHub repository.
-
-    \item[hsc\_m5:] Functionality of Bonsai.ML.HybridSystemControl demonstrated
+    \item[ldsCE\_m4:] Functionality of \texttt{Bonsai.ML.LDS-CTR-EST} demonstrated
         with experimental data.
 
-    \item[hsc\_i5:] Experimental evidence available in GitHub repository demonstrating that the package
-        Bonsai.ML.HybridSystemControl succeeded holding the firing rate of a
+    \item[ldsCE\_i4:] Experimental evidence available in GitHub repository
+        demonstrating that the package\linebreak
+        \texttt{Bonsai.ML.LDS-CTR-EST} succeeded holding the firing rate of a
         single neuron in the thalamus at a steady level with optogenetic
-        inputs, while a mouse was visually stimulated.
+        inputs, while a mouse was visually stimulated, as in
+        \citet{bolusEtAl21}.
 
-    \item[hsc\_m6:] Documentation added to Bonsai.ML.HybridSystemControl.
+    \item[ldsCE\_m5:] Documentation added to \texttt{Bonsai.ML.LDS-CTR-EST}.
 
-    \item[hsc\_i6:] API documentation, examples and tutorials available in
-        GitHub repository.
+    \item[ldsCE\_i5:] API documentation, examples and tutorials available for
+        package \texttt{Bonsai.ML.LDS-CTR-EST}.
 
-    \item[hsc\_m7:] Package Bonsai.ML.HybridSystemControl released.
+    \item[ldsCE\_m6:] Package \texttt{Bonsai.ML.LDS-CTR-EST} released.
 
-    \item[hsc\_i7:] Bonsai.ML.HybridSystemControl available in nuget.org.
+    \item[ldsCE\_i6:] \texttt{Bonsai.ML.LDS-CTR-EST} available in nuget.org.
 
 \end{description}
 
@@ -370,7 +365,37 @@ these prototypes (ndac stands for neural dynamic adaptive control).
 \subsubsection{Aim5: Community building}
 \paragraph{Summary:} Organise the 2026 Bonsai developers conference
 
-\paragraph{Previous work:} Last December we organised the \href{https://conference.bonsai-rx.org/2024/}{2024 Bonsai Developers conference}, attended by more than 30 scientists and engineers from around the globe.
+\paragraph{Previous work:} A Bonsai developer conference is a week-long
+meetings aimed at bringing together neuroscience researchers, computational
+scientists, and software engineers who are interested in developing and using
+the Bonsai visual reactive programming language.
+
+The first edition of this conference took place at the Sainsbury Wellcome
+Centre on December 2024. It was attended by 30 scientists and engineers from
+around the world, including representatives from the Allen Institute for Neural
+Dynamics, Janelia Research Campus, Massachusetts Institute of Technology, and
+University College London, to mention a few.
+%
+The website of the first edition of this conference  can be found
+\href{https://conference.bonsai-rx.org/2024/}{here}.  The proceedings
+repository of the first conference is still under construction, but can be
+accessed from
+\href{https://github.com/joacorapela/bonsaiConference2024Proceedings}{here},
+and the summary of its Bonsai.ML session can be read
+\href{https://github.com/joacorapela/bonsaiConference2024Proceedings/blob/master/sessions/machineLearning/README.md}{here}.
+
+In this first edition of the conference we voted to hold the second edition in
+2026. We propose to organise and deliver it as part of this project.
+
+\paragraph{Tasks:}
+
+\begin{description}
+
+    \item[conf\_prepare:] Conference preparation (3 weeks).
+    \item[conf\_delivery:] Conference delivery (1 weeks).
+
+\end{description}
+
 
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 6: Governance}
