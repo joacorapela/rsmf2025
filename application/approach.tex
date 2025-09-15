@@ -13,66 +13,146 @@
 
 \subsubsection{Aim 1: Documentation}
 
-Background: The Bonsai.ML project has maintained a strong commitment to producing high-quality documentation to support both experimental neuroscience users and machine learning method developers. The documentation of the current Bonsai.ML project includes a few articles introducing the packages with installation guides for each package, an automatically generated API reference for the C\# codebase, and some examples demonstrating various use cases. Currently, there is no documentation for the Python code integrated into the packages, nor are there any video tutorials or developer-focused documentation.
+\paragraph{Background:} The Bonsai.ML project has maintained a strong
+commitment to producing high-quality documentation to support both experimental
+neuroscience users and machine learning method developers. The current
+documentation includes introductory articles with installation guides for each
+package, an automatically generated API reference for the C\# codebase, and
+illustrative examples demonstrating a range of use cases. However, it lacks
+essential statistical explanations of the integrated methods and clear
+connections between them, which are critical for non-specialist users to
+understand how and when to apply each technique. As a model for improvement, we
+look to \href{https://scikit-learn.org/}{scikit-learn}, whose documentation
+successfully combines intuitive statistical background, practical tutorials,
+and comprehensive API references, and has been key to its widespread adoption.
 
-Our team has been approached by several users of the package who have expressed concerns about the current state of the documentation, particularly regarding the documentation structure. There is redundancy in places in the documentation and a lack of clarity in others. For instance, the installation instructions for Bonsai.ML.LinearDynamicalSystems is included in the "Getting Started" section of the Linear Dynamical Systems examples. Additionally, these instructions are very similar to those found in other Bonsai.ML - Python based packages, leading to additional redundancy. Conversely, the current documentation lacks critical statistical information in several parts, including packages implementing specific machine learning models, and examples (both with simulated data and real-world data). This lack of clarity and redundancy has made it difficult for users to find the information they need, leading to unnecessary user-friction driving new users away from the project.
 
-Furthermore, the current documentation does not adequately address the needs of machine learning method developers. Our team has documented several approaches for integrating machine learning models into Bonsai, but this information is currently distributed across various sources, including GitHub repos, discussion issues, pull requests, and examples. Our project lacks a dedicated, centralized resource that provides comprehensive documentation for method developers looking to create new machine learning functionality in Bonsai using the approaches our team has developed.
+Our team has been approached by several users of the package who have expressed
+concerns about the current state of the documentation, particularly regarding
+the documentation structure.  There is redundancy in some places of the
+documentation and a lack of clarity in others.
+%
+These problems make it difficult for users to find the information they need,
+leading to unnecessary user-friction driving new users away from the project.
 
-To address these issues, we have identified several key areas of improvement that we believe will enhance the usability and accessibility of the documentation for both user groups. These include:
+Furthermore, the current documentation does not adequately address the needs of
+machine learning method developers. Our team has documented several approaches
+for integrating machine learning models into Bonsai, but this information is
+currently distributed across various sources, including GitHub repos,
+discussion issues, pull requests, and examples. Our project lacks a dedicated,
+centralized resource that provides comprehensive documentation for method
+developers looking to integrate new machine learning functionality into Bonsai
+using the approaches our team has developed.
 
-* Restructure and expand the existing documentation to match the style of established machine learning libraries. For this, our team will base our documentation style on the popular scikit-learn documentation. We will add to Bonsai.ML's documentation by creating dedicated sections for installation, user guides, detailed statistical explanations of methods, API reference, examples, and troubleshooting.
-* Provide additional tailored, comprehensive examples and user guides to demonstrate applications of Bonsai.ML methods for both neuroscientists and machine learning developers.
-* Produce video tutorials to complement written documentation, catering to different learning styles and improving accessibility.
-* Enhance developer-focused documentation, including detailed guides and tutorials for method developers on how to create and integrate new machine learning methods into Bonsai using 3 different approaches: Python, C\# scripting, and TorchSharp.
-
+To address these issues, we have identified several key areas of improvement
+that we believe will enhance the usability and accessibility of the
+documentation for both experimental neuroscientists and machine learning
+methods developers. These include the following tasks.
 
 \paragraph{Tasks:}\mbox{}\\
 
 \begin{description}
 
-    \item[doc\_review:] Conduct a thorough review of the existing documentation (Python, C\#, and TorchSharp). Identify redundancies, outdated content, missing sections compared to scikit-learn package.
+    \item[doc\_sickit-learn] Restructure and expand the existing documentation
+        to match the \texttt{scikit-learn} documentation style. (4 weeks)
 
-    \item[doc\_style\_guide:] Create a Bonsai.ML style guide which will include conventions for: documentation, code formatting, naming, and video tutorial format. These will draw on inspirations from the style guides and best practices put forth by \href{https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions}{Microsoft}, the \href{https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md}{dotnet community}, and the developers of \href{https://github.com/pytorch/pytorch/blob/main/CONTRIBUTING.md}{PyTorch}.
-    
-    \item[doc\_examples\_improvement:] Improve the existing examples by restructuring them to match the new style guide. Each example will include a detailed explanation of the Bonsai workflow, the mathematical/statistical basis of the model, and clarifications on assumptions and data requirements.
+    \item[doc\_examples:] Develop at least 3 new examples demonstrating
+        applications of Bonsai.ML to neuroscience problems. These examples will
+        cover: real-time visualizations of neural latents, forecasting
+        positions and head orientations of mice in augmented reality
+        environments, and close-loop control of simulated neural populations.
+        Each example will have detailed workflow
+        descriptions, information on the models and assumptions, and
+        explanations of the datasets. (3 weeks)
 
-    \item[doc\_examples\_new:] Develop at least 3 new examples that showcase complete applications of Bonsai.ML. These examples will cover: neural signal processing, real-time latent visualization, and clustering of behavioural data. Each example will have detailed workflow descriptions, information on the models and assumptions, and explanations of the datasets.
+    \item[doc\_trouble:] Create a troubleshooting section to address
+        common issues users may encounter when using Bonsai.ML packages. This
+        section will include solutions to frequently asked questions, common
+        errors, and tips for debugging. (2 weeks)
 
-    \item[doc\_user\_guides:] Write new, comprehensive user guides to teach users about key ML concepts and how to use the Bonsai.ML libraries correctly. User guides will come in 2 flavours: one will be geared towards neuroscientists who may have familiarity with conducting experiments but are less familiar with ML techniques. These will focus more on teaching core concepts of math, statistics, and machine learning. The other style will be geared more towards ML developers and will focus more on reactive, online data streams and approaches for integrating ML models into Bonsai. These user guides will include how to create a new Bonsai.ML package with Python, C\# and expression scripting, and integrating models via TorchSharp and other native C\# libraries.
-    
-    \item[doc\_troubleshooting:] Create a troubleshooting section to address common issues users may encounter when using Bonsai.ML packages. This section will include solutions to frequently asked questions, common errors, and tips for debugging.
-    
-    \item[doc\_videos:] Produce at least 3 video tutorials and demos, hosted on YouTube, and embed them directly into the documentation. These videos will cover key topics such as installation, user guides, and examples. The 3 videos will be: 1) Installation and getting started with Bonsai.ML, 2) Integrating custom models into Bonsai using Python, C\#, and TorchSharp, and 3) Building a Bonsai.ML application to perform closed-loop stimulation using online neural signal processing.
+    \item[doc\_videos:] Produce at least 3 video tutorials and demos, hosted on
+        YouTube, and embed them directly into the documentation. These videos
+        will cover key topics such as installation, user guides, and examples.
+        The 3 videos will be: 1) Installation and getting started with
+        Bonsai.ML, 2) Integrating custom models into Bonsai using Python, and
+        3) Building a Bonsai.ML application to perform closed-loop control of
+        neural activity. Video engagement will be monitored by tracking views,
+        likes, and comments. (3 weeks)
+
+    \item[doc\_case\_studies:] Create two case studies on intelligent
+        experimental control in Bonsai, similar to the
+        \href{https://mark-kramer.github.io/Case-Studies-Python/intro.html}{case
+        studies for neural data analysis in Python}, or those for
+        \href{https://mbmlbook.com/index.html}{model based machine learning},
+        by our Microsoft collaborators. Case study one will cover inference
+        of mouse kinematics using linear dynamical systems and case study two
+        will elaborate on real-time inference and visualisation of neural
+        latents. (4 weeks)
 
 \end{description}
-
-\paragraph{Impact:}
-Improving the documentation of Bonsai.ML will directly improve the code's maintainability, reduce technical debt for maintainers and contributors, and expand the project's reach. The expansion of the documentation will also greatly enhance usability of Bonsai.ML for two core communities: experimental neuroscientists and machine learning developers. Clearer, better-structured resources aimed at these groups will reduce barriers to usage and onboarding friction. Specifically, we will provide experimental neuroscientists with the knowledge to adopt and implement powerful ML tools for real-time experimental applications. Additionally, we will provide ML developers interested in integrating their models into Bonsai with the guidance from experienced, Bonsai.ML developers, to extend ML functionality in Bonsai. By adding examples, comprehensive user guides, troubleshooting resources, and video tutorials, we will create robust, easy-to-navigate documentation, modeled after leading ML libraries, that will greatly boost Bonsai.ML's maintenance and adoption. Ultimately, these improvements will lower duplication of effort, standardize best practices, broaden Bonsai.ML's reach, and ensure long-term sustainability through a stronger and more engaged user and developer community.
 
 \paragraph{Milestones and Indicators:}\mbox{}\\
 
 \begin{description}
 
-    \item[doc\_m1]: Documentation review completed and style guide released.
-    \item[doc\_i1]: Publically shared document on GitHub detailing review of current documentation and plan for restructuring. Style guide publicly shared at docs/contributing.md on GitHub which will include information on coding style, contributing code/PRs, documentation, unit testing, and naming conventions.
-    
-    \item[doc\_m2]: All existing examples reviewed and updated to conform to the style guide.
-    \item[doc\_i2]: All existing examples updated with new documentation to address missing information on mathematical/statistical background, data assumptions, and Bonsai workflows.
-    
-    \item[doc\_m3]: Three new examples published (neural signal processing, real-time latent visualization, behavioural clustering).
-    \item[doc\_i3]: Each new example will be documented with explanation of the workflow components, mathematical basis of models/algorithms, and assumptions about the data.
-    
-    \item[doc\_m4]: New user guides and troubleshooting sections published.
-    \item[doc\_i4]: At least 3 user guides developed per audience type completed (3 user guides tailored towards neuroscientists and explaining core ML concepts, 3 user guides for ML developers explaining how to integrate models into Bonsai). Troubleshooting section will include at least 10 common issues/errors addressed.
-    
-    \item[doc\_m5]: Video tutorials produced, uploaded to YouTube, and embedded in documentation.
-    \item[doc\_i5]: Video 1: "Installation and Getting Started with Bonsai.ML" - posted by April. Video 2: "Integrating Custom Models with Python, C\#, and TorchSharp" - posted by May. Video 3: "Building a Closed-Loop Experiment with Bonsai.ML." - posted by September. Video engagement will be monitored by tracking views, likes, and comments.
+    \item[doc\_m1]: Documentation restructured using the \texttt{scikit-learn}
+        documentation style.
+
+    \item[doc\_i1]: Documentation updated in the
+        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
+
+    \item[doc\_m2]: Dissemination of three new examples of the application of Bonsai.ML to
+        neuroscience problems.
+
+    \item[doc\_i2]: Three new examples of the application of Bonsai.ML
+        to neuroscience problems published in the
+        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
+
+    \item[doc\_m3]: New troubleshooting sections published.
+
+    \item[doc\_i3]: Troubleshooting section including at least 10 common
+        issues/error added to the
+        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
+
+    \item[doc\_m4]: Three video tutorials produced, uploaded to YouTube, and
+        embedded in the documentation.
+
+    \item[doc\_i4]: Three video tutorials published in the Bonsai.ML YouTube
+        channel and linked in the
+        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
+
+    \item[doc\_m5]: Two case studies on intelligent experimental control
+        created.
+
+    \item[doc\_i5]: Two case studies published in a new Case Studies section of
+        the
+        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
 
 \end{description}
 
+\paragraph{Impact:} Improving the documentation of Bonsai.ML will directly
+improve the code's maintainability, reduce technical debt for maintainers and
+contributors, and expand the project's reach. The expansion of the
+documentation will also greatly enhance usability of Bonsai.ML for two core
+communities: experimental neuroscientists and machine learning developers.
+Clearer, better-structured resources aimed at these groups will reduce barriers
+to usage and onboarding friction. Specifically, we will provide experimental
+neuroscientists with the knowledge to adopt and implement powerful ML tools for
+real-time experimental applications. Additionally, we will provide ML
+developers interested in integrating their models into Bonsai with the guidance
+from experienced, Bonsai.ML developers, to extend ML functionality in Bonsai.
+By adding examples, comprehensive user guides, troubleshooting resources, and
+video tutorials, we will create robust, easy-to-navigate documentation, modeled
+after leading ML libraries, that will greatly boost Bonsai.ML's maintenance and
+adoption. Ultimately, these improvements will lower duplication of effort,
+standardize best practices, broaden Bonsai.ML's reach, and ensure long-term
+sustainability through a stronger and more engaged user and developer
+community.
+
+\paragraph{Responsible team members:} NG
+
 \noindent\rule{\textwidth}{1pt}
-\subsubsection{Aim2: Training}
+\subsubsection{Aim 2: Training}
 \paragraph{Summary:} Organise a Bonsai course with a dedicated Bonsai.ML module.
 
 \paragraph{Previous work:} Since 2017, NeuroGEARS Ltd has organised at least
@@ -98,7 +178,7 @@ Course at St.~Andrews University}) and is outlined briefly below.
 \paragraph{Outputs:} course delivery, online course material (including lecture
 slides, worksheets and video recordings).
 
-\paragraph{Responsible team members:} GL, JR.
+\paragraph{Responsible team members:} GL
 
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 3: Maintainability}
@@ -365,7 +445,7 @@ provide infrastructure to access its functionality from Bonsai.
 \paragraph{Responsible team members:} JR
 
 \noindent\rule{\textwidth}{1pt}
-\subsubsection{Aim5: Community building}
+\subsubsection{Aim 5: Community building}
 \paragraph{Summary:} Organise the 2026 Bonsai developers conference
 
 \paragraph{Previous work:} A Bonsai developer conference is a week-long
@@ -452,7 +532,7 @@ We will conduct management activities at different frequencies:
 
 \begin{description}
 
-    \item[Twice a year:] we will convene the steering committee. Two weeks in
+    \item[Quartely:] we will convene the steering committee. Two weeks in
         advance of each meeting, we will circulate a progress report
         summarising achieved milestones, proposed future activities, and the
         most recent version of the Bonsai.ML long-term roadmap.
@@ -465,10 +545,9 @@ We will conduct management activities at different frequencies:
         with community needs and strategic goals.
         %
         Minutes and key decisions from these meetings will be documented and,
-        where possible, shared with the Research Software Maintenance Fund
-        through appropriate reporting channels.
+        shared with the Research Software Maintenance Fund.
 
-    \item[Every month:] we will hold meetings between the project lead, the
+    \item[Monthly:] we will hold meetings between the project lead, the
         project co-lead, the RSE, and the external project co-lead, to evaluate
         the project progress.
 
