@@ -10,6 +10,9 @@
 *.blg
 *.csh
 .nfs*
+*.fls
+*.fdb_latexmk
+*.synctex.gz
 
 application/activitiesGraphs/*svg
 application/beforeChatGPT/*
