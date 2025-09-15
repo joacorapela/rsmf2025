@@ -76,40 +76,40 @@
             <depend id="37" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="37" uid="45d5d1c825904c43a18d83b4914b52c7" name="in_ms5" color="#00ff00" meeting="true" start="2026-04-13" duration="0" complete="0" expand="true"/>
-        <task id="12" uid="3f205da73680477594a5eebd371f354a" name="hsc_C#_Infer.NET" color="#e10000" meeting="false" start="2026-04-13" duration="20" complete="0" expand="true">
+        <task id="12" uid="3f205da73680477594a5eebd371f354a" name="ldsCE_eval" color="#e10000" meeting="false" start="2026-08-17" duration="10" complete="0" expand="true">
             <depend id="14" type="2" difference="0" hardness="Strong"/>
             <depend id="39" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="39" uid="ba8b36c5ca404158aeb3302154acf0b8" name="hsc_m1" color="#e10000" meeting="true" start="2026-05-11" duration="0" complete="0" expand="true"/>
-        <task id="14" uid="b77f6fac5da24c7a822f32eaa8fe5abc" name="hsc_test_cases" color="#e10000" meeting="false" start="2026-05-11" duration="10" complete="0" expand="true">
+        <task id="39" uid="ba8b36c5ca404158aeb3302154acf0b8" name="hsc_m1" color="#e10000" meeting="true" start="2026-08-31" duration="0" complete="0" expand="true"/>
+        <task id="14" uid="b77f6fac5da24c7a822f32eaa8fe5abc" name="ldsCE_wrapper" color="#e10000" meeting="false" start="2026-08-31" duration="15" complete="0" expand="true">
             <depend id="15" type="2" difference="0" hardness="Strong"/>
             <depend id="38" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="38" uid="9d9a9134ca04436d98ce245d9fa498ec" name="hsc_m2" color="#e10000" meeting="true" start="2026-05-25" duration="0" complete="0" expand="true"/>
-        <task id="15" uid="f5820e29194e410292cd2ac9b5b4e8ad" name="hsc_bonsai_integration" color="#e10000" meeting="false" start="2026-05-25" duration="10" complete="0" expand="true">
+        <task id="38" uid="9d9a9134ca04436d98ce245d9fa498ec" name="hsc_m2" color="#e10000" meeting="true" start="2026-09-21" duration="0" complete="0" expand="true"/>
+        <task id="15" uid="f5820e29194e410292cd2ac9b5b4e8ad" name="ldsCE_bonsai_integration" color="#e10000" meeting="false" start="2026-09-21" duration="15" complete="0" expand="true">
             <depend id="16" type="2" difference="0" hardness="Strong"/>
             <depend id="19" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="16" uid="2b28f7ea878e4d5d9e1ee5006474c03d" name="ns_m3" color="#e10000" meeting="true" start="2026-06-08" duration="0" complete="0" expand="true"/>
-        <task id="19" uid="63f1af49e9a44531adf8410e81ba03d7" name="hsc_eval_synthetic" color="#e10000" meeting="false" start="2026-06-08" duration="10" complete="0" expand="true">
+        <task id="16" uid="2b28f7ea878e4d5d9e1ee5006474c03d" name="ns_m3" color="#e10000" meeting="true" start="2026-10-12" duration="0" complete="0" expand="true"/>
+        <task id="19" uid="63f1af49e9a44531adf8410e81ba03d7" name="ldsCE_eval_synthetic" color="#e10000" meeting="false" start="2026-10-12" duration="10" complete="0" expand="true">
             <depend id="20" type="2" difference="0" hardness="Strong"/>
             <depend id="40" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="40" uid="f16c1226d93f478f9d3870a4da0f74ca" name="hsc_m4" color="#e10000" meeting="true" start="2026-06-22" duration="0" complete="0" expand="true"/>
-        <task id="20" uid="e493a51ce59a461cbbc009cf806f253c" name="hsc_eval_exp_data" color="#e10000" meeting="false" start="2026-06-22" duration="20" complete="0" expand="true">
+        <task id="40" uid="f16c1226d93f478f9d3870a4da0f74ca" name="hsc_m4" color="#e10000" meeting="true" start="2026-10-26" duration="0" complete="0" expand="true"/>
+        <task id="20" uid="e493a51ce59a461cbbc009cf806f253c" name="ldsSE_eval_exp_data" color="#e10000" meeting="false" start="2026-10-26" duration="20" complete="0" expand="true">
             <depend id="21" type="2" difference="0" hardness="Strong"/>
             <depend id="23" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="23" uid="00de51948b3c4ba49db7bb1fa262379c" name="ns_m5" color="#e10000" meeting="true" start="2026-07-20" duration="0" complete="0" expand="true"/>
-        <task id="21" uid="4ed56296f10747db8a70cbfd8584467d" name="hsc_docs" color="#e10000" meeting="false" start="2026-07-20" duration="15" complete="0" expand="true">
+        <task id="23" uid="00de51948b3c4ba49db7bb1fa262379c" name="ns_m5" color="#e10000" meeting="true" start="2026-11-23" duration="0" complete="0" expand="true"/>
+        <task id="21" uid="4ed56296f10747db8a70cbfd8584467d" name="ldsCE_docs" color="#e10000" meeting="false" start="2026-11-23" duration="15" complete="0" expand="true">
             <depend id="25" type="2" difference="0" hardness="Strong"/>
             <depend id="41" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="41" uid="348e0fd365f14d86a3c4cb4794ad9b09" name="hsc_m6" color="#e10000" meeting="true" start="2026-08-10" duration="0" complete="0" expand="true"/>
-        <task id="25" uid="26bc158881684e9db6cffa50847f6c83" name="ns_package_release" color="#e10000" meeting="false" start="2026-08-10" duration="5" complete="0" expand="true">
+        <task id="41" uid="348e0fd365f14d86a3c4cb4794ad9b09" name="hsc_m6" color="#e10000" meeting="true" start="2026-12-14" duration="0" complete="0" expand="true"/>
+        <task id="25" uid="26bc158881684e9db6cffa50847f6c83" name="ldsCE_release" color="#e10000" meeting="false" start="2026-12-14" duration="5" complete="0" expand="true">
             <depend id="26" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="26" uid="ea710ab09da94cb4abe9754bc3fca81c" name="ns_m7" color="#e10000" meeting="true" start="2026-08-17" duration="0" complete="0" expand="true"/>
+        <task id="26" uid="ea710ab09da94cb4abe9754bc3fca81c" name="ns_m7" color="#e10000" meeting="true" start="2026-12-21" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Joaquin Rapela" function="Default:0" contacts="" phone=""/>
