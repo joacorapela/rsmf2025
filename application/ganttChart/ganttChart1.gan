@@ -6,7 +6,7 @@
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#80ffff #0000e1 #ff00ff #e10000 #00ff00 #e100e1 #e1e100 #e1e1e1]]></option>
+        <option id="color.recent"><![CDATA[#000000 #80ffff #0000e1 #ff00ff #e10000 #00ff00 #e100e1 #e1e100 #e1e1e1]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="270" order="0"/>
@@ -148,6 +148,26 @@
             <depend id="26" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="26" uid="ea710ab09da94cb4abe9754bc3fca81c" name="ldsCE_m6" color="#e10000" meeting="true" start="2026-11-23" duration="0" complete="0" expand="true"/>
+        <task id="64" uid="c0a98a1538224743a05e9962f82687b8" name="sc_assembly" color="#000000" meeting="false" start="2026-01-05" duration="1" complete="0" expand="true">
+            <depend id="59" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="59" uid="0e7ef6be5cd34abd926d7caa19bb9e3c" name="sc_m0" color="#000000" meeting="true" start="2026-01-06" duration="0" complete="0" expand="true"/>
+        <task id="65" uid="35ee22961d9c4f2f9cbd8a32f9ebd4c4" name="sc_meet1" color="#000000" meeting="false" start="2026-01-26" duration="1" complete="0" expand="true">
+            <depend id="60" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="60" uid="e5324efa8c2d4bc4b7b8ec5bd6f336b6" name="sc_m1" color="#000000" meeting="true" start="2026-01-27" duration="0" complete="0" expand="true"/>
+        <task id="67" uid="c524dffdc6ec4555a8234db9b31dc5fb" name="sc_meet2" color="#000000" meeting="false" start="2026-04-27" duration="1" complete="0" expand="true">
+            <depend id="61" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="61" uid="081b0890c49e4de8af084e3a852ccf35" name="sc_m2" color="#000000" meeting="true" start="2026-04-28" duration="0" complete="0" expand="true"/>
+        <task id="68" uid="18a91be5f54a4649807a2ef1f4031c53" name="sc_meet3" color="#000000" meeting="false" start="2026-08-31" duration="1" complete="0" expand="true">
+            <depend id="62" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="62" uid="de94671bf4f64a938af0625ab3f279b8" name="sc_m3" meeting="true" start="2026-09-01" duration="0" complete="0" expand="true"/>
+        <task id="69" uid="b46c267a6a75446abbc1529bf7054d0a" name="sc_meet4" color="#000000" meeting="false" start="2026-11-30" duration="1" complete="0" expand="true">
+            <depend id="63" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="63" uid="5dcc3d768cd94a08ba16fc2e950f5f93" name="sc_m4" color="#000000" meeting="true" start="2026-12-01" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Joaquin Rapela" function="Default:0" contacts="" phone=""/>
