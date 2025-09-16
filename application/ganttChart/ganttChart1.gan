@@ -61,9 +61,31 @@
             <depend id="49" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="49" uid="42203d20bfdd49b4b321a1db8c3c920d" name="doc_m5" color="#8cb6ce" meeting="true" start="2026-05-04" duration="0" complete="0" expand="true"/>
-        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="tr_Bonsai_course" color="#ff00ff" meeting="false" start="2026-05-04" duration="26" complete="0" expand="true"/>
-        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="dis_paper" color="#0000e1" meeting="false" start="2026-06-08" duration="30" complete="0" expand="true"/>
-        <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="com_conference" color="#80ffff" meeting="false" start="2026-11-16" duration="24" complete="0" expand="true"/>
+        <task id="5" uid="54a362e2b76b42b09d6aa5b15c093d1f" name="course_prep" color="#ff00ff" meeting="false" start="2026-05-04" duration="15" complete="0" expand="true">
+            <depend id="51" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="51" uid="b5d707c855bf45bb8e4f00539b89ef44" name="course_m1" color="#ff00ff" meeting="true" start="2026-05-25" duration="0" complete="0" expand="true"/>
+        <task id="50" uid="1242a719738946ec88815d75e64f5b33" name="conf_prep" color="#80ffff" meeting="false" start="2026-05-25" duration="10" complete="0" expand="true">
+            <depend id="52" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="52" uid="7f946d6921804b6492f8375772aade1f" name="conf_m1" color="#80ffff" meeting="true" start="2026-06-08" duration="0" complete="0" expand="true"/>
+        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="paper_write" color="#0000e1" meeting="false" start="2026-06-08" duration="30" complete="0" expand="true">
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="56" uid="bfd3baea4ad74ed99a5e50f05bc11615" name="paper_m1" color="#0000e1" meeting="true" start="2026-07-20" duration="0" complete="0" expand="true"/>
+        <task id="53" uid="a277c2971cd247f5a59c536d3a593d41" name="course_del" color="#ff00ff" meeting="false" start="2026-11-30" duration="5" complete="0" expand="true">
+            <depend id="54" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="54" uid="75c8e831ae064b12a43b9764d13348fd" name="course_m2" color="#ff00ff" meeting="true" start="2026-12-07" duration="0" complete="0" expand="true"/>
+        <task id="11" uid="b2b94815e3f54be2b4552f82b12c9dcf" name="conf_del" color="#80ffff" meeting="false" start="2026-12-07" duration="5" complete="0" expand="true">
+            <depend id="55" type="2" difference="0" hardness="Strong"/>
+            <depend id="57" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="55" uid="d21b7c911ca44744a874d57becb33e29" name="conf_m2" color="#80ffff" meeting="true" start="2026-12-14" duration="0" complete="0" expand="true"/>
+        <task id="57" uid="7b920957f07c43418c15d50561eb514f" name="conf_proc" color="#80ffff" meeting="false" start="2026-12-14" duration="10" complete="0" expand="true">
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="58" uid="b8cc479abf7a437aa670338000d56e51" name="conf_m3" color="#80ffff" meeting="true" start="2026-12-28" duration="0" complete="0" expand="true"/>
         <task id="27" uid="ae6e69f352544a859621d9ac1785644f" name="in_learn" color="#00ff00" meeting="false" start="2026-01-12" duration="10" complete="0" expand="true">
             <depend id="28" type="2" difference="0" hardness="Strong"/>
         </task>
