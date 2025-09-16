@@ -199,7 +199,39 @@ St.~Andrews University}), with the addition of a Bonsai.ML module.
 \paragraph{Responsible team members:} GL
 
 \noindent\rule{\textwidth}{1pt}
-\subsubsection{Aim 3: Maintainability}
+\subsubsection{Aim 3: Dissemination}
+
+\paragraph{Summary:} Publish first Bonsai.ML paper
+
+\paragraph{Background:} Specially in neuroscience, adoption of open-source
+software greatly increase when they are supported by scientific papers. In our
+own experiences, we have seen this happen many times, with the foundational
+Bonsai paper \citep{lopesEtAl15}, with the BonVision paper \citep{lopesEtAl21},
+and with the BonZeb paper \citep{guilbeaultEtAl21}.
+%
+To increase adoption of Bonsai.ML, we will prepare and submit for publication
+the first Bonsai.ML paper.
+
+\paragraph{Tasks:}\mbox{}\\
+
+\begin{description}
+
+    \item[paper\_write:] Write first Bonsai.ML paper.
+
+\end{description}
+
+\paragraph{Milestones and Indicators:}\mbox{}\\
+
+\begin{description}
+
+    \item[paper\_m1]: First Bonsai.ML paper written.
+    \item[paper\_i1]: First Bonsai.ML paper available in
+        \href{https://www.biorxiv.org/}{BioRxiv}.
+
+\end{description}
+
+\noindent\rule{\textwidth}{1pt}
+\subsubsection{Aim 4: Maintainability}
 
 \paragraph{Summary:} Simplify and homogenise inference and learning code, and streamline the addition of new probabilistic models to Bonsai.ML.
 
@@ -335,7 +367,7 @@ probabilistic functionality to the Bonsai ecosystem.
 \paragraph{Responsible team member:} JR.
 
 \noindent\rule{\textwidth}{1pt}
-\subsubsection{Aim 4: Community reach}
+\subsubsection{Aim 5: Community reach}
 
 \paragraph{Summary:} Attract to Bonsai scientists interested in close-loop
 control of neural activity by integrating functionality from
@@ -463,7 +495,7 @@ provide infrastructure to access its functionality from Bonsai.
 \paragraph{Responsible team members:} JR
 
 \noindent\rule{\textwidth}{1pt}
-\subsubsection{Aim 5: Community building}
+\subsubsection{Aim 6: Community building}
 \paragraph{Summary:} Organise the 2026 Bonsai developers conference
 
 \paragraph{Background:} A Bonsai developer conference is a week-long
@@ -528,25 +560,24 @@ In this first edition of the conference we voted to hold the second edition in
 \end{description}
 
 \noindent\rule{\textwidth}{1pt}
-\subsubsection{Aim 6: Governance}
+\subsubsection{Aim 7: Governance}
 
-We will create a Bonsai.ML steering committee that will be responsible for
-approving project milestones and advise us on building a long-term development
-roadmap for Bonsai.ML.
-%
-Responding to guidance and feedback from the steering committee ensures
-Bonsai.ML addressed pressing neuroscience needs on an international scale.
+\paragraph{Background:} We will assemble a Bonsai.ML steering committee that
+will be responsible for approving project milestones and advise us on building
+a long-term development roadmap for Bonsai.ML.  Responding to guidance and
+feedback from the steering committee ensures Bonsai.ML addressed pressing
+neuroscience needs on an international scale.
 
 Several renowned experimental and computational neuroscientists around the
-world are heavily invested in Bonsai, are very interested in adding ML
-functionality to their Bonsai workflows, and have agreed to join the Bonsai.ML
-steering committee. We list them below.
+world are heavily invested in Bonsai, and are very interested in adding ML
+functionality to their Bonsai workflows. We have already invited a few of them
+to join the Bonsai.ML steering committee:
 
 \begin{description}
 
     \item[Prof.~Garrett Stanley,] leader of the Laboratory for the Control of
         Neural Systems, Georgia Tech, US. Expert on close-loop control of
-        neurophysiological systems. He contacted us to migrate to Bonsai
+        neurophysiological systems. He contacted us to migrate to Bonsai.ML
         a package for real-time cortical state estimation and the CLOCTools
         referred above, both originally written in C++/RTXI.
 
@@ -555,20 +586,51 @@ steering committee. We list them below.
         author of \href{https://bonvision.github.io/}{Bon-Vision}, a software
         package that creates and controls visual environments in close loop,
         built on top of Bonsai.
+        %
+        We are currently collaborating with the Saleem lab using the package
+        \texttt{Bonsai.ML.LinearDynamicalSystems} to forecast mouse positions
+        and head orientations in order to achieve zero-lag stimuli presentation
+        in augmented reality experiments.
 
     \item[Prof.~Josh Siegle,] senior scientist and lead of the
         electrophysiology group at the Allen Institute for Neural Dynamics. He
         leads the development of Open Ephys GUI, which is tightly integrated
         with Bonsai.
 
-    \item[Prof.~Ken Harris,] co-director of the Cortexlab, University College
-        London, and founding director of the International Brain Laboratory,
-        that uses Bonsai for reproducible experimental control across 22
-        laboratories around the world.
+\end{description}
 
-    \item[Prof.~Athena Akrami,] director of the Learning, Inference and Memory
-        Lab, at the SWC, that uses Bonsai extensively for the control of
-        complex rodent experiments in her lab.
+Please refer to their letters of support.
+
+We will meet with the steering committee four times in 2026. These meetings
+will happen at the end of January, April, August and November, respectively.
+%
+Before each meeting, we will prepare a progress report and send it to the
+committee members two weeks before the meeting. After each meeting we will
+write a follow-up report with meetings minutes and the revised project roadmap.
+
+\paragraph{Tasks:}
+
+\begin{description}
+
+    \item[sc\_assembly:] Complete the assembly of the steering committee.
+
+    \item[sc\_meet\{i\}:] Meet with the steering committee for this ith
+        time, with $i\in\{1,2,3,4\}$.
+
+\end{description}
+
+\paragraph{Milestones and Indicators:}\mbox{}\\
+
+\begin{description}
+
+    \item[sc\_m0:] Steering committee assembled.
+
+    \item[sc\_i0:] Documented published in the project GitHub repository with
+        names and affiliations of the steering committee members.
+
+    \item[sc\_m\{i\}:] ith steering committee meeting held.
+
+    \item[sc\_i\{i\}] Progress and follow-up reports for the ith meeting.
 
 \end{description}
 
