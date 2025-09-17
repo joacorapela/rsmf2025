@@ -57,7 +57,7 @@
             <depend id="48" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="47" uid="56c0717dd7e542e2825d0e7b1aff298c" name="doc_m4" color="#8cb6ce" meeting="true" start="2026-04-06" duration="0" complete="0" expand="true"/>
-        <task id="48" uid="ec6e297d29a44366a5a9b495d0a33876" name="doc_case_studies" meeting="false" start="2026-04-06" duration="20" complete="0" expand="true">
+        <task id="48" uid="ec6e297d29a44366a5a9b495d0a33876" name="doc_cases" meeting="false" start="2026-04-06" duration="20" complete="0" expand="true">
             <depend id="49" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="49" uid="42203d20bfdd49b4b321a1db8c3c920d" name="doc_m5" color="#8cb6ce" meeting="true" start="2026-05-04" duration="0" complete="0" expand="true"/>
@@ -69,10 +69,10 @@
             <depend id="52" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="52" uid="7f946d6921804b6492f8375772aade1f" name="conf_m1" color="#80ffff" meeting="true" start="2026-06-08" duration="0" complete="0" expand="true"/>
-        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="paper_write" color="#0000e1" meeting="false" start="2026-06-08" duration="30" complete="0" expand="true">
+        <task id="4" uid="0e81883db210461c9b3f73f21efcfcb0" name="paper_write" color="#0000e1" meeting="false" start="2026-06-08" duration="20" complete="0" expand="true">
             <depend id="56" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="56" uid="bfd3baea4ad74ed99a5e50f05bc11615" name="paper_m1" color="#0000e1" meeting="true" start="2026-07-20" duration="0" complete="0" expand="true"/>
+        <task id="56" uid="bfd3baea4ad74ed99a5e50f05bc11615" name="paper_m1" color="#0000e1" meeting="true" start="2026-07-06" duration="0" complete="0" expand="true"/>
         <task id="53" uid="a277c2971cd247f5a59c536d3a593d41" name="course_del" color="#ff00ff" meeting="false" start="2026-11-30" duration="5" complete="0" expand="true">
             <depend id="54" type="2" difference="0" hardness="Strong"/>
         </task>
@@ -116,38 +116,38 @@
             <depend id="37" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="37" uid="45d5d1c825904c43a18d83b4914b52c7" name="in_ms5" color="#00ff00" meeting="true" start="2026-04-13" duration="0" complete="0" expand="true"/>
-        <task id="12" uid="3f205da73680477594a5eebd371f354a" name="ldsCE_eval" color="#e10000" meeting="false" start="2026-07-20" duration="10" complete="0" expand="true">
+        <task id="12" uid="3f205da73680477594a5eebd371f354a" name="ldsCE_eval" color="#e10000" meeting="false" start="2026-07-06" duration="10" complete="0" expand="true">
             <depend id="14" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="14" uid="b77f6fac5da24c7a822f32eaa8fe5abc" name="ldsCE_wrapper" color="#e10000" meeting="false" start="2026-08-03" duration="15" complete="0" expand="true">
+        <task id="14" uid="b77f6fac5da24c7a822f32eaa8fe5abc" name="ldsCE_wrapper" color="#e10000" meeting="false" start="2026-07-20" duration="15" complete="0" expand="true">
             <depend id="15" type="2" difference="0" hardness="Strong"/>
             <depend id="38" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="38" uid="9d9a9134ca04436d98ce245d9fa498ec" name="ldsCE_m1" color="#e10000" meeting="true" start="2026-08-24" duration="0" complete="0" expand="true"/>
-        <task id="15" uid="f5820e29194e410292cd2ac9b5b4e8ad" name="ldsCE_bonsai_integration" color="#e10000" meeting="false" start="2026-08-24" duration="15" complete="0" expand="true">
+        <task id="38" uid="9d9a9134ca04436d98ce245d9fa498ec" name="ldsCE_m1" color="#e10000" meeting="true" start="2026-08-10" duration="0" complete="0" expand="true"/>
+        <task id="15" uid="f5820e29194e410292cd2ac9b5b4e8ad" name="ldsCE_bonsai_integration" color="#e10000" meeting="false" start="2026-08-10" duration="15" complete="0" expand="true">
             <depend id="16" type="2" difference="0" hardness="Strong"/>
             <depend id="19" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="16" uid="2b28f7ea878e4d5d9e1ee5006474c03d" name="ldsCE_m2" color="#e10000" meeting="true" start="2026-09-14" duration="0" complete="0" expand="true"/>
-        <task id="19" uid="63f1af49e9a44531adf8410e81ba03d7" name="ldsCE_eval_synthetic" color="#e10000" meeting="false" start="2026-09-14" duration="10" complete="0" expand="true">
+        <task id="16" uid="2b28f7ea878e4d5d9e1ee5006474c03d" name="ldsCE_m2" color="#e10000" meeting="true" start="2026-08-31" duration="0" complete="0" expand="true"/>
+        <task id="19" uid="63f1af49e9a44531adf8410e81ba03d7" name="ldsCE_eval_synthetic" color="#e10000" meeting="false" start="2026-08-31" duration="10" complete="0" expand="true">
             <depend id="20" type="2" difference="0" hardness="Strong"/>
             <depend id="40" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="40" uid="f16c1226d93f478f9d3870a4da0f74ca" name="ldsCE_m3" color="#e10000" meeting="true" start="2026-09-28" duration="0" complete="0" expand="true"/>
-        <task id="20" uid="e493a51ce59a461cbbc009cf806f253c" name="ldsSE_eval_exp_data" color="#e10000" meeting="false" start="2026-09-28" duration="20" complete="0" expand="true">
+        <task id="40" uid="f16c1226d93f478f9d3870a4da0f74ca" name="ldsCE_m3" color="#e10000" meeting="true" start="2026-09-14" duration="0" complete="0" expand="true"/>
+        <task id="20" uid="e493a51ce59a461cbbc009cf806f253c" name="ldsSE_eval_exp_data" color="#e10000" meeting="false" start="2026-09-14" duration="20" complete="0" expand="true">
             <depend id="21" type="2" difference="0" hardness="Strong"/>
             <depend id="23" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="23" uid="00de51948b3c4ba49db7bb1fa262379c" name="ldsCE_m4" color="#e10000" meeting="true" start="2026-10-26" duration="0" complete="0" expand="true"/>
-        <task id="21" uid="4ed56296f10747db8a70cbfd8584467d" name="ldsCE_docs" color="#e10000" meeting="false" start="2026-10-26" duration="15" complete="0" expand="true">
+        <task id="23" uid="00de51948b3c4ba49db7bb1fa262379c" name="ldsCE_m4" color="#e10000" meeting="true" start="2026-10-12" duration="0" complete="0" expand="true"/>
+        <task id="21" uid="4ed56296f10747db8a70cbfd8584467d" name="ldsCE_docs" color="#e10000" meeting="false" start="2026-10-12" duration="15" complete="0" expand="true">
             <depend id="25" type="2" difference="0" hardness="Strong"/>
             <depend id="41" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="41" uid="348e0fd365f14d86a3c4cb4794ad9b09" name="ldsCE_m5" color="#e10000" meeting="true" start="2026-11-16" duration="0" complete="0" expand="true"/>
-        <task id="25" uid="26bc158881684e9db6cffa50847f6c83" name="ldsCE_release" color="#e10000" meeting="false" start="2026-11-16" duration="5" complete="0" expand="true">
+        <task id="41" uid="348e0fd365f14d86a3c4cb4794ad9b09" name="ldsCE_m5" color="#e10000" meeting="true" start="2026-11-02" duration="0" complete="0" expand="true"/>
+        <task id="25" uid="26bc158881684e9db6cffa50847f6c83" name="ldsCE_release" color="#e10000" meeting="false" start="2026-11-02" duration="5" complete="0" expand="true">
             <depend id="26" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="26" uid="ea710ab09da94cb4abe9754bc3fca81c" name="ldsCE_m6" color="#e10000" meeting="true" start="2026-11-23" duration="0" complete="0" expand="true"/>
+        <task id="26" uid="ea710ab09da94cb4abe9754bc3fca81c" name="ldsCE_m6" color="#e10000" meeting="true" start="2026-11-09" duration="0" complete="0" expand="true"/>
         <task id="64" uid="c0a98a1538224743a05e9962f82687b8" name="sc_assembly" color="#000000" meeting="false" start="2026-01-05" duration="1" complete="0" expand="true">
             <depend id="59" type="2" difference="0" hardness="Strong"/>
         </task>
