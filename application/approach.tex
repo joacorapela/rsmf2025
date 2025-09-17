@@ -1,153 +1,39 @@
 
-\begin{figure}
-    \centering
-    \includegraphics[width=6in]{activitiesGraphs/activities_larger.png}
-
-    \caption{Proposed activities. The initials below each task name indicate
-    the responsible team member (JR: Joaquin Rapela, NG: NeuroGEARS Ltd). See
-    text for details.}
-
-\end{figure}
-
 \subsection{Approach}
 
 \subsubsection{Aim 1: Documentation}
 
-\paragraph{Background:} The Bonsai.ML project has maintained a strong
-commitment to producing high-quality documentation to support both experimental
-neuroscience users and machine learning method developers. The current
-documentation includes introductory articles with installation guides for each
-package, an automatically generated API reference for the C\# codebase, and
-illustrative examples demonstrating a range of use cases. However, it lacks
-essential statistical explanations of the integrated methods and clear
-connections between them, which are critical for non-specialist users to
-understand how and when to apply each technique. As a model for improvement, we
-look to \href{https://scikit-learn.org/}{scikit-learn}, whose documentation
-successfully combines intuitive statistical background, practical tutorials,
-and comprehensive API references, and has been key to its widespread adoption.
+The current Bonsai.ML documentation includes installation guides, API
+references, and examples, but it lacks essential statistical explanations,
+clear connections between methods, and a well-structured organization. Users
+have reported redundancy, gaps in clarity, and difficulty finding information,
+creating friction for newcomers. In addition, documentation for machine
+learning method developers is scattered across disparate sources rather than
+being centralized. Inspired by the model of
+\href{https://scikit-learn.org/}{scikit-learn}, which combines conceptual
+background with tutorials and API references, we aim to restructure and expand
+Bonsai.ML documentation into a comprehensive, accessible resource that serves
+both experimental neuroscientists and method developers.
 
-
-Our team has been approached by several users of the package who have expressed
-concerns about the current state of the documentation, particularly regarding
-the documentation structure.  There is redundancy in some places of the
-documentation and a lack of clarity in others.
-%
-These problems make it difficult for users to find the information they need,
-leading to unnecessary user-friction driving new users away from the project.
-
-Furthermore, the current documentation does not adequately address the needs of
-machine learning method developers. Our team has documented several approaches
-for integrating machine learning models into Bonsai, but this information is
-currently distributed across various sources, including GitHub repos,
-discussion issues, pull requests, and examples. Our project lacks a dedicated,
-centralized resource that provides comprehensive documentation for method
-developers looking to integrate new machine learning functionality into Bonsai
-using the approaches our team has developed.
-
-To address these issues, we have identified several key areas of improvement
-that we believe will enhance the usability and accessibility of the
-documentation for both experimental neuroscientists and machine learning
-methods developers. These include the following tasks.
-
-\paragraph{Tasks:}\mbox{}\\
+\paragraph{Tasks:}  
 
 \begin{description}
+    \item[doc\_structure:] Restructure documentation in the style of \texttt{scikit-learn} (4 weeks).  
+    \item[doc\_examples:] Add at least 3 neuroscience-focused examples (3 weeks).  
+    \item[doc\_trouble:] Create a troubleshooting section with common issues (2 weeks).  
+    \item[doc\_videos:] Produce 3 tutorial videos, hosted on YouTube and embedded in the docs (3 weeks).  
+    \item[doc\_cases:] Develop 2 case studies on intelligent experimental control in Bonsai (4 weeks).  
+\end{description}  
 
-    \item[doc\_sickit-learn] Restructure and expand the existing documentation
-        to match the \texttt{scikit-learn} documentation style. (4 weeks)
-
-    \item[doc\_examples:] Develop at least 3 new examples demonstrating
-        applications of Bonsai.ML to neuroscience problems. These examples will
-        cover: real-time visualizations of neural latents, forecasting
-        positions and head orientations of mice in augmented reality
-        environments, and close-loop control of simulated neural populations.
-        Each example will have detailed workflow
-        descriptions, information on the models and assumptions, and
-        explanations of the datasets. (3 weeks)
-
-    \item[doc\_trouble:] Create a troubleshooting section to address
-        common issues users may encounter when using Bonsai.ML packages. This
-        section will include solutions to frequently asked questions, common
-        errors, and tips for debugging. (2 weeks)
-
-    \item[doc\_videos:] Produce at least 3 video tutorials and demos, hosted on
-        YouTube, and embed them directly into the documentation. These videos
-        will cover key topics such as installation, user guides, and examples.
-        The 3 videos will be: 1) Installation and getting started with
-        Bonsai.ML, 2) Integrating custom models into Bonsai using Python, and
-        3) Building a Bonsai.ML application to perform closed-loop control of
-        neural activity. Video engagement will be monitored by tracking views,
-        likes, and comments. (3 weeks)
-
-    \item[doc\_case\_studies:] Create two case studies on intelligent
-        experimental control in Bonsai, similar to the
-        \href{https://mark-kramer.github.io/Case-Studies-Python/intro.html}{case
-        studies for neural data analysis in Python}, or those for
-        \href{https://mbmlbook.com/index.html}{model based machine learning},
-        by our Microsoft collaborators. Case study one will cover inference
-        of mouse kinematics using linear dynamical systems and case study two
-        will elaborate on real-time inference and visualisation of neural
-        latents. (4 weeks)
-
-\end{description}
-
-\paragraph{Milestones and Indicators:}\mbox{}\\
+\paragraph{Milestones and Indicators:}  
 
 \begin{description}
-
-    \item[doc\_m1]: Documentation restructured using the \texttt{scikit-learn}
-        documentation style.
-
-    \item[doc\_i1]: Documentation updated in the
-        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
-
-    \item[doc\_m2]: Dissemination of three new examples of the application of Bonsai.ML to
-        neuroscience problems.
-
-    \item[doc\_i2]: Three new examples of the application of Bonsai.ML
-        to neuroscience problems published in the
-        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
-
-    \item[doc\_m3]: New troubleshooting sections published.
-
-    \item[doc\_i3]: Troubleshooting section including at least 10 common
-        issues/error added to the
-        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
-
-    \item[doc\_m4]: Three video tutorials produced, uploaded to YouTube, and
-        embedded in the documentation.
-
-    \item[doc\_i4]: Three video tutorials published in the Bonsai.ML YouTube
-        channel and linked in the
-        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
-
-    \item[doc\_m5]: Two case studies on intelligent experimental control
-        created.
-
-    \item[doc\_i5]: Two case studies published in a new Case Studies section of
-        the
-        \href{https://bonsai-rx.org/machinelearning/}{Bonsai.ML documentation site}.
-
+    \item[doc\_m1/i1:] Documentation restructured and published on the Bonsai.ML site.  
+    \item[doc\_m2/i2:] Three new neuroscience examples added and published.  
+    \item[doc\_m3/i3:] Troubleshooting section online with at least 10 issues addressed.  
+    \item[doc\_m4/i4:] Three tutorial videos produced, uploaded, and linked in the docs.  
+    \item[doc\_m5/i5:] Two case studies completed and published in a new Case Studies section.  
 \end{description}
-
-\paragraph{Impact:} Improving the documentation of Bonsai.ML will directly
-improve the code's maintainability, reduce technical debt for maintainers and
-contributors, and expand the project's reach. The expansion of the
-documentation will also greatly enhance usability of Bonsai.ML for two core
-communities: experimental neuroscientists and machine learning developers.
-Clearer, better-structured resources aimed at these groups will reduce barriers
-to usage and onboarding friction. Specifically, we will provide experimental
-neuroscientists with the knowledge to adopt and implement powerful ML tools for
-real-time experimental applications. Additionally, we will provide ML
-developers interested in integrating their models into Bonsai with the guidance
-from experienced, Bonsai.ML developers, to extend ML functionality in Bonsai.
-By adding examples, comprehensive user guides, troubleshooting resources, and
-video tutorials, we will create robust, easy-to-navigate documentation, modeled
-after leading ML libraries, that will greatly boost Bonsai.ML's maintenance and
-adoption. Ultimately, these improvements will lower duplication of effort,
-standardize best practices, broaden Bonsai.ML's reach, and ensure long-term
-sustainability through a stronger and more engaged user and developer
-community.
 
 \paragraph{Responsible team members:} NG
 
@@ -167,33 +53,20 @@ to that of previous ones (e.g.,
 \href{https://neurogears.org/st-andrews-2024/}{2024 Bonsai Course at
 St.~Andrews University}), with the addition of a Bonsai.ML module.
 
-\paragraph{Tasks:}\mbox{}\\
+\paragraph{Tasks:}  
 
 \begin{description}
+    \item[course\_prep] Prepare course syllabus and teaching materials; secure venue; announce the course; recruit instructors, teaching assistants, and students. (3 weeks)  
+    \item[course\_del] Deliver the course. (1 week)  
+\end{description}  
 
-    \item[course\_prep] Design course syllabus, prepare course material,
-    reserve lecture theatre, announce course, select students, find instructors, find teaching
-    assistants. (3 weeks)
-
-    \item[course\_del] Deliver course. (1 week)
-
-\end{description}
-
-\paragraph{Milestones and Indicators:}\mbox{}\\
+\paragraph{Milestones and Indicators:}  
 
 \begin{description}
-
-    \item[course\_m1]: Bonsai course announced.
-
-    \item[course\_i1]: Course announced on several channels (e.g., several
-    mailing lists, X, Mastodom, LinkedIn), with the help of the SWC and Gatsby
-    Unit communication groups, and with detailed course syllabus.
-
-    \item[course\_m2]: Bonsai course delivered.
-
-    \item[course\_i2]: Course video recordings, slides, worksheets and their
-        solutions freely available on a GitHub repository.
-
+    \item[course\_m1] Course publicly announced with detailed syllabus.  
+    \item[course\_i1] Announcement disseminated via multiple channels (mailing lists, X, Mastodon, LinkedIn) with support from SWC and Gatsby Unit communication teams.  
+    \item[course\_m2] Course delivered.  
+    \item[course\_i2] Course recordings, slides, worksheets, and solutions made freely available on GitHub.  
 \end{description}
 
 \paragraph{Responsible team members:} GL
@@ -216,7 +89,7 @@ the first Bonsai.ML paper.
 
 \begin{description}
 
-    \item[paper\_write:] Write first Bonsai.ML paper.
+    \item[paper\_write:] Write first Bonsai.ML paper (4 weeks).
 
 \end{description}
 
@@ -233,135 +106,51 @@ the first Bonsai.ML paper.
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 4: Maintainability}
 
-\paragraph{Summary:} Simplify and homogenise inference and learning code, and streamline the addition of new probabilistic models to Bonsai.ML.
+\paragraph{Summary:} Most probabilistic models in Bonsai.ML are currently
+implemented in Python, which helps attract Python developers but limits
+performance in real-time applications. Implementations in C\# and especially in
+a probabilistic programming language (PPL) would be faster, simpler, and more
+homogeneous, since PPLs abstract away the complexity of inference algorithms.
+Integrating a PPL would make adding new models far easier and greatly improve
+maintainability.  
 
-\paragraph{Background:} Most of the probabilistic models currently integrated
-into Bonsai are implemented in Python. These serve as excellent demonstrations
-of how Python applications can connect to the Bonsai ecosystem, and they are
-central to our aim of attracting Python developers to contribute to Bonsai.ML.
-%
-However, Python implementations are substantially slower than equivalent C\#
-code. For demanding real-time applications, C\# implementations are preferable,
-especially when expressed in a probabilistic programming language (PPL).
-
-In addition, the existing Python and C\# implementations of probabilistic
-models (e.g., linear dynamical systems, hidden Markov models, Bayesian linear
-regression — see
-\href{https://bonsai-rx.org/machinelearning/examples/README.html}{examples})
-are relatively complex and heterogeneous, in the sense that the implementation
-of learning and inference in linear dynamical systems is non-trivial and has
-little in common with the implementation of learning and inference in Bayesian
-linear regression or in hidden Markov models.
-%
-In contrast, implementations in a C\# PPL would be much simpler, since PPLs
-abstract from their users the complexities of their inference algorithms,
-leading to sophisticated inferential methods implemented in a few lines of
-code.
-%
-Also, thanks to this abstraction, implementations of different probabilistic
-models in PPLs are substantially more homogeneous in PPLs than in general
-purpose ones.
-
-Currently, when we decide to incorporate a new probabilistic model into
-Bonsai.ML, we need to implement the learning and inference algorithms for the
-specific model, which is generally quite complex and time consuming.
-%
-In contrast, implementing a new probabilistic model in a PPL only requires the
-specification of how the model generates observations, without the
-need of specific learning or inference algorithms.
-%
-Thus, integrating a PPL into Bonsai.ML would greatly simplify the addition of
-new probabilistic models to the language.
-
-Fortunately, C\# has an excellent PPL:
+Fortunately, C\# has a mature PPL:
 \href{https://dotnet.github.io/infer/}{Infer.NET}, developed at Microsoft
-Research Cambridge since 2004, used in
-\href{https://dotnet.github.io/infer/papers.html}{hundreds of papers}, and
-\href{https://www.microsoft.com/en-us/research/blog/the-microsoft-infer-net-machine-learning-framework-goes-open-source/}{open-sourced
-in 2018}.  Infer.NET uses deterministic approximate inference, enabling fast
-and scalable solutions. For
-\href{https://www.microsoft.com/en-us/research/blog/the-microsoft-infer-net-machine-learning-framework-goes-open-source/}{example},
-it has powered systems that extract knowledge from billions of web pages
-(petabyte-scale data) — the kind of scalability critical for real-time
-inference in Bonsai.
+Research Cambridge, used in hundreds of papers, and open-sourced in 2018.
+Infer.NET delivers scalable, deterministic approximate inference, enabling
+powerful models to be implemented in only a few lines of code. Incorporating it
+into Bonsai.ML will accelerate inference, standardise implementations, and make
+it much easier for neuroscientists to extend the ecosystem.  
 
-\paragraph{Previous work:} Our Microsoft collaborator, Dr.~Tom Minka, invented
-a seminal algorithm for inference in graphical models, the Expectation
-Propagation algorithm~\citep{minka01}, and is the lead developer of Infer.NET.
-Please refer to his letter of support.
+Our collaborator Dr.~Tom Minka, inventor of Expectation Propagation and lead
+developer of Infer.NET, will support this effort.  
 
-\paragraph{Tasks:}\mbox{}\\
+\paragraph{Tasks:}  
 
 \begin{description}
+    \item[in\_learn:] The responsible team member, already skilled in probabilistic programming, will dedicate two weeks to learning Infer.NET (2 weeks).  
 
-    \item[in\_learn:] the responsible team member is skilled in probabilistic
-        programming, but not in Infer.NET. He will invest two weeks in learning
-        well the language.
+    \item[in\_OBLR:] Re-implement the Online Bayesian Linear Regression (currently in C\#) using Infer.NET. Develop test cases to validate equivalence with the existing implementation (2 weeks).  
 
-    \item[in\_OBLR:]  Implement in Infer.NET the Online Bayesian Linear
-        Regression model, currently implemented in C\# in Bonsai.ML. Develop
-        test cases to check that the output of the Infer.Net and previous C\#
-        implementations are equal.
+    \item[in\_LDS:] Re-implement the Linear Dynamical System model (currently in Python) in Infer.NET, with test cases to ensure equivalence (2 weeks).  
 
-    \item[in\_LDS:] Implement in Infer.NET the Linear Dynamical Systems model,
-        currently implemented in Python. Develop test cases to check that the
-        output of the Infer.Net and previous Python implementations are equal.
+    \item[in\_HMM:] Re-implement the Hidden Markov Model (currently in Python) in Infer.NET, with test cases to ensure equivalence (2 weeks).  
 
-    \item[in\_HMM:] Implement in Infer.NET the Hidden Markov Model, currently
-        implemented in Python. Develop test cases to check that the output of
-        the Infer.Net and previous Python implementations are equal.
+    \item[in\_PPdecoder:] Re-implement the Point Process Decoder (currently in Python) in Infer.NET, with test cases to ensure equivalence (2 weeks).  
 
-    \item[in\_PPdecoder:] Implement in Infer.NET the Point Process Decoding
-        model, currently implemented in Python. Develop test cases to check
-        that the output of the Infer.Net and previous Python implementations
-        are equal.
+    \item[in\_docs:] Add detailed documentation for each model integrated above, describing implementation in Infer.NET (3 weeks).  
 
-    \item[in\_docs:] For each of the models integrated above, we will add
-        extensive documentation explaining how the models were implemented in
-        Infer.NET. The aim is to enable Bonsai.ML users to learn from these
-        examples and apply the same principles to build and perform inference
-        on their own custom probabilistic models, beyond the ones provided in
-        Bonsai.ML-Infer.NET.
+\end{description}  
 
-\end{description}
-
-\paragraph{Impact:}
-This integration will accelerate
-inference, simplify and standardise inference programs, and empower Bonsai
-users to create new probabilistic models and inference algorithms with just a
-few lines of code. Consequently, this activity will drastically improve the
-maintainability of the software and facilitate the incorporation of new
-probabilistic functionality to the Bonsai ecosystem.
-
-\paragraph{Milestones and Indicators:}\mbox{}\\
+\paragraph{Milestones and Indicators:}  
 
 \begin{description}
-
-    \item[in\_m1:] OBLR implemented in Bonsai.ML.Infer.NET.
-
-    \item[in\_i1:] Package Bonsai.ML.Infer.NET.OBLR published in nuget.org.
-
-    \item[in\_m2:] LDS implemented in Bonsai.ML.Infer.NET.
-
-    \item[in\_i2:] Package Bonsai.ML.Infer.NET.LDS published in nuget.org.
-
-    \item[in\_m3:] HMM implemented in Bonsai.ML.Infer.NET.
-
-    \item[in\_i3:] Package Bonsai.ML.Infer.NET.HMM published in nuget.org.
-
-    \item[in\_m4:] Point Process Decoder implemented in Bonsai.ML.Infer.NET
-
-    \item[in\_i4:] Package Bonsai.ML.Infer.NET.PP.decoder published in
-        nuget.org.
-
-    \item[in\_m5:] Detailed documentation added to all nuget packages above.
-
-    \item[in\_i5:] Eetailed documentation available in the above nuget
-        packages.
-
-    \item[in\_m6:] Bonsai.ML.Infer.NET.* packages published.
-    \item[in\_i6:] Packages Bonsai.ML.Infer.NET.* available in nuget.org.
-
+    \item[in\_m1/i1:] OBLR implemented in Bonsai.ML.Infer.NET and published on \texttt{nuget.org}.  
+    \item[in\_m2/i2:] LDS implemented in Bonsai.ML.Infer.NET and published on \texttt{nuget.org}.  
+    \item[in\_m3/i3:] HMM implemented in Bonsai.ML.Infer.NET and published on \texttt{nuget.org}.  
+    \item[in\_m4/i4:] Point Process Decoder implemented in Bonsai.ML.Infer.NET and published on \texttt{nuget.org}.  
+    \item[in\_m5/i5:] Comprehensive documentation added for all models and published with the corresponding \texttt{nuget} packages.  
+    \item[in\_m6/i6:] All Bonsai.ML.Infer.NET packages released and available on \texttt{nuget.org}.  
 \end{description}
 
 \paragraph{Responsible team member:} JR.
@@ -373,123 +162,40 @@ probabilistic functionality to the Bonsai ecosystem.
 control of neural activity by integrating functionality from
 the \href{https://cloctools.github.io/}{CLOCTools} software into Bonsai.ML.
 
-\paragraph{Background:} Closed-loop neural control represents a transformative
-advance in neuroscience:  rather than delivering stimulation at fixed,
-open-loop schedules, it enables precisely timed interventions based on ongoing
-brain and behavioural activity. This paradigm allows researchers to move beyond
-observing correlations to  directly testing causal mechanisms of neural
-dynamics, plasticity, and behaviour. Critically, closed-loop stimulation has
-already proved transformative in the  clinic, for example in deep brain
-stimulation for Parkinson’s disease and  epilepsy, while its extension to other
-disorders (e.g. depression, obsessive  compulsive disorder) remains an active
-area of research. Despite this promise, widespread adoption has been limited
-by the lack of accessible, well-engineered,  and sustainable software
-frameworks for real-time experimental control.
+We will expand Bonsai.ML to support closed-loop neural control by integrating
+functionality from \href{https://cloctools.github.io/}{CLOCTools}
+, developed by Prof.~Garrett Stanley’s lab (Georgia Tech/Emory). While Bonsai
+already excels in real-time behavioural control, this integration will make it
+the first sustainable, general-purpose framework supporting both behavioural
+and neural closed-loop experimentation. Existing closed-loop tools are often ad
+hoc, difficult to install, and poorly integrated; Bonsai will provide
+accessible, open-source, and maintainable solutions, lowering barriers to
+adoption and enabling real-time read–write interaction with neural activity.
+Concretely, we will create a Bonsai package that interfaces with CLOCTools’
+\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}
+ repository, with Prof.~Stanley’s team maintaining the core library and our
+ team providing Bonsai integration.
 
-Prof.~Garrett Stanley (Georgia Tech and Emory University, US) is a pioneer in
-closed-loop neuroscience, having developed groundbreaking methods that combine
-real-time neural control with systems neuroscience. He recently contacted us to
-explore integrating their existing
-\href{https://cloctools.github.io/}{CLOCTools}, originally implemented in
-RTXI/C++, into Bonsai.ML.  This represents a unique opportunity: Bonsai already
-excels at real-time closed-loop control in behavioural experiments, and
-extending it to include state-of-the-art closed-loop neural control will
-position the platform as the first sustainable, general-purpose framework for
-both levels of experimentation.
-
-An important reason for the poor uptake of closed-loop methods in neuroscience
-is that existing implementations are often ad hoc, difficult to install or
-extend, and not integrated with widely-used software for experimental control.
-By providing Bonsai users with accessible, open-source, and sustainably
-engineered tools for closed-loop control, we will directly address this barrier
-and enable a new type of experimentation where researchers can both read and
-write the neural code in real time. This will accelerate discovery across both
-basic and translational neuroscience.
-
-We will create a Bonsai package integrating functionality for the estimation
-and control of linear dynamical systems from the repository
-\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}, built by the
-laboratory of Prof.~Garrett Stanley.
-%
-They will be responsible of maintaining the lds-ctrl-est repository and we will
-provide infrastructure to access its functionality from Bonsai.
-
-\paragraph{Tasks:}\mbox{}\\
+\paragraph{Tasks:}  
 
 \begin{description}
+    \item[ldsCE\_eval:] Review and evaluate the functionality of \href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}. (2 weeks)  
+    \item[ldsCE\_wrapper:] Create C++/CLI wrappers to access \texttt{lds-ctrl-est} from C\#. (3 weeks)  
+    \item[ldsCE\_integration:] Build the \texttt{Bonsai.ML.LDS-CTR-EST} package providing \texttt{lds-ctrl-est} functionality within Bonsai. (3 weeks)  
+    \item[ldsCE\_testing:] Evaluate with synthetic data to ensure real-time performance (2 weeks), and assist Prof.~Stanley’s lab in validation with experimental data (4 weeks).  
+    \item[ldsCE\_docs:] Add documentation in line with other Bonsai.ML packages. (3 weeks)  
+    \item[ldsCE\_release:] Release the package. (1 week)  
+\end{description}  
 
-    \item[ldsCE\_eval:] Learn and evaluate the functionality in the
-        package
-        \href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}. (2
-        weeks)
-
-    \item[ldsCE\_wrapper:] Use C++/CLI wrappers to access C++
-        functionality in the \texttt{lds-ctr-est} package from C\#. (3 weeks)
-
-    \item[ldsCE\_bonsai\_integration:] Build the package
-        \texttt{Bonsai.ML.LDS-CTR-EST} providing the functionality of the
-        package \texttt{lds-ctr-est} to the Bonsai ecosystem (3 weeks).
-
-    \item[ldsCE\_eval\_synthetic:] Evaluate the package
-        \texttt{Bonsai.ML.LDS-CTR-EST} with synthetic data and fix problems.
-        These evaluation will focus on testing if the package can achieve the
-        real-time latency constraints required in neuroscience applications. (2
-        weeks)
-
-    \item[ldsCE\_eval\_exp:] Assist the laboratory of Prof.~Stanely in testing
-        the package \texttt{Bonsai.ML.LDS-CTR-EST} with experimental data, and
-        address potential problems. (4 weeks)
-
-    \item[ldsCE\_docs:] Add documentation to the package
-        \texttt{Bonsai.ML.LDS-CTR-EST}, in a similar style as the new
-        documentation of other Bonsai.ML packages.  (3 weeks)
-
-    \item[ldsCE\_release:] Release the package \texttt{Bonsai.ML.LDS-CTR-EST}.
-        (1 week)
-
-\end{description}
-
-\paragraph{Milestones and Indicators:}\mbox{}\\
+\paragraph{Milestones and Indicators:}  
 
 \begin{description}
-
-    \item[ldsCE\_m1:] Functionality from the package
-        \texttt{Bonsai.ML.LDS-CTR-EST} accessible from C\#.
-
-    \item[ldsCE\_i1:] \href{https://cloctools.github.io/lds-ctrl-est/docs/api/examples/}{Examples}
-        from the package \texttt{lds-ctr-est} replicated with C\# code.
-        C\# examples available in a GitHub repository.
-
-    \item[ldsCE\_m2:] Build package \texttt{Bonsai.ML.LDS-CTR-EST}.
-
-    \item[ldsCE\_i2:] Package \texttt{Bonsai.ML.LDS-CTR-EST} available in
-        Bonsai's package manager.
-
-    \item[ldsCE\_m3:] Package \texttt{Bonsai.ML.LDS-CTR-EST}
-        evaluated with synthetic data.
-
-    \item[ldsCE\_i3:] Evaluation report, including latency figures, added to
-        the documentation of package\linebreak\texttt{Bonsai.ML.LDS-CTR-EST}.
-
-    \item[ldsCE\_m4:] Functionality of \texttt{Bonsai.ML.LDS-CTR-EST} demonstrated
-        with experimental data.
-
-    \item[ldsCE\_i4:] Experimental evidence available in GitHub repository
-        demonstrating that the package\linebreak
-        \texttt{Bonsai.ML.LDS-CTR-EST} succeeded holding the firing rate of a
-        single neuron in the thalamus at a steady level with optogenetic
-        inputs, while a mouse was visually stimulated, as in
-        \citet{bolusEtAl21}.
-
-    \item[ldsCE\_m5:] Documentation added to \texttt{Bonsai.ML.LDS-CTR-EST}.
-
-    \item[ldsCE\_i5:] API documentation, examples and tutorials available for
-        package \texttt{Bonsai.ML.LDS-CTR-EST}.
-
-    \item[ldsCE\_m6:] Package \texttt{Bonsai.ML.LDS-CTR-EST} released.
-
-    \item[ldsCE\_i6:] \texttt{Bonsai.ML.LDS-CTR-EST} available in nuget.org.
-
+    \item[ldsCE\_m1/i1:] Core functionality accessible from C\#, with examples from \texttt{lds-ctrl-est} replicated in C\# and shared on GitHub.  
+    \item[ldsCE\_m2/i2:] Package integrated into Bonsai and available via the package manager.  
+    \item[ldsCE\_m3/i3:] Package validated with synthetic data; latency figures documented.  
+    \item[ldsCE\_m4/i4:] Experimental validation in collaboration with Prof.~Stanley’s lab, with results (e.g. steady-state firing rate control as in \citet{bolusEtAl21}) documented on GitHub.  
+    \item[ldsCE\_m5/i5:] API documentation, examples, and tutorials completed.  
+    \item[ldsCE\_m6/i6:] Package released and available on \texttt{nuget.org}.  
 \end{description}
 
 \paragraph{Responsible team members:} JR
@@ -520,43 +226,20 @@ and the summary of its Bonsai.ML session can be read
 In this first edition of the conference we voted to hold the second edition in
 2026. We propose to organise and deliver it as part of this project.
 
-\paragraph{Tasks:}
+\paragraph{Tasks:}  
 
 \begin{description}
+    \item[conf\_prep:] Prepare program, invite speakers, arrange venue and logistics, announce event, and select participants (3 weeks).  
+    \item[conf\_del:] Deliver the conference (1 week).  
+    \item[conf\_proc:] Prepare proceedings (2 weeks).  
+\end{description}  
 
-    \item[conf\_prep:] Conference preparation: construction of conference
-        program, speakers invitations, venue reservation, food logistic
-        organisation, announcement, participants selection (3 weeks).
-    \item[conf\_del:] Conference delivery (1 weeks).
-    \item[conf\_proc:] Conference proceedings preparation (2 weeks).
-
-\end{description}
-
-\paragraph{Milestones and Indicators:}\mbox{}\\
+\paragraph{Milestones and Indicators:}  
 
 \begin{description}
-
-    \item[conf\_m1:] Conference announced
-
-    \item[conf\_i1:] Conference announcement in several media outlets (e.g.,
-        several mailing lists, X, Mastodon), with detailed preliminary program
-        and list of speakers.
-
-    \item[conf\_m2:] Conference delivered
-
-    \item[conf\_i2:] Raw video recordings shared with the Research Software
-        Management Funds.
-
-    \item[conf\_m3:] Release of conference proceedings
-
-    \item[conf\_i3:] GitHub repository with list of conference attendants,
-        video recordings, narrative summaries, slides from talks, and exercises
-        proposed by speakers and their solutions, similar to the
-        \href{https://github.com/joacorapela/bonsaiConference2024Proceedings}{conference
-        proceedings of the first Bonsai conference} (still under construction,
-        but see the
-        \href{https://github.com/joacorapela/bonsaiConference2024Proceedings/blob/master/sessions/machineLearning/README.md}{machine
-        learning session}).
+    \item[conf\_m1/i1:] Event announced via mailing lists and social media (X, Mastodon), with preliminary program and speaker list.  
+    \item[conf\_m2/i2:] Event delivered; raw video recordings shared with the Research Software Management Fund.  
+    \item[conf\_m3/i3:] Proceedings released in a GitHub repository, including attendance list, recordings, narrative summaries, slides, and exercises with solutions (cf. \href{https://github.com/joacorapela/bonsaiConference2024Proceedings}{2024 conference proceedings}).  
 \end{description}
 
 \noindent\rule{\textwidth}{1pt}
@@ -571,35 +254,8 @@ neuroscience needs on an international scale.
 Several renowned experimental and computational neuroscientists around the
 world are heavily invested in Bonsai, and are very interested in adding ML
 functionality to their Bonsai workflows. We have already invited a few of them
-to join the Bonsai.ML steering committee:
-
-\begin{description}
-
-    \item[Prof.~Garrett Stanley,] leader of the Laboratory for the Control of
-        Neural Systems, Georgia Tech, US. Expert on close-loop control of
-        neurophysiological systems. He contacted us to migrate to Bonsai.ML
-        a package for real-time cortical state estimation and the CLOCTools
-        referred above, both originally written in C++/RTXI.
-
-    \item[Prof.~Aman Saleem,] director of the Saleem Lab at the Institute for
-        Behavioural Neuroscience, University College London. Prof.~Saleem is the
-        author of \href{https://bonvision.github.io/}{Bon-Vision}, a software
-        package that creates and controls visual environments in close loop,
-        built on top of Bonsai.
-        %
-        We are currently collaborating with the Saleem lab using the package
-        \texttt{Bonsai.ML.LinearDynamicalSystems} to forecast mouse positions
-        and head orientations in order to achieve zero-lag stimuli presentation
-        in augmented reality experiments.
-
-    \item[Prof.~Josh Siegle,] senior scientist and lead of the
-        electrophysiology group at the Allen Institute for Neural Dynamics. He
-        leads the development of Open Ephys GUI, which is tightly integrated
-        with Bonsai.
-
-\end{description}
-
-Please refer to their letters of support.
+to join the Bonsai.ML steering committee: Prof.~Garrett Stanley, Prof.~Aman
+Saleem and Dr.~Josh Siegle. Please refer to their letters of support.
 
 We will meet with the steering committee four times in 2026. These meetings
 will happen at the end of January, April, August and November, respectively.
