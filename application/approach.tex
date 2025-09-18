@@ -3,13 +3,16 @@
 
 \subsubsection{Aim 1: Documentation}
 
+\paragraph{Summary:} Improve the current Bonsai.ML documentation.
+
+\paragraph{Background:}
 The current Bonsai.ML documentation includes installation guides, API
 references, and examples, but it lacks essential statistical explanations,
-clear connections between methods, and a well-structured organization. Users
+clear connections between methods, and a well-structured organisation. Users
 have reported redundancy, gaps in clarity, and difficulty finding information,
 creating friction for newcomers. In addition, documentation for machine
 learning method developers is scattered across disparate sources rather than
-being centralized. Inspired by the model of
+being centralised. Inspired by the model of
 \href{https://scikit-learn.org/}{scikit-learn}, which combines conceptual
 background with tutorials and API references, we aim to restructure and expand
 Bonsai.ML documentation into a comprehensive, accessible resource that serves
@@ -47,7 +50,7 @@ them can be \href{https://bonsai-rx.org/learn/}{viewed online}.
 %
 We will deliver a Bonsai course, with a new Bonsai.ML module. It will be
 targeted to intermediate Bonsai users, and will take place at the lecture
-theatre of the Sainsbury Wellcome Center, which is free for us. It will host a
+theatre of the Sainsbury Wellcome Centre, which is free for us. It will host a
 class size of around 20 students. The structure of the course will be similar
 to that of previous ones (e.g.,
 \href{https://neurogears.org/st-andrews-2024/}{2024 Bonsai Course at
@@ -64,7 +67,7 @@ St.~Andrews University}), with the addition of a Bonsai.ML module.
 
 \begin{description}
     \item[course\_m1] Course publicly announced with detailed syllabus.  
-    \item[course\_i1] Announcement disseminated via multiple channels (mailing lists, X, Mastodon, LinkedIn) with support from SWC and Gatsby Unit communication teams.  
+    \item[course\_i1] Announcement disseminated via multiple channels (mailing lists, X, Mastodon, Linked In) with support from SWC and Gatsby Unit communication teams.  
     \item[course\_m2] Course delivered.  
     \item[course\_i2] Course recordings, slides, worksheets, and solutions made freely available on GitHub.  
 \end{description}
@@ -106,7 +109,11 @@ the first Bonsai.ML paper.
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 4: Maintainability}
 
-\paragraph{Summary:} Most probabilistic models in Bonsai.ML are currently
+\paragraph{Summary:} Improve the runtime efficiency, simplicity, and
+extensibility of Bonsai.ML code by integrating Infer.NET.
+
+\paragraph{Background:}
+Most probabilistic models in Bonsai.ML are currently
 implemented in Python, which helps attract Python developers but limits
 performance in real-time applications. Implementations in C\# and especially in
 a probabilistic programming language (PPL) would be faster, simpler, and more
@@ -162,19 +169,20 @@ developer of Infer.NET, will support this effort.
 control of neural activity by integrating functionality from
 the \href{https://cloctools.github.io/}{CLOCTools} software into Bonsai.ML.
 
-We will expand Bonsai.ML to support closed-loop neural control by integrating
-functionality from \href{https://cloctools.github.io/}{CLOCTools}
-, developed by Prof.~Garrett Stanley’s lab (Georgia Tech/Emory). While Bonsai
-already excels in real-time behavioural control, this integration will make it
-the first sustainable, general-purpose framework supporting both behavioural
-and neural closed-loop experimentation. Existing closed-loop tools are often ad
-hoc, difficult to install, and poorly integrated; Bonsai will provide
-accessible, open-source, and maintainable solutions, lowering barriers to
-adoption and enabling real-time read–write interaction with neural activity.
-Concretely, we will create a Bonsai package that interfaces with CLOCTools’
-\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}
- repository, with Prof.~Stanley’s team maintaining the core library and our
- team providing Bonsai integration.
+\paragraph{Background:} We will expand Bonsai.ML to support closed-loop neural
+control by integrating functionality from
+\href{https://cloctools.github.io/}{CLOCTools} , developed by Prof.~Garrett
+Stanley’s lab (Georgia Tech/Emory). While Bonsai already excels in real-time
+behavioural control, this integration will make it the first sustainable,
+general-purpose framework supporting both behavioural and neural closed-loop
+experimentation. Existing closed-loop tools are often ad hoc, difficult to
+install, and poorly integrated; Bonsai will provide accessible, open-source,
+and maintainable solutions, lowering barriers to adoption and enabling
+real-time read–write interaction with neural activity.  Concretely, we will
+create a Bonsai package that interfaces with CLOCTools’
+\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est} repository, with
+Prof.~Stanley’s team maintaining the core library and our team providing Bonsai
+integration.
 
 \paragraph{Tasks:}  
 
@@ -245,6 +253,9 @@ In this first edition of the conference we voted to hold the second edition in
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 7: Governance}
 
+\paragraph{Summary:} Establish and convene a steering committee to guide
+milestones, review progress, and shape a long-term development roadmap.
+
 \paragraph{Background:} We will assemble a Bonsai.ML steering committee that
 will be responsible for approving project milestones and advise us on building
 a long-term development roadmap for Bonsai.ML.  Responding to guidance and
@@ -297,7 +308,7 @@ We will conduct management activities at different frequencies:
 
 \begin{description}
 
-    \item[Quartely:] we will convene the steering committee. Two weeks in
+    \item[Quarterly:] we will convene the steering committee. Two weeks in
         advance of each meeting, we will circulate a progress report
         summarising achieved milestones, proposed future activities, and the
         most recent version of the Bonsai.ML long-term roadmap.

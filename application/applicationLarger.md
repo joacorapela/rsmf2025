@@ -8,18 +8,33 @@ bibliography:
 - latentsVariablesModels.bib
 - messagePassing.bib
 - neuralControl.bib
+<<<<<<< HEAD
 title: "[Research Software Maintenance Found -- Round
   1](https://www.software.ac.uk/research-software-maintenance-fund/round-1)"
 ---
 
 # Title {#title .unnumbered}
+=======
+title: '[Research Software Maintenance Found -- Round
+  1](https://www.software.ac.uk/research-software-maintenance-fund/round-1)'
+---
+
+Title {#title .unnumbered}
+=====
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 Consolidating Bonsai as a Standard for Neuroscience Intelligent
 Experimental Control
 
+<<<<<<< HEAD
 # Summary
 
 ::: {.tcolorbox}
+=======
+Summary
+=======
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Please provide a summary in plain English of your proposed work.
 
 This summary will be made publicly available on external-facing
@@ -33,9 +48,15 @@ and unsuccessful applications. Information supplied in the other
 sections of the application will not be published.
 
 It may also be used to help identify suitable reviewers.
+<<<<<<< HEAD
 :::
 
 ## Summary (500 words)
+=======
+
+Summary (500 words)
+-------------------
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 [Bonsai](https://bonsai-rx.org/) is a free and open-source visual
 reactive programming language widely used for experimental control in
@@ -70,7 +91,11 @@ environment enables adaptive, data-driven experimental designs that were
 previously out of reach for many laboratories.
 
 To maximise the impact and long-term sustainability of Bonsai.ML, this
+<<<<<<< HEAD
 proposal pursues seven aims:
+=======
+proposal pursues six aims:
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 1.  **Documentation** -- Produce comprehensive, user-centred
     documentation that makes ML tools accessible to non-specialists
@@ -84,7 +109,11 @@ proposal pursues seven aims:
     visibility and uptake within the scientific community.
 
 4.  **Maintainability** -- In collaboration with Microsoft Research
+<<<<<<< HEAD
     Cambridge, integrate their C\# probabilistic programming library
+=======
+    Cambridge, integrate their C# probabilistic programming library
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
     *Infer.NET* into Bonsai.ML. This will simplify and unify inference
     and learning code, making it faster, more maintainable, and more
     extensible, while embedding the expertise of a world-leading
@@ -117,9 +146,15 @@ adopted research software platform, aligned with UKRI's strategic
 priorities in artificial intelligence, bioscience, and community-driven
 research software sustainability.
 
+<<<<<<< HEAD
 # Core Team
 
 ::: {.tcolorbox}
+=======
+Core Team
+=========
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Tell us who will deliver the proposed work. Create an entry for each
 core team member.
 
@@ -137,17 +172,27 @@ an eligible UK Research Organisation. The project lead should normally
 be the person submitting the application. If the project lead has
 changed since the EoI, please contact us to have an invitation to the
 new lead issued.
+<<<<<<< HEAD
 :::
 
 # Software
 
 ::: {.tcolorbox}
+=======
+
+Software
+========
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Please provide details of the software to be supported.
 
 This information may be used by reviewers as part of the assessment of
 your application. It may also be used to provide an anonymised and
 aggregated summary across all applications.
+<<<<<<< HEAD
 :::
+=======
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 a\. Software to be maintained:
 
@@ -171,21 +216,36 @@ e\. Year of first release:
 
 f\. Programming language:
 
+<<<<<<< HEAD
 :   C\#
 
 # Vision
 
 ::: {.tcolorbox}
+=======
+:   C#
+
+Vision
+======
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Please describe what you are hoping to achieve with this funding.
 
 Discuss both your vision and objectives for the technical development,
 as well as your plans to improve your software's sustainability and
 support EDIA considerations.
+<<<<<<< HEAD
 :::
 
 ## Vision (300 words)
 
 ::: {.tcolorbox}
+=======
+
+Vision (300 words)
+------------------
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Explain how your proposed work will:
 
 -   have a benefit and impact on research, with specific examples of
@@ -198,6 +258,7 @@ Explain how your proposed work will:
 -   improve the maintainability of the software
 
 -   advance good practice
+<<<<<<< HEAD
 :::
 
 More than ten years ago our business partner, Dr. Goncalo Lopes, created
@@ -276,6 +337,79 @@ project and on building a long-term Bonsai.ML roadmap.
 ## Timeliness and Sustainability (300 words)
 
 ::: {.tcolorbox}
+=======
+
+More than a decade ago, Dr. Gonçalo Lopes created
+[Bonsai](https://bonsai-rx.org/), a reactive visual programming language
+for neuroscience experiment control. Today, Bonsai has become the most
+widely used tool of its kind, adopted by thousands of laboratories
+worldwide, with over 7,000 downloads annually and nearly 100 citations
+per year of the core Bonsai paper [@lopesEtAl15]. It has already
+transformed experimental design by enabling studies of a complexity
+previously unimaginable.
+
+In 2022, we recognised that integrating machine learning (ML) into
+Bonsai could enable a new generation of intelligent experimental
+control. With BBSRC support, we developed
+[Bonsai.ML](https://bonsai-rx.org/machinelearning), a package that
+seamlessly incorporates advanced ML functionality into the Bonsai
+ecosystem.
+
+Our proposal will accelerate the uptake and impact of Bonsai.ML through
+complementary strategies. First, we will provide high-quality ML
+methods, supported by comprehensive documentation, training, and
+dissemination. This will empower experimental neuroscientists to explore
+and identify "killer applications" independently. Second, we will
+collaborate directly with neuroscientists to address specific research
+challenges, demonstrating Bonsai.ML's transformative potential through
+real-world case studies. This interdisciplinary effort leverages our
+unique expertise in software engineering, ML, and experimental
+neuroscience.
+
+Community engagement will be central to success. A Bonsai developers
+conference and targeted community-building activities will consolidate
+and expand the user base, while training courses and dissemination will
+promote best practices in sustainable software development. The
+integration of a C# probabilistic programming language will simplify
+and unify inference and learning code, improving maintainability and
+enabling scalable online learning. Finally, an international steering
+committee will guide research priorities, oversee development, and help
+establish a long-term roadmap, ensuring sustainability.
+
+With Bonsai.ML, we aim to spark a second revolution in experimental
+neuroscience--- empowering researchers to design adaptive, intelligent
+experiments that were previously beyond imagination.
+
+Objectives (200 words)
+----------------------
+
+Clearly describe the aims and objectives of this work.
+
+The central objective of this proposal is to **facilitate the adoption
+of machine learning for neuroscience experimental control**. Our
+approach builds on Bonsai.ML, an extension of the widely used Bonsai
+platform, which equips neuroscientists with accessible, high-performance
+tools for intelligent and adaptive experimentation.
+
+To achieve this aim, we will pursue three interconnected objectives. First, we will promote **community uptake** by producing clear, comprehensive documentation, delivering a dedicated Bonsai course, publishing a Bonsai.ML paper, and strengthening the community through a second Bonsai Developers Conference. Together, these activities will lower barriers for non-specialist users, empower experimentalists to explore machine learning in their own work, and foster a vibrant, self-sustaining community of users and contributors.
+
+Second, we will improve **software maintenance** by simplifying the
+existing codebase and strengthening extensibility by integrating into
+Bonsai.ML the C# probabilistic programming language Infer.NET. This
+will make Bonsai.ML faster, more robust, easier to maintain, and more
+adaptable to evolving research needs.
+
+Finally, we will ensure the **long-term sustainability and alignment**
+of Bonsai.ML with the neuroscience community by convening an
+internationally recognised steering committee. This group will provide
+guidance on priorities, governance, and strategic planning, ensuring
+that Bonsai.ML remains a reliable, community-driven platform for
+cutting-edge experimental neuroscience.
+
+Timeliness and Sustainability (300 words)
+-----------------------------------------
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Justify why it is important that your project is funded in this round,
 and include:
 
@@ -287,6 +421,7 @@ and include:
 
 -   how the software will be sustained and maintained after the RSMF
     funding ends, and how the RSMF funding will help achieve this
+<<<<<<< HEAD
 :::
 
 ### Timeliness {#timeliness .unnumbered}
@@ -302,6 +437,12 @@ essential to ensure that the UK remains at the forefront of this field.
 Support from this award is also critical for retaining a key Bonsai.ML
 developer, ensuring continuity in the project and avoiding disruption to
 a highly skilled and experienced contributor.
+=======
+
+### Timeliness {#timeliness .unnumbered}
+
+Recent years have demonstrated the transformative potential of machine learning in biology. For example, the 2024 Nobel Prize in Chemistry was awarded to Demis Hassabis, a former Gatsby Unit PhD student, for his pioneering work on the application of ML to protein structure prediction. Significant opportunities now remain for integrating ML into experimental control in neuroscience and biology. Capturing these opportunities quickly is essential to ensure the UK remains at the forefront of innovation.
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ### Other sources of support {#other-sources-of-support .unnumbered}
 
@@ -310,7 +451,10 @@ Grant is not appropriate at this stage, as Bonsai.ML is not yet embedded
 in a major biological research programme. Likewise, a BBSRC Follow-on
 Fund is not a fit, as we cannot currently point to a single application
 of Bonsai.ML with immediate transformative economic or societal impact.
+<<<<<<< HEAD
 integration work we propose.
+=======
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ### Sustainability {#sustainability .unnumbered}
 
@@ -328,6 +472,7 @@ learning expertise to guide Bonsai.ML's growth. Prof. Stanley's lab will
 contribute its expertise in the control of physiological signals to
 extend Bonsai.ML's capabilities.
 
+<<<<<<< HEAD
 Finally, this project initiates a long-term collaboration between
 Microsoft Research Cambridge, the Gatsby Unit, the SWC, and NeuroGEARS
 (see Dr. Minka's support letter). Integrating Infer.NET into Bonsai.ML
@@ -338,6 +483,16 @@ expertise.
 ## EDIA (300 words)
 
 ::: {.tcolorbox}
+=======
+Finally, our collaboration with Microsoft Research Cambridge ensures
+that Infer.NET integration brings sustained industrial expertise to
+Bonsai.ML, strengthening its long-term sustainability beyond the funding
+period.
+
+EDIA (300 words)
+----------------
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Explain how you will embed equity, diversity, inclusivity and
 accessibility considerations into your proposed work and the software
 being maintained, and how these will guide your aims, objectives,
@@ -345,6 +500,7 @@ activities and outputs.
 
 This can include (but is not limited to) considerations applying to your
 team, your community, and your software.
+<<<<<<< HEAD
 :::
 
 We are committed to ensuring that Bonsai.ML is accessible, inclusive, and beneficial to the widest possible community of neuroscience researchers.
@@ -362,6 +518,12 @@ Finally, community events such as the 2026 Bonsai Developers Conference will ado
 # Approach (2000 words)
 
 ::: {.tcolorbox}
+=======
+
+Approach (2000 words)
+=====================
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Explain what work you have planned, and how you will manage this. Cover
 both the technical as well as project management areas.
 
@@ -391,6 +553,7 @@ Management
     contribute to the success of the work
 
 -   what risks to delivery were identified and how they will be managed
+<<<<<<< HEAD
 :::
 
 ## Approach
@@ -409,6 +572,29 @@ which combines conceptual background with tutorials and API references,
 we aim to restructure and expand Bonsai.ML documentation into a
 comprehensive, accessible resource that serves both experimental
 neuroscientists and method developers.
+=======
+
+Approach
+--------
+
+### Aim 1: Documentation
+
+3.25ex 1ex .2ex -1em Summary: Improve the current Bonsai.ML
+documentation.
+
+3.25ex 1ex .2ex -1em Background: The current Bonsai.ML documentation
+includes installation guides, API references, and examples, but it lacks
+essential statistical explanations, clear connections between methods,
+and a well-structured organisation. Users have reported redundancy, gaps
+in clarity, and difficulty finding information, creating friction for
+newcomers. In addition, documentation for machine learning method
+developers is scattered across disparate sources rather than being
+centralised. Inspired by the model of
+[scikit-learn](https://scikit-learn.org/), which combines conceptual
+background with tutorials and API references, we aim to restructure and
+expand Bonsai.ML documentation into a comprehensive, accessible resource
+that serves both experimental neuroscientists and method developers.
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 3.25ex 1ex .2ex -1em Tasks:
 
@@ -463,6 +649,7 @@ doc_m5/i5:
 
 ### Aim 2: Training
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Summary: Organise a Bonsai course with a dedicated
 Bonsai.ML module.
 
@@ -477,6 +664,12 @@ around 20 students. The structure of the course will be similar to that
 of previous ones (e.g., [2024 Bonsai Course at St. Andrews
 University](https://neurogears.org/st-andrews-2024/)), with the addition
 of a Bonsai.ML module.
+=======
+Summary: Organise a Bonsai course with a dedicated
+Bonsai.ML module.
+
+**Background:** Since 2017, NeuroGEARS Ltd has organised at least two Bonsai courses per year at universities worldwide, several of which are [available online](https://bonsai-rx.org/learn/). Building on this experience, we will deliver a new Bonsai course that includes a dedicated **Bonsai.ML** module. The course will be aimed at intermediate Bonsai users and held in the lecture theatre of the Sainsbury Wellcome Centre, which is available to us free of charge. It will accommodate around 20 students. The structure will follow the format of previous courses (e.g., the [2024 Bonsai Course at St Andrews University](https://neurogears.org/st-andrews-2024/)), with the new Bonsai.ML module integrated into the programme.
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 3.25ex 1ex .2ex -1em Tasks:
 
@@ -499,7 +692,11 @@ course_m1
 course_i1
 
 :   Announcement disseminated via multiple channels (mailing lists, X,
+<<<<<<< HEAD
     Mastodon, LinkedIn) with support from SWC and Gatsby Unit
+=======
+    Mastodon, Linked In) with support from SWC and Gatsby Unit
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
     communication teams.
 
 course_m2
@@ -517,6 +714,7 @@ course_i2
 
 ### Aim 3: Dissemination
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Summary: Publish first Bonsai.ML paper
 
 3.25ex 1ex .2ex -1em Background: Specially in neuroscience, adoption of
@@ -528,6 +726,13 @@ BonVision paper [@lopesEtAl21], and with the BonZeb paper
 and submit for publication the first Bonsai.ML paper.
 
 3.25ex 1ex .2ex -1em Tasks:\
+=======
+Summary: Prepare and submit for publications the first Bonsai.ML paper
+
+Background: In neuroscience, the adoption of open-source software increases significantly when supported by peer-reviewed publications. We have seen this repeatedly in our own experience, with the foundational Bonsai paper (Lopes et al., 2015), the BonVision paper (Lopes et al., 2021), and the BonZeb paper (Guilbeault et al., 2021). To promote wider uptake of Bonsai.ML, we will prepare and submit the first dedicated Bonsai.ML paper for publication.
+
+Tasks:\
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 paper_write:
 
@@ -548,6 +753,7 @@ paper_i1
 
 ### Aim 4: Maintainability
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Summary: Most probabilistic models in Bonsai.ML are
 currently implemented in Python, which helps attract Python developers
 but limits performance in real-time applications. Implementations in C\#
@@ -633,11 +839,60 @@ in_m6/i6:
     `nuget.org`.
 
 3.25ex 1ex .2ex -1em Responsible team member: JR.
+=======
+Summary: Improve the runtime efficiency,
+simplicity, and extensibility of Bonsai.ML code by integrating
+Infer.NET.
+
+Background: Most probabilistic models in Bonsai.ML
+are currently implemented in Python, which helps attract Python
+developers but limits performance in real-time applications.
+Implementations in C# and especially in a probabilistic programming
+language (PPL) would be faster, simpler, and more homogeneous, since
+PPLs abstract away the complexity of inference algorithms. Integrating a
+PPL would make adding new models far easier and greatly improve
+maintainability.
+
+Fortunately, C# has a mature PPL: [Infer.NET](https://dotnet.github.io/infer/), developed at Microsoft Research Cambridge, used in hundreds of papers, and open-sourced in 2018. Infer.NET delivers scalable, deterministic approximate inference, enabling powerful models to be implemented in only a few lines of code. Incorporating it into Bonsai.ML will accelerate inference, standardise implementations, and make it much easier for neuroscientists to extend the ecosystem.
+
+Our collaborator Dr. Tom Minka, inventor of Expectation Propagation and lead developer of Infer.NET, will support this effort. Please refer to his letter of support.
+
+Tasks:
+
+in_learn: The responsible team member, already skilled in probabilistic programming, will dedicate time to learning Infer.NET well (2 weeks).
+
+in_OBLR: Re-implement the Online Bayesian Linear Regression (currently in C#) using Infer.NET. Develop test cases to validate equivalence with the existing implementation (2 weeks).
+
+in_LDS: Re-implement the Linear Dynamical System model (currently in Python) in Infer.NET, with test cases to ensure equivalence (2 weeks).
+
+in_HMM: Re-implement the Hidden Markov Model (currently in Python) in Infer.NET, with test cases to ensure equivalence (2 weeks).
+
+in_PPdecoder: Re-implement the Point Process Decoder (currently in Python) in Infer.NET, with test cases to ensure equivalence (2 weeks).
+
+in_docs: :   Add detailed documentation for each model integrated above, describing implementation in Infer.NET (3 weeks).
+
+Milestones and Indicators:
+
+in_m1/i1: OBLR implemented in Bonsai.ML.Infer.NET and published on `nuget.org`.
+
+in_m2/i2: LDS implemented in Bonsai.ML.Infer.NET and published on `nuget.org`.
+
+in_m3/i3: HMM implemented in Bonsai.ML.Infer.NET and published on `nuget.org`.
+
+in_m4/i4: Point Process Decoder implemented in Bonsai.ML.Infer.NET and published on `nuget.org`.
+
+in_m5/i5: Comprehensive documentation added for all models and published with the corresponding `nuget` packages.
+
+in_m6/i6: All Bonsai.ML.Infer.NET packages released and available on the Bonsai package manager.
+
+Responsible team member: JR.
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ------------------------------------------------------------------------
 
 ### Aim 5: Community reach
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Summary: Attract to Bonsai scientists interested in
 close-loop control of neural activity by integrating functionality from
 the [CLOCTools](https://cloctools.github.io/) software into Bonsai.ML.
@@ -658,6 +913,17 @@ with Prof. Stanley's team maintaining the core library and our team
 providing Bonsai integration.
 
 3.25ex 1ex .2ex -1em Tasks:
+=======
+Summary
+
+Attract to Bonsai scientists interested in close-loop control of neural activity by integrating functionality from the [CLOCTools](https://cloctools.github.io/) software into Bonsai.ML.
+
+Background
+
+We will expand Bonsai.ML to support closed-loop neural control by integrating functionality from the CLOCTools software, developed by Prof. Garrett Stanley's lab (Georgia Tech/Emory). While Bonsai already excels in real-time behavioural control, this integration will make it the first sustainable, general-purpose framework supporting both behavioural and neural closed-loop experimentation. Existing closed-loop tools are often ad hoc, difficult to install, and poorly integrated; Bonsai will provide accessible, open-source, and maintainable solutions, lowering barriers to adoption and enabling real-time read--write interaction with neural activity. Concretely, we will create a Bonsai package that interfaces with CLOCTools' [lds-ctrl-est](https://github.com/CLOCTools/lds-ctrl-est) repository, with Prof. Stanley's team maintaining the core library and our team providing Bonsai integration.
+
+Tasks:
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ldsCE_eval:
 
@@ -666,7 +932,11 @@ ldsCE_eval:
 
 ldsCE_wrapper:
 
+<<<<<<< HEAD
 :   Create C++/CLI wrappers to access `lds-ctrl-est` from C\#. (3 weeks)
+=======
+:   Create C++/CLI wrappers to access `lds-ctrl-est` from C#. (3 weeks)
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ldsCE_integration:
 
@@ -687,12 +957,21 @@ ldsCE_release:
 
 :   Release the package. (1 week)
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Milestones and Indicators:
 
 ldsCE_m1/i1:
 
 :   Core functionality accessible from C\#, with examples from
     `lds-ctrl-est` replicated in C\# and shared on GitHub.
+=======
+Milestones and Indicators:
+
+ldsCE_m1/i1:
+
+:   Core functionality accessible from C#, with examples from
+    `lds-ctrl-est` replicated in C# and shared on GitHub.
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ldsCE_m2/i2:
 
@@ -715,19 +994,33 @@ ldsCE_m5/i5:
 
 ldsCE_m6/i6:
 
+<<<<<<< HEAD
 :   Package released and available on `nuget.org`.
 
 3.25ex 1ex .2ex -1em Responsible team members: JR
+=======
+:   Package released and available on Bonsai's package manager.
+
+Responsible team members: JR
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 ------------------------------------------------------------------------
 
 ### Aim 6: Community building
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Summary: Organise the 2026 Bonsai developers
 conference
 
 3.25ex 1ex .2ex -1em Background: A Bonsai developer conference is a
 week-long meetings aimed at bringing together neuroscience researchers,
+=======
+Summary: Organise the 2026 Bonsai developers
+conference
+
+Background: A Bonsai developer conference is a
+week-long meeting aimed at bringing together neuroscience researchers,
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 computational scientists, and software engineers who are interested in
 developing and using the Bonsai visual reactive programming language.
 
@@ -748,7 +1041,11 @@ In this first edition of the conference we voted to hold the second
 edition in 2026. We propose to organise and deliver it as part of this
 project.
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Tasks:
+=======
+Tasks:
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 conf_prep:
 
@@ -763,7 +1060,11 @@ conf_proc:
 
 :   Prepare proceedings (2 weeks).
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Milestones and Indicators:
+=======
+Milestones and Indicators:
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 conf_m1/i1:
 
@@ -786,7 +1087,15 @@ conf_m3/i3:
 
 ### Aim 7: Governance
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Background: We will assemble a Bonsai.ML steering
+=======
+Summary: Establish and convene a steering committee
+to guide milestones, review progress, and shape a long-term development
+roadmap.
+
+Background: We will assemble a Bonsai.ML steering
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 committee that will be responsible for approving project milestones and
 advise us on building a long-term development roadmap for Bonsai.ML.
 Responding to guidance and feedback from the steering committee ensures
@@ -807,7 +1116,11 @@ send it to the committee members two weeks before the meeting. After
 each meeting we will write a follow-up report with meetings minutes and
 the revised project roadmap.
 
+<<<<<<< HEAD
 3.25ex 1ex .2ex -1em Tasks:
+=======
+Tasks
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 sc_assembly:
 
@@ -816,9 +1129,15 @@ sc_assembly:
 sc_meet{i}:
 
 :   Meet with the steering committee for this ith time, with
+<<<<<<< HEAD
     $i\in\{1,2,3,4\}$.
 
 3.25ex 1ex .2ex -1em Milestones and Indicators:\
+=======
+    i={1,2,3,4}.
+
+Milestones and Indicators
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 sc_m0:
 
@@ -839,6 +1158,7 @@ sc_i{i}
 
 ------------------------------------------------------------------------
 
+<<<<<<< HEAD
 ## Management
 
 We will conduct management activities at different frequencies:
@@ -891,6 +1211,45 @@ help illustrate timing of and links among the activities.
 # Capability to deliver (1000 words)
 
 ::: {.tcolorbox}
+=======
+Management
+----------
+
+We will conduct management activities at different frequencies:
+
+Quarterly: we will convene the steering committee. Two weeks in advance of each
+meeting, we will circulate a progress report summarising achieved milestones,
+proposed future activities, and the most recent version of the Bonsai.ML
+long-term roadmap. The steering committee will review the report, endorse
+completed milestones, and provide feedback or suggestions on planned
+activities. Based on project progress and committee input, we will revise the
+long-term roadmap, ensuring that Bonsai.ML development remains aligned with
+community needs and strategic goals. Minutes and key decisions from these
+meetings will be documented and, shared with the Research Software Maintenance
+Fund.
+
+Monthly: we will hold meetings between the project lead, the project co-lead,
+the external project co-lead, and the RSEs, to evaluate the project progress.
+
+Weekly: as has been our practice since the start of the Bonsai.ML project, the
+RSEs will meet with the external project co-lead to discuss issues that
+appeared during the week, review activities for the following week, and adjust
+project directions.
+
+Meetings with collaborators will be arranged as needed. At the SWC, GCNU, and NeuroGEARS we bring together experimental and computational neuroscientists with a strong track record of collaboration. We are confident that the proposed interactions will be equally successful, particularly given our history of productive work with many of the collaborators involved in this project.
+
+Workplan (optional)
+-------------------
+
+You may choose to upload a one page document such as a Gantt chart to
+help illustrate timing of and links among the activities.
+
+![image](figures/ganttChart1.png){width="6.5in"}
+
+Capability to deliver (1000 words)
+==================================
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Provide evidence of how you and your team have:
 
 -   the relevant experience (appropriate to career stage) to deliver the
@@ -903,6 +1262,7 @@ Provide evidence of how you and your team have:
 -   contributed to developing good practice in your communities
 
 Where applicable, discuss your approach to developing others.
+<<<<<<< HEAD
 :::
 
 ## Relevant Experience
@@ -1059,6 +1419,71 @@ students and is advising an RSE in machine learning methods development.
 # Project partners
 
 ::: {.tcolorbox}
+=======
+
+Relevant Experience
+-------------------
+
+TMF is an experimental neuroscientists and director of the SWC. Research in his laboratory aims to explain how the brain makes decisions by combining sensory information with previously learned knowledge. As the behavioural tasks used in his lab require complex software-control of data acquisition and data analysis pipelines, he knows first-hand their crucial importance for driving and enabling neuroscientific research.
+
+He has published 49 peer-reviewed papers, with an h-index of 35 (calculated by google scholar). He is a founding member of the International Brain Laboratory (IBL et al 2019 Neuron). The Bonsai ecosystem is critical to IBL, as it ensures that experimental control, stimulus presentation and data acquisition can be identically reproduced across all participating labs in UK, Europe and USA (IBL et al 2021, eLife).
+
+MS is a computational neuroscientist and director of the Gatsby Unit. He has authored over 150 peer-reviewed scientific papers, with an h-index (computed by Google scholar) of 57. A substantial component of his research focuses on the development of advanced machine-learning tools for neuroscience research.
+
+Beginning around 2005, his group published a series of new neuroinformatics tools designed to characterise and understand population-scale activity using the large-scale multielectrode recording methods. These papers provided the backbone for a new analytic approach that is now being employed and extended by systems neuroscience laboratories worldwide. A central component of the current proposal is to disseminate this approach (and others) already available within Bonsai, easing its adoption by a wider group of laboratories that lack in-house informatics expertise.
+
+GL is the creator of Bonsai and has ample experience in software engineering, holding a Licentiate degree in Computer Science from NOVA University Lisbon, and having worked between 2006 and 2010 at the NOVA CENTRIA Artificial Intelligence laboratory, and at YDreams, where he was leading a team developing a ground-breaking engine for Augmented Reality.
+
+Transitioning into his neuroscience PhD at the Champalimaud Foundation, he created the Bonsai visual programming language to run his PhD experiments, which then led him to managing a software development company serving thousands of users and collaborating with leading universities and research centres around the world.
+
+JR specialises in signal processing and machine learning, with applications to understanding brain function (Rapela et al., 2006, Rapela et al., 2010, Rapela et al., 2018 and Rapela et al., 2019).
+
+He has extensive software development expertise, holding a Master's degree in Computer Science and industry experience at IBM Argentina and the IBM Almaden Research Center, US. He joined the Gatsby Computational Neuroscience Unit in 2019 as a Research Engineer Fellow. He is the lead developer of [Sparse Variational Gaussian Process Factor Analysis (svGPFA)](https://github.com/joacorapela/svGPFA), and has openly released several [other machine learning packages](https://github.com/joacorapela).
+
+JR played a leading role in securing the BBSRC grant that funded the creation of Bonsai.ML and has overseen its development since its inception. He is also the principal author of the current proposal.
+
+NG is a research software engineer with expertise in real-time machine learning, neural data analysis, and open-source software development. He holds a PhD in neuroscience from the University of Toronto, where he developed the [BonZeb](https://ncguilbeault.github.io/BonZeb/) software for zebrafish kinematic tracking, closed-loop stimulation, and neural data analysis.
+
+Since joining the Gatsby Computational Neuroscience Unit in 2023, Dr. Guilbeault has served as the core developer of the [Bonsai.ML](https://bonsai-rx.org/machinelearning) project, integrating machine learning methods into the Bonsai visual reactive programming language.
+
+Balance of Skills and Expertise
+-------------------------------
+
+Our team has the required expertise, at the leadership and development levels, in machine learning (MS, JR, NG), software development (GL, JR, NG), neuroscience (TMF, MS, GL, JR, NG) and experimental control (GL, NG).
+
+Our expertise is complemented by that of world-class project partners in close-loop neural control (Prof. Garrett Stanley), probabilistic programming (Dr. Tom Minka), high-channel-count electrophysiological recordings (Dr. Josh Siegle) and vision and navigation (Prof. Aman Saleem). Please refer to their letters of support.
+
+Leadership and Management Skills
+--------------------------------
+
+TMF is the Director of the Sainsbury Wellcome Centre (SWC) at University College London. He is responsible for setting the Centre's strategic and scientific direction, which currently comprises 12 experimental labs. In addition, he has line management responsibilities for the Executive Team, several members of the SWC Faculty, and numerous scientific and administrative support staff.
+
+MS has been Director of the Gatsby Computational Neuroscience Unit since 2017, leading strategy in research and teaching. He has overseen recruitment to new strategic roles, as well as new members of the Unit faculty. As Director, he sits in the Executive Leadership Committee of the Faculty of Life Sciences at UCL.
+
+GL is the Founder and Director of NeuroGEARS since 2017, where he has led a diverse team of scientists, engineers and artists in the development of novel experimental platforms across multiple model organisms. He has also directly contributed in the organisation and teaching of Bonsai for neuroscience experimentation worldwide, and was part of the creation of the Neuronauts educational outreach programme. Currently, NeuroGEARS employs 8 scientists and engineers across the UK, US and Portugal.
+
+JR has lead a small team of RSEs in the creation of the Bonsai.ML package since 2023.
+
+Contribution to Developing Good Practice in Communities
+-------------------------------------------------------
+
+Bonsai is an open-source platform built with robust software engineering practices, including modular design, automated testing, semantic versioning, and comprehensive documentation. Its development is deeply community-driven, with contributions from labs and companies worldwide, training workshops, conferences, and active online forums. Sustained by public/private funding and the Bonsai Foundation CIC, Bonsai promotes transparency, reproducibility, and long-term sustainability in neuroscience software.
+
+Developing others
+-----------------
+
+TMF has led a laboratory since 2008. He has successfully supervised 12 MA students, 9 PhD students, and 14 postdoctoral scholars.
+
+MS has led a laboratory since 2004, and has supervised a total of 18 PhD students and 17 postdoctoral fellows.
+
+GL has supervised and trained over 10 scientists and engineers at NeuroGEARS since 2017, and co-supervised 2 iCASE studentships in collaboration with UCL faculty.
+
+JR co-mentored a masters, two undergraduate students and is advising an RSE in machine learning methods development.
+
+Project partners
+================
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 A project partner is a collaborating organisation that plays an integral
 role in the proposed work. You should describe the nature of this
 support in the Approach section of your application.
@@ -1075,6 +1500,7 @@ named as the project partner contact.
 
 All project partners must be listed as contributors below, and a letter
 of support for each must be uploaded as a single combined PDF.
+<<<<<<< HEAD
 :::
 
 ## Letter(s) of Support (optional)
@@ -1082,6 +1508,15 @@ of support for each must be uploaded as a single combined PDF.
 # Resources
 
 ::: {.tcolorbox}
+=======
+
+Letter(s) of Support (optional)
+-------------------------------
+
+Resources
+=========
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Please provide details of the funding requested.
 
 Use the breakdown categories listed in this section, and discuss the
@@ -1089,11 +1524,18 @@ main resource requirements.
 
 You will also need to upload a consolidated budget from the lead
 organisation using a standard FEC costing format.
+<<<<<<< HEAD
 :::
 
 ## Justification of resources (1000 words)
 
 ::: {.tcolorbox}
+=======
+
+Justification of resources (1000 words)
+---------------------------------------
+
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 Justify the application's more costly resources, in particular:
 
 -   any staff costs
@@ -1112,6 +1554,7 @@ We are not looking for a detailed breakdown of each cost, but want you
 to demonstrate how the resources you are applying for are comprehensive,
 appropriate and justified, and represent the optimal use of resources to
 achieve the intended outcomes.
+<<<<<<< HEAD
 :::
 
 ### Cash contributions
@@ -1123,6 +1566,22 @@ one RSE.
 
 NeuroGEARS will provide in-kind contributions valued at £100,000,
 including:
+=======
+
+3.25ex 1ex .2ex -1em Staff costs: cover the salary of two research
+software engineers working on the project.
+
+3.25ex 1ex .2ex -1em Community engagement: The directly incurred
+`Other costs` cover the costs of one training curse and one developers
+conference. These cost only cover food expenses, as the venue is
+provided free of charge by the Sainsbury Wellcome Centre.
+
+3.25ex 1ex .2ex -1em Cash contributions: NeuroGEARS will contribute
+£5,733.60 in cash towards salary support for one RSE.
+
+3.25ex 1ex .2ex -1em In-kind contributions: NeuroGEARS will provide
+in-kind contributions valued at £100,000, including:
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
 
 1.  Supporting the organisation of a Bonsai course, including a
     Bonsai.ML module, and providing instructors for its delivery.
@@ -1143,6 +1602,7 @@ including:
 
 6.  Providing Bonsai technical support to members of the Bonsai.ML team.
 
+<<<<<<< HEAD
 ### Total funding requested
 
 ### Directly incurred - Staff
@@ -1165,3 +1625,49 @@ including:
 
 The lead organisation's consolidated budget in a standard FEC costing
 format.
+=======
+Total funding requested:
+------------------------
+
+£283,384.02
+
+Directly incurred - Staff:
+--------------------------
+
+£130,539.22
+
+Directly incurred - Travel and Subsistence:
+-------------------------------------------
+
+£0.0
+
+Directly incurred - Other:
+--------------------------
+
+£13,600
+
+Directly allocated - Staff:
+---------------------------
+
+£0.0
+
+Directly allocated - Estates:
+-----------------------------
+
+£26,100.80
+
+Directly allocated - Other:
+---------------------------
+
+£0.0
+
+Indirects:
+----------
+
+£113.144
+
+Exceptions:
+-----------
+
+£0.0
+>>>>>>> 4cd67c5340152a45f3ffbcd2befa30586167a66e
