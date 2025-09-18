@@ -3,6 +3,9 @@
 
 \subsubsection{Aim 1: Documentation}
 
+\paragraph{Summary:} Improve the current Bonsai.ML documentation.
+
+\paragraph{Background:}
 The current Bonsai.ML documentation includes installation guides, API
 references, and examples, but it lacks essential statistical explanations,
 clear connections between methods, and a well-structured organisation. Users
@@ -106,7 +109,11 @@ the first Bonsai.ML paper.
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 4: Maintainability}
 
-\paragraph{Summary:} Most probabilistic models in Bonsai.ML are currently
+\paragraph{Summary:} Improve the runtime efficiency, simplicity, and
+extensibility of Bonsai.ML code by integrating Infer.NET.
+
+\paragraph{Background:}
+Most probabilistic models in Bonsai.ML are currently
 implemented in Python, which helps attract Python developers but limits
 performance in real-time applications. Implementations in C\# and especially in
 a probabilistic programming language (PPL) would be faster, simpler, and more
@@ -162,19 +169,20 @@ developer of Infer.NET, will support this effort.
 control of neural activity by integrating functionality from
 the \href{https://cloctools.github.io/}{CLOCTools} software into Bonsai.ML.
 
-We will expand Bonsai.ML to support closed-loop neural control by integrating
-functionality from \href{https://cloctools.github.io/}{CLOCTools}
-, developed by Prof.~Garrett Stanley’s lab (Georgia Tech/Emory). While Bonsai
-already excels in real-time behavioural control, this integration will make it
-the first sustainable, general-purpose framework supporting both behavioural
-and neural closed-loop experimentation. Existing closed-loop tools are often ad
-hoc, difficult to install, and poorly integrated; Bonsai will provide
-accessible, open-source, and maintainable solutions, lowering barriers to
-adoption and enabling real-time read–write interaction with neural activity.
-Concretely, we will create a Bonsai package that interfaces with CLOCTools’
-\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est}
- repository, with Prof.~Stanley’s team maintaining the core library and our
- team providing Bonsai integration.
+\paragraph{Background:} We will expand Bonsai.ML to support closed-loop neural
+control by integrating functionality from
+\href{https://cloctools.github.io/}{CLOCTools} , developed by Prof.~Garrett
+Stanley’s lab (Georgia Tech/Emory). While Bonsai already excels in real-time
+behavioural control, this integration will make it the first sustainable,
+general-purpose framework supporting both behavioural and neural closed-loop
+experimentation. Existing closed-loop tools are often ad hoc, difficult to
+install, and poorly integrated; Bonsai will provide accessible, open-source,
+and maintainable solutions, lowering barriers to adoption and enabling
+real-time read–write interaction with neural activity.  Concretely, we will
+create a Bonsai package that interfaces with CLOCTools’
+\href{https://github.com/CLOCTools/lds-ctrl-est}{lds-ctrl-est} repository, with
+Prof.~Stanley’s team maintaining the core library and our team providing Bonsai
+integration.
 
 \paragraph{Tasks:}  
 
@@ -244,6 +252,9 @@ In this first edition of the conference we voted to hold the second edition in
 
 \noindent\rule{\textwidth}{1pt}
 \subsubsection{Aim 7: Governance}
+
+\paragraph{Summary:} Establish and convene a steering committee to guide
+milestones, review progress, and shape a long-term development roadmap.
 
 \paragraph{Background:} We will assemble a Bonsai.ML steering committee that
 will be responsible for approving project milestones and advise us on building
