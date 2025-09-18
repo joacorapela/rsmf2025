@@ -1,7 +1,7 @@
 
 all: applicationLarger.pdf
 
-applicationLarger.pdf: applicationLarger.tex software.tex vision.tex approach.tex objectives.tex capabilityToDeliver.tex timelinessAndSustainability.tex summary.tex
+applicationLarger.pdf: applicationLarger.tex software.tex vision.tex approach.tex objectives.tex capabilityToDeliver.tex timelinessAndSustainability.tex summary.tex edia.tex
 	pdflatex applicationLarger.tex
 	bibtex applicationLarger.aux
 	pdflatex applicationLarger.tex
